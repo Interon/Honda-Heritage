@@ -9,9 +9,9 @@
 		<!-- Base MasterSlider style sheet -->
 		<link rel="stylesheet" href="masterslider/style/masterslider.css" />
 		 
-		<!-- MasterSlider default skin 
+		<!-- MasterSlider default skin -->
 		<link rel="stylesheet" href="masterslider/skins/contrast/style.css" />
-		 -->
+		 
 
 		<!-- Latest version of jQuery from Google CDN -->
 		<!-- You can remove it if jQuery is already included. -->
@@ -19,25 +19,57 @@
 		 
 		<!-- MasterSlider main JS file -->
 		<script src="masterslider/masterslider.min.js"></script>
-		
+
+        <!--JBox popup JS and CSS-->
+        <script src="masterslider/jBox.min.js"></script>
+        <link href="masterslider/jBox.css" rel="stylesheet">
+
+        <!--Custom Javascript-->
+        <script src="masterslider/customjs.js"></script>
+
 		<!-- Change Text to White -->
 		<style type="text/css">
+            .content{
+                position: relative;
+                top:70px;
+            }
+            
 			.ms-layer { 
 				font-size:25px; 
 				color: white; 
 				//font-weight:bold; 
 				font-style:italic;
                 font-family:Arial, Helvetica, sans-serif, sans-serif;
+                
 			}
 		</style>
-				
+
+        <script>
+        $(document).ready(function(){
+            new jBox('Image');
+        });
+
+        </script>
+			
+    
+        
+        
+        	
 	</head>
 
 	<body>
 
-    <div style ="width:100%;height:180px;margin:auto">
-        <h1 >Honda Header Banner Size</h1>
-    </div>
+        <!--header to be moved to fixed position infront of content-->
+        
+        <div style ="width:100%;height:180px;margin:auto;z-index:100;background: #fff;position: absolute;">
+            <h1 >Honda Header Banner Size</h1>
+        </div>
+       
+
+       
+        
+<div class="content">
+
 <!-- masterslider -->
 <div class="master-slider ms-skin-contrast" id="masterslider">
     <!-- new slide -->
@@ -189,21 +221,23 @@
 			
 		</div>
 	
-        <!-- car image layer -->
-        <img class="ms-layer" alt="lorem ipsum dolor sit"
-             data-offset-x="0"
-             data-offset-y="0"
-             data-origin="br"
-             data-type="image"
-             data-effect="right(long)"
-             data-duration="1200"
-             data-ease="linear"
-             data-delay="800"
-             data-hide-effect="fade" 
-             src="masterslider/blank.gif"
-             data-src="masterslider/images/Slide 2/honda-car-2-c.png" 
-        />
-
+        
+             <!-- car image layer -->
+             <img class="ms-layer" alt="lorem ipsum dolor sit"
+                data-offset-x="0"
+                 data-offset-y="0"
+                data-origin="br"
+                data-type="image"
+                data-effect="right(long)"
+                data-duration="1200"
+                data-ease="linear"
+                data-delay="800"
+                data-hide-effect="fade" 
+                src="masterslider/blank.gif"
+                data-src="masterslider/images/Slide 2/honda-car-2-c.png" 
+             />
+        
+        
         
          
     </div>
@@ -249,37 +283,37 @@
 
         
 
-
-        <!-- car image layer -->
-        <img class="ms-layer" alt="hotspot"
-             data-offset-x="0"
-             data-offset-y="0"
-             data-origin="br"
-             data-type="image"
-             data-effect="right(long)"
-             data-duration="1200"
-             data-ease="linear"
-             data-delay="800"
-             data-hide-effect="fade"
-             src="masterslider/blank.gif"
-             data-src="masterslider/images/Slide 3/honda-car-3-c.png" />
-
+        <!--Link to imbedded slide-->
+        <a href="masterslider/images/test-images/02.jpg" title="Embedded Slide 1" data-jbox-image="gallery1"></a>
+        <a href="masterslider/images/test-images/04.jpg" title="Embedded Slide 2" data-jbox-image="gallery1"></a>
+        <a href="masterslider/images/test-images/05.jpg" title="Embedded Slide 3" data-jbox-image="gallery1"></a>
+        <a href="masterslider/images/test-images/09.jpg" title="Embedded Slide 3" data-jbox-image="gallery1"></a>
         
 
+        <!--<a href="masterslider/simple-fade-slideshow.slider/with-jquery.html"></a>-->
 
-        <!--hotspot-->
-        <div class="ms-layer"
-             data-offset-x="100"
-             data-offset-y="100"
-             data-delay="500"
-             data-type="hotspot"
-             data-align="bottom">
-            <div class="product-tt">
-                <h1>LOREM IPSUM DOLOR</h1>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.
-            </div>
-        </div>
 
+
+
+
+            <!-- car image layer -->
+            <img class="ms-layer" alt="hotspot"
+                data-offset-x="0"
+                data-offset-y="0"
+                data-origin="br"
+                data-type="image"
+                data-effect="right(long)"
+                data-duration="1200"
+                data-ease="linear"
+                data-delay="800"
+                data-hide-effect="fade"
+                src="masterslider/blank.gif"
+                data-src="masterslider/images/Slide 3/honda-car-3-clickable-c.png" />
+   
+
+
+
+        
 
 
 
@@ -298,10 +332,14 @@
  
 </div>
 <!-- end of masterslider -->
+
+<!--end of content class-->
+</div>
 		
 	</body>
 	
-	<script type="text/javascript">		
+	<script type="text/javascript">	
+
 	    var slider = new MasterSlider();
 	    slider.setup('masterslider', {
 	         width:1920,    // slider standard width
