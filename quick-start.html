@@ -21,29 +21,6 @@
 		<script src="masterslider/masterslider.min.js"></script>
 
 
-
-		<!-- Change Text to White 
-        
-		<style type="text/css">
-            body {
-                position: fixed;
-                background-color: black;
-            } 
-            .ms-layer {
-                font-size: 25px;
-                color: white;
-                //font-weight:bold;
-                font-style: italic;
-                font-family: Arial, Helvetica, sans-serif, sans-serif;
-            }
-         
-            
-              
-			
-		</style>
-
-		-->
-
         	
 	</head>
 
@@ -55,10 +32,6 @@
             <h1 >Honda Header Banner Size</h1>
         </div>	
 
-        
-       
-
-       
         
 		<div class="content">
 
@@ -73,8 +46,6 @@
 					
 					<!-- slide text layer -->
 
-                
-				
 					<div class="mytext ms-layer ms-caption"
 						 
 						 data-offset-x="100"
@@ -279,7 +250,6 @@
 	</body>
 			
 			<script type="text/javascript">	
-
 				var slider = new MasterSlider();
 				slider.setup('masterslider', {
 					 width:1920,    // slider standard width
@@ -288,7 +258,6 @@
 					 fullwidth: true,
 					 autoHeight: true,
 					 layout: "fullscreen",
-					 //fullscreenMargin: 155,
 					 smoothHeight: true,
 					 fillMode: "stretch",
 
@@ -298,7 +267,9 @@
 				});
 				// adds Arrows navigation control to the slider.
 				slider.control('arrows');
-				slider.control('bullets');
+				
+				
+				
 		slider.api.addEventListener(MSSliderEvent.CHANGE_START , function(){
 			 chainEffect();
 		});
