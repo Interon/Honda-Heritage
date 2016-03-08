@@ -27,32 +27,34 @@
         <!--Custom Javascript-->
         <script src="masterslider/customjs.js"></script>
 
-		<!-- Change Text to White -->
+		<!-- Change Text to White and CSS for popup slideshow-->
+        
 		<style type="text/css">
-            .content{
-                
+            body {
+                background-color: black;
+            } 
+            .ms-layer {
+                font-size: 25px;
+                color: white;
+                //font-weight:bold;
+                font-style: italic;
+                font-family: Arial, Helvetica, sans-serif, sans-serif;
             }
+         
             
-			.ms-layer { 
-				font-size:25px; 
-				color: white; 
-				//font-weight:bold; 
-				font-style:italic;
-                font-family:Arial, Helvetica, sans-serif, sans-serif;
-                
-			}
+              
+			
 		</style>
 
         <script>
         $(document).ready(function(){
             new jBox('Image');
+
         });
 
+
         </script>
-			
-    
-        
-        
+
         	
 	</head>
 
@@ -60,8 +62,12 @@
 
         <!--header to be moved to fixed position infront of content-->
         
-        <div style ="width:100%;height:155px;margin:auto;z-index:100;background: #fff;">
+        <div id="myModal">
+
+        <div style ="width:100%;height:155px;margin:auto;background: #fff;">
             <h1 >Honda Header Banner Size</h1>
+        </div>
+
         </div>
        
 
@@ -95,61 +101,74 @@
 
         <!-- slide text layer -->
         <div class="ms-layer ms-caption"
-             data-offset-x="50"
-             data-offset-y="52"
+             style="top:10%; left:10%; bottom:50%; right:1300%; bottom:500%; font-size:19.5px;"
+             data-offset-x="58"
+             data-offset-y="50"
              data-origin="tl"
              data-type="text"
              data-effect="bottom(90)"
              data-duration="800"
              data-ease="easeOutQuart">
 
-             Type <span style="color:red"; >R</span> - The “<span style="color:red" ;>
-             R</span>” stands for Racing. 
-             <br />
-             <br />
 
-             The Type <span style="color:red" ;>R</span> brand delivers speed and 
-             <br />
-             excitement that stimulates the driver and 
-             <br />
-             enhances the driving experience. All Type <span style="color:red" ;>R</span> 
-             <br />
-             cars are immersed in Honda’s racing DNA and
-             <br />
-             the knowledge and expertise of Honda’s 
-             <br />
-             engineers. When creating a Type <span style="color:red" ;>
-             R</span> car, Honda 
-			 <br />
-			 aim to create the ultimate driving machine.
+            
+
+            Type <span style="color:red" ;>R</span> - The “<span style="color:red" ;>
+                R
+            </span>” stands for Racing.
             <br />
             <br />
 
-             The spirit of Type <span style="color:red" ;>R</span> was first seen in 1964, long
-			 <br>
-             before the first Type <span style="color:red" ;>R</span> model was built. This
-			 <br>
-             was the year that Honda first joined Formula 
-			 <br>
-			 One. At the time Honda was still a relatively 
-			 <br>
-			 small car manufacturer but with the dedication 
-			 <br />
-			 of our engineers we met challenging targets and 
-			 <br />
-			 achieved what often seemed unachievable.
-             <br />
-             <br />
+            The Type <span style="color:red" ;>R</span> brand delivers speed and
+            
+            excitement that stimulates the driver and
+            
+            enhances the driving experience. All Type <span style="color:red" ;>R</span>
+            
+            cars are immersed in Honda’s racing DNA and
+            
+            the knowledge and expertise of Honda’s
+            
+            engineers. When creating a Type <span style="color:red" ;>
+                R
+            </span> car, Honda
+            
+            aim to create the ultimate driving machine.
+            <br />
+            <br />
 
-             The first Honda Formula One machine to
-			 <br />
-			 compete in a Grand Prix (Germany) was 
-			 <br />
-			 painted in Ivory White and featured the Honda 
-			 <br />
-			 emblem in red…these colours have been 
-			 <br />
-			 passed on to all Honda Type <span style="color:red" ;>R</span> cars.
+            The spirit of Type <span style="color:red" ;>R</span> was first seen in 1964, long
+            
+            before the first Type <span style="color:red" ;>R</span> model was built. This
+            
+            was the year that Honda first joined Formula
+            
+            One. At the time Honda was still a relatively
+            
+            small car manufacturer but with the dedication
+            
+            of our engineers we met challenging targets and
+            
+            achieved what often seemed unachievable.
+            <br />
+            <br />
+
+            The first Honda Formula One machine to
+            
+            compete in a Grand Prix (Germany) was
+            
+            painted in Ivory White and featured the Honda
+            
+            emblem in red…these colours have been
+            
+            passed on to all Honda Type <span style="color:red" ;>R</span> cars.
+
+
+
+
+
+
+
 		</div>
 	
         <!-- car image layer -->
@@ -181,7 +200,8 @@
 
         <!-- slide text layer -->
         <div class="ms-layer ms-caption"
-             data-offset-x="50"
+             style="top:10%; left:10%; bottom:50%; right:1300%;"
+             data-offset-x="58"
              data-offset-y="55"
              data-origin="tl"
              data-type="text"
@@ -190,32 +210,32 @@
              data-ease="easeOutQuart">
 			
 			The new Honda Civic Type <span style="color:red"; > R </span>has added
-			<br />
+			
 			motorsport honors to its growing list of plaudits,
-			<br />
+			
 			as Honda Yuasa Racing clinched the drivers and
-			<br />
+			
 			manufacturers championship in the 2015 Dunlop
-			<br />
+			
 			MSA British Touring Car Championship in a tense
-			<br />
+			
 			final round at Brands Hatch.
 			<br />
 			<br />
 			Continuing the success story for the most high
-			<br />
+			
 			performance car ever to waer the red 'H' badge,
-			<br />
+			
 			the new Honda Civic Type <span style="color:red"; >R</span> was developed with
-			<br />
+			
 			help from the brand's World ouring Car Team.
-			<br />
+			
 			Vital analysis and feedback from the track
-			<br />
+			
 			informed decisions about performance and
-			<br />
+			
 			styling, supporting the British team to driver and 
-			<br />
+			
 			manufacturer titles in its first competitive year.
 			
 		</div>
@@ -253,7 +273,8 @@
 
         <!-- slide text layer -->
         <div class="ms-layer ms-caption"
-             data-offset-x="50"
+             style="top:10%; left:10%; bottom:50%; right:1300%;"
+             data-offset-x="58"
              data-offset-y="52"
              data-origin="tl"
              data-type="text"
@@ -262,57 +283,64 @@
              data-ease="easeOutQuart">
 
             This car marked the beginning of the Type <span style="color:red" ;>R</span>
-            <br />
+            
             story. The aim was to develop a car that
-            <br />
+            
             delivered overwhelming driving pleasure and the
-            <br />
+            
             speed of a racing car. The design language of
-            <br />
+            
             NSX Type <span style="color:red" ;>R</span> echoes the image of an F1 racing
-            <br />
+            
             machine. This was also the first time that the red
-            <br />
+            
             Honda emblem and championship white body
-            <br />
+            
             colour was introduced.
 
         </div>
 
 
+
+        <!-- car image layer -->
+        <img class="ms-layer" alt="hotspot"
+             data-offset-x="0"
+             data-offset-y="0"
+             data-origin="br"
+             data-type="image"
+             data-effect="right(long)"
+             data-duration="1200"
+             data-ease="linear"
+             data-delay="800"
+             data-hide-effect="fade"
+             src="masterslider/blank.gif"
+             data-src="masterslider/images/Slide 3/car-3-c.png" />
+
+      
+
+            <!--Start of embeded slideshow functionality-->
+            <!--Popup start -->
+            
+        <a href="/masterslider/images/test-images/02.jpg" title="" data-jbox-image="gallery1"><img src="" alt=""></a>
+        <a href="/masterslider/images/test-images/04.jpg" title="" data-jbox-image="gallery1"><img src="" alt=""></a>
+        <a href="/masterslider/images/test-images/05.jpg" title="" data-jbox-image="gallery1"><img src="" alt=""></a>
+        <a href="/masterslider/images/test-images/09.jpg" title="" data-jbox-image="gallery1"><img src="" alt=""></a>
         
-
-        <!--Link to imbedded slide-->
-        <a href="masterslider/images/test-images/02.jpg" title="" data-jbox-image="gallery1"></a>
-        <a href="masterslider/images/test-images/04.jpg" title="" data-jbox-image="gallery1"></a>
-        <a href="masterslider/images/test-images/05.jpg" title="" data-jbox-image="gallery1"></a>
-        <a href="masterslider/images/test-images/09.jpg" title="" data-jbox-image="gallery1"></a>
+            
         
-
-        <!--<a href="masterslider/simple-fade-slideshow.slider/with-jquery.html"></a>-->
-
-
-
-
-
-            <!-- car image layer -->
-            <img class="ms-layer" alt="hotspot"
-                data-offset-x="0"
-                data-offset-y="0"
-                data-origin="br"
-                data-type="image"
-                data-effect="right(long)"
-                data-duration="1200"
-                data-ease="linear"
-                data-delay="800"
-                data-hide-effect="fade"
-                src="masterslider/blank.gif"
-                data-src="masterslider/images/Slide 3/car-3-c.png" />
-   
+                            <!--start of embedded slideshow-->
+                    
+                    
 
 
 
-        
+                            <!--end of embedded slideshow-->
+
+                         
+
+                    <!--Popup end-->
+                    
+                <!--End of embedded slideshow-->
 
 
 
@@ -321,7 +349,8 @@
 
 
 
-    </div>
+
+        </div>
     <!-- end of slide -->   
 
 
