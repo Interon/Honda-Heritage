@@ -28,7 +28,7 @@
 
         <!--header to be moved to fixed position infront of content-->
 
-        <div style ="width:100%;height:180px; margin:auto; margin-top:-20px; position:fixed; z-index:100; background: #fff;">
+        <div style ="width:100%;height:180px; margin:auto; margin-top:-20px; background: #fff;">
             <h1 >Honda Header Banner Size</h1>
         </div>	
 
@@ -42,7 +42,15 @@
 				<div class="ms-slide">
 					 
 					<!-- slide background -->
-					<img src="masterslider/style/blank.gif" data-src="masterslider/images/bg-racetrack.png" alt="bg-racetrack"/>     
+					<img src="masterslider/style/blank.gif" data-src="masterslider/images/bg-racetrack.png" alt="bg-racetrack"/>  
+
+					<!-- rev counter -->
+					<div class="ms-layer revborder"></div>
+					
+					<div class="ms-layer" >
+						
+					</div>	
+					
 
 					<!-- slide text layer -->
 						<div class="mytext ms-layer ms-caption"
@@ -81,10 +89,10 @@
 						 data-src="masterslider/images/car-1.png" 
 					/>
 					
-					<!-- rev counter -->
-						<div class = "div0">
-							<div class = "div1"></div>
-						</div>
+
+							
+							
+						
 				</div>
 				<!-- end of slide -->
 				 
@@ -116,6 +124,10 @@
 							<br />
 							The first Honda Formula One machine to compete in a Grand Prix (Germany) was painted in Ivory White and featured the Honda emblem in red…these colours have been passed on to all Honda Type <span style="color:red" ;>R</span> cars.
 						</div>
+						
+						
+						
+						
 
 					<!--car image layer-->
 					<img class="ms-layer" alt="car"
@@ -682,10 +694,7 @@
 						 data-src="masterslider/images/car-1.png" 
 					/>
 					
-					<!-- rev counter -->
-						<div class = "div0">
-							<div class = "div1"></div>
-						</div>
+
 				</div>
 				<!-- end of slide -->
 
@@ -732,17 +741,24 @@
 						 data-src="masterslider/images/car-1.png" 
 					/>
 					
-					<!-- rev counter -->
-						<div class = "div0">
-							<div class = "div1"></div>
-						</div>
+					
 				</div>
 				<!-- end of slide -->
 
 				
-			 
 				
-                
+				
+				
+			 	
+				
+                <!-- rev counter 
+						<div class = "div0">
+							<div class = "div1">
+
+							
+							</div>
+						</div>
+				-->
 
 				
 				
@@ -778,16 +794,23 @@
 			<script type="text/javascript">	
 				var slider = new MasterSlider();
 				slider.setup('masterslider', {
-					 width:1920,    // slider standard width
-					 height:1080,   // slider standard height
-					 space: 0,
-					 fullwidth: true,
-					 autoHeight: true,
-					 layout: "fullscreen",
-					 smoothHeight: true,
-					 fillMode: "stretch",
-
-					 view: "fade"
+					width:1920,    // slider standard width
+					height:643,   // slider standard height
+					space:0,
+				
+					
+					layout:"fullwidth",
+				
+				
+				
+				
+					 //width:1920,    // slider standard width
+					 //height:1080,   // slider standard height
+					 //space: 0,
+					 //fullwidth: true,
+					 //autoHeight: true,
+					 //layout: "boxed",
+					 //view: "fade"
 					 // more slider options goes here...
 					 // check slider options section in documentation for more options.
 				});
