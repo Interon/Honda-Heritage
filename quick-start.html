@@ -325,9 +325,26 @@
     <!-- end of slide -->   
 
 
+<div  style="width:100%;text-align:center">
+ <div id = "chainblock"  style ="position:relative;height:20px;width:580px;top:-50px;margin-left:auto;margin-right:auto">
+ <div class="chainball" data-position ="0" style="background-repeat:no-repeat;background-image:url('masterslider/images/start.png');height:13px;width:13px;float:left"> </div>
+ <div class="chainball" data-position ="1" style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left"> </div>
+ <div class="chainball" data-position ="2"  style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left"> </div>
+ <div class="chainball" data-position ="3" style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left"> </div>
+ <div class="chainball" data-position ="4" style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left"> </div>
+ <div class="chainball" data-position ="5" style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left"> </div>
+ <div class="chainball" data-position ="6" style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left"> </div>
+ <div class="chainball" data-position ="7" style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left"> </div>
+ <div class="chainball" data-position ="8" style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left"> </div>
+ <div class="chainball" data-position ="9" style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left"> </div>
+ <div class="chainball" data-position ="10" style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left"> </div>
+ <div class="chainball" data-position ="11" style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left"> </div>
+ <div class="chainball" data-position ="12" style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left"> </div>
+ <div class="chainball" data-position ="13" style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left"> </div>
+ </div>
+ </div>
 
- 
-   	
+
  
 </div>
 <!-- end of masterslider -->
@@ -352,6 +369,33 @@
 	    });
 	    // adds Arrows navigation control to the slider.
 	    slider.control('arrows');
-	    
+	    slider.control('bullets');
+slider.api.addEventListener(MSSliderEvent.CHANGE_START , function(){
+     chainEffect();
+});
+$(document).ready(function(){
+});
+
+function chainEffect()
+{
+$('.chainball').each(function(){
+
+
+    if($(this).data('position') <= slider.api.index()){
+
+        $(this).css('background-image','url(' + 'masterslider/images/next.png'+ ')');
+    }
+    else
+    {
+     $(this).css('background-image','url(' + 'masterslider/images/open.png'+ ')');
+    }
+if($(this).data('position') == "0"){
+    $(this).css('background-image','url(' + 'masterslider/images/start.png'+ ')');
+    }
+
+ });
+
+}
+
 	</script>
 </html>
