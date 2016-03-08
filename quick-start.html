@@ -20,17 +20,13 @@
 		<!-- MasterSlider main JS file -->
 		<script src="masterslider/masterslider.min.js"></script>
 
-        <!--JBox popup JS and CSS-->
-        <script src="masterslider/jBox.min.js"></script>
-        <link href="masterslider/jBox.css" rel="stylesheet">
 
-        <!--Custom Javascript-->
-        <script src="masterslider/customjs.js"></script>
 
-		<!-- Change Text to White and CSS for popup slideshow-->
+		<!-- Change Text to White -->
         
 		<style type="text/css">
             body {
+                position: fixed;
                 background-color: black;
             } 
             .ms-layer {
@@ -47,10 +43,7 @@
 		</style>
 
         <script>
-            $(document).ready(function(){
-                 new jBox('Image');
 
-            });
 
 
         </script>
@@ -62,13 +55,13 @@
 
         <!--header to be moved to fixed position infront of content-->
         
-        <div id="myModal">
+        
 
-        <div style ="width:100%;height:155px;margin:auto;background: #fff;">
+        <div style ="width:100%;height:155px; margin-left:0px; margin-top:-30px; position:relative; background: #fff;">
             <h1 >Honda Header Banner Size</h1>
         </div>
 
-        </div>
+        
        
 
        
@@ -81,24 +74,9 @@
     <div class="ms-slide">
          
         <!-- slide background -->
-        <img src="masterslider/style/blank.gif" data-src="masterslider/images/Slide 1/bg-1-c.png" alt=""/>     
+        <img src="masterslider/style/blank.gif" data-src="masterslider/images/bg-racetrack.png" alt=""/>     
 
-
-        <!-- slide image layer 
-        <img class="ms-layer" alt="lorem ipsum dolor sit"
-             
-             data-offset-x="0"
-             data-offset-y="0"
-             data-origin="tr"
-             data-type="image"
-             data-effect="fade()"
-             data-duration="1800"
-             data-ease="linear"
-             auto-delay="0"
-             src="masterslider/blank.gif"
-             data-src="masterslider/images/Slide 1/square-1-c.png" 
-         />-->
-
+        
         <!-- slide text layer -->
         <div class="ms-layer ms-caption"
              style="top:10%; left:10%; bottom:50%; right:1300%; bottom:500%; font-size:20px;"
@@ -110,64 +88,16 @@
              data-duration="800"
              data-ease="easeOutQuart">
 
-
-            
-
-            Type <span style="color:red" ;>R</span> - The “<span style="color:red" ;>
-                R
-            </span>” stands for Racing.
+            Type <span style="color:red" ;>R</span> - The “<span style="color:red" ;>R</span>” stands for Racing.
             <br />
             <br />
-
-            The Type <span style="color:red" ;>R</span> brand delivers speed and
-            
-            excitement that stimulates the driver and
-            
-            enhances the driving experience. All Type <span style="color:red" ;>R</span>
-            
-            cars are immersed in Honda’s racing DNA and
-            
-            the knowledge and expertise of Honda’s
-            
-            engineers. When creating a Type <span style="color:red" ;>
-                R
-            </span> car, Honda
-            
-            aim to create the ultimate driving machine.
+            The Type <span style="color:red" ;>R</span> brand delivers speed and excitement that stimulates the driver and enhances the driving experience. All Type <span style="color:red" ;>R</span>cars are immersed in Honda’s racing DNA and the knowledge and expertise of Honda’s engineers. When creating a Type <span style="color:red" ;> R </span> car, Honda aim to create the ultimate driving machine.
             <br />
             <br />
-
-            The spirit of Type <span style="color:red" ;>R</span> was first seen in 1964, long
-            
-            before the first Type <span style="color:red" ;>R</span> model was built. This
-            
-            was the year that Honda first joined Formula
-            
-            One. At the time Honda was still a relatively
-            
-            small car manufacturer but with the dedication
-            
-            of our engineers we met challenging targets and
-            
-            achieved what often seemed unachievable.
+            The spirit of Type <span style="color:red" ;>R</span> was first seen in 1964, long before the first Type <span style="color:red" ;>R</span> model was built. This was the year that Honda first joined Formula One. At the time Honda was still a relatively small car manufacturer but with the dedication of our engineers we met challenging targets and achieved what often seemed unachievable.
             <br />
             <br />
-
-            The first Honda Formula One machine to
-            
-            compete in a Grand Prix (Germany) was
-            
-            painted in Ivory White and featured the Honda
-            
-            emblem in red…these colours have been
-            
-            passed on to all Honda Type <span style="color:red" ;>R</span> cars.
-
-
-
-
-
-
+            The first Honda Formula One machine to compete in a Grand Prix (Germany) was painted in Ivory White and featured the Honda emblem in red…these colours have been passed on to all Honda Type <span style="color:red" ;>R</span> cars.
 
 		</div>
 	
@@ -183,7 +113,7 @@
              data-delay="800"
              data-hide-effect="fade" 
              src="masterslider/blank.gif"
-             data-src="masterslider/images/Slide 1/car-1-c.png" 
+             data-src="masterslider/images/Slide 1/car-1.png" 
         />
 
         
@@ -371,11 +301,11 @@
 	    var slider = new MasterSlider();
 	    slider.setup('masterslider', {
 	         width:1920,    // slider standard width
-	         height:1080,   // slider standard height
+	         height:1080,   // 1080 less 155 for header slider standard height
 	         space: 0,
 	         fullwidth: true,
 	         autoHeight: true,
-	         //layout: "fullscreen",
+	         layout: "fullscreen",
              //fullscreenMargin: 155,
 	         smoothHeight: true,
 	         fillMode: "stretch",
