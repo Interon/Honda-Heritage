@@ -2,7 +2,10 @@
  *  Master Slider
  * 	Core css file
  */
-
+body
+{
+	background-color: black;
+}
 .master-slider{
 	position: relative;
 	visibility: hidden;
@@ -23,7 +26,7 @@
 
 .master-slider.before-init{}
 
-.master-slider.ms-fullheight{height: 100%;}
+.master-slider.ms-fullheight{height: 80%;}
 
 .ms-layout-partialview .ms-view {
 	overflow: visible;
