@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="masterslider/style/masterslider.css" />
 		 
 		<!-- MasterSlider default skin -->
-		<link rel="stylesheet" href="masterslider/skins/contrast/style.css" />
+		<link rel="stylesheet" href="masterslider/skins/light-3/style.css" />
 		 
 
 		<!-- Latest version of jQuery from Google CDN -->
@@ -47,10 +47,10 @@
 		</style>
 
         <script>
-        $(document).ready(function(){
-            new jBox('Image');
+            $(document).ready(function(){
+                 new jBox('Image');
 
-        });
+            });
 
 
         </script>
@@ -76,7 +76,7 @@
 <div class="content">
 
 <!-- masterslider -->
-<div class="master-slider ms-skin-contrast" id="masterslider">
+<div class="master-slider ms-skin-light-3" id="masterslider">
     <!-- new slide -->
     <div class="ms-slide">
          
@@ -101,9 +101,9 @@
 
         <!-- slide text layer -->
         <div class="ms-layer ms-caption"
-             style="top:10%; left:10%; bottom:50%; right:1300%; bottom:500%; font-size:19.5px;"
+             style="top:10%; left:10%; bottom:50%; right:1300%; bottom:500%; font-size:20px;"
              data-offset-x="58"
-             data-offset-y="50"
+             data-offset-y="45"
              data-origin="tl"
              data-type="text"
              data-effect="bottom(90)"
@@ -275,7 +275,7 @@
         <div class="ms-layer ms-caption"
              style="top:10%; left:10%; bottom:50%; right:1300%;"
              data-offset-x="58"
-             data-offset-y="52"
+             data-offset-y="50"
              data-origin="tl"
              data-type="text"
              data-effect="bottom(90)"
@@ -375,6 +375,11 @@
 	         space: 0,
 	         fullwidth: true,
 	         autoHeight: true,
+	         //layout: "fullscreen",
+             //fullscreenMargin: 155,
+	         smoothHeight: true,
+	         fillMode: "stretch",
+
              view: "fade"
 	         // more slider options goes here...
 	         // check slider options section in documentation for more options.
