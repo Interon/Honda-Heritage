@@ -5,18 +5,25 @@
             body {
                 //position: absolute;
                 background-color: black;
+
+				//overflow: hidden;
             } 
             .ms-caption {
-                font-size: 112%;
+                font-size: 140%;
                 color: white;
                 font-style: italic;
                 font-family: Arial, Helvetica, sans-serif, sans-serif;
             }
 			.mytext {
-				right: 1250%;
-				top:50%;
+				position: absolute;
+				right: 1275%;
 				left:150%;
+				bottom: 250%;
+				top:120%;
+				
 			}
+			
+
 			.specs {
 				position:absolute;
 				width:24%;
@@ -28,7 +35,7 @@
 				margin: auto;
 				padding: 10px 10px 10px 15px;
 				vertical-align: middle;
-				bottom:100%;
+				bottom:110%;
 				left: 150%;
 				
 				font-size:110%;
@@ -107,7 +114,9 @@
 				75%, 100% {background:red; height:20px;opacity:.9}
 			}
 
-			
+			.car3 {
+				width: 70%;
+			}
 
 
 
