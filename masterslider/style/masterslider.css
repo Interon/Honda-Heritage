@@ -35,7 +35,7 @@ and (orientation: landscape) {
 	/* Styles */
 	
 	.mytext {
-			font-size: 20px;
+			font-size: 40px;
 	}
 	 
 }
@@ -89,13 +89,11 @@ only screen and (min-device-pixel-ratio: 1.5) {
                 font-family: Arial, Helvetica, sans-serif, sans-serif;
             }
 			.mytext {
-<<<<<<< HEAD
+
 				position: absolute;
 				right: 1275%;
-=======
-				right: 1275%;
+
 				top:60%;
->>>>>>> parent of 9596b40... Revert "Loaded text content"
 				left:150%;
 				bottom: 250%;
 				top:120%;
