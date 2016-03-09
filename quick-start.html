@@ -1016,8 +1016,8 @@
               var w = screen.width * ratio;
               var h = screen.height * ratio;
               var r = gcd (screen.width, screen.height);
-              var aspect = screen.width/r + ':' + screen.height/r;
-              var xheight = 800;
+              var aspect = w/r + ':' + h/r;
+              var xheight = 650;
               if(aspect=='4:3')
               {
                 xheight = 1100;
@@ -1026,8 +1026,9 @@
               {
                 xheight = 700;
               }
-			  alert (aspect);
 
+			  alert (aspect);
+              alert(w + '-' + h)
 				var slider = new MasterSlider();
 				slider.setup('masterslider', {
 					width:1920,    // slider standard width
