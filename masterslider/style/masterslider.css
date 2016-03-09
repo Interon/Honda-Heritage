@@ -79,7 +79,21 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	/* Styles */
 }
 
+/* Samsung */
 
+@media (max-device-width: 1280px) and (orientation: landscape) {
+	.mytext {
+		font-size: 21px;
+		left:30px;
+		top:50px;
+	}
+}
+
+
+/* Samsung */
+@media (max-device-width: 1232px) and (orientation: portrait) {
+
+}
 
 
 
