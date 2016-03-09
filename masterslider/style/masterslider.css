@@ -35,12 +35,10 @@ and (orientation: landscape) {
 	/* Styles */
 	
 	.mytext {
-<<<<<<< HEAD
-			font-size: 40px;
-=======
+
 		padding-top:100px;
 			font-size: 21px;
->>>>>>> refs/remotes/origin/ViewPort
+
 	}
 	 
 }
@@ -110,17 +108,13 @@ only screen and (min-device-pixel-ratio: 1.5) {
 			.mytext {
 
 				position: absolute;
-<<<<<<< HEAD
-				right: 1275%;
 
-				top:60%;
-=======
 
 
 			right: 1275%;
 				top:60%;
 
->>>>>>> refs/remotes/origin/ViewPort
+
 				left:150%;
 				bottom: 250%;
 				top:120%;
