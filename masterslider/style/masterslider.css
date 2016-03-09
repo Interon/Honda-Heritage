@@ -1,3 +1,77 @@
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+	/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width: 321px) {
+	/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width: 320px) {
+	/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+	/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape) {
+	/* Styles */
+	
+	.mytext {
+			font-size: 12px;
+	}
+	 
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait) {
+	/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width: 1224px) {
+	/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width: 1824px) {
+	/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+	/* Styles */
+}
+
+
+
+
+
+
 /** 
  *  Custom CSS
  */
@@ -15,8 +89,13 @@
                 font-family: Arial, Helvetica, sans-serif, sans-serif;
             }
 			.mytext {
+<<<<<<< HEAD
 				position: absolute;
 				right: 1275%;
+=======
+				right: 1275%;
+				top:60%;
+>>>>>>> parent of 9596b40... Revert "Loaded text content"
 				left:150%;
 				bottom: 250%;
 				top:120%;
@@ -727,67 +806,3 @@
 
 
 
-<<<<<<< HEAD
-=======
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 480px) {
-	/* Styles */
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen
-and (min-width: 321px) {
-	/* Styles */
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen
-and (max-width: 320px) {
-	/* Styles */
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px) {
-	/* Styles */
-}
-
-/* iPads (landscape) ----------- */
-@media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px)
-and (orientation: landscape) {
-	/* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px)
-and (orientation: portrait) {
-	/* Styles */
-}
-
-/* Desktops and laptops ----------- */
-@media only screen
-and (min-width: 1224px) {
-	/* Styles */
-}
-
-/* Large screens ----------- */
-@media only screen
-and (min-width: 1824px) {
-	/* Styles */
-}
-
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5) {
-	/* Styles */
-}
-
->>>>>>> refs/remotes/origin/ViewPort
