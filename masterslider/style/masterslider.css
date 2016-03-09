@@ -35,13 +35,17 @@ and (orientation: landscape) {
 	/* Styles */
 	
 	.mytext {
-<<<<<<< HEAD
-			font-size: 40px;
-=======
-		padding-top:100px;
+
+		padding-top: 100px;
 			font-size: 21px;
->>>>>>> refs/remotes/origin/ViewPort
+
 	}
+		
+	.revborder {
+		height: 50%;
+	}
+	
+	
 	 
 }
 
@@ -57,6 +61,9 @@ and (orientation: portrait) {
 @media only screen
 and (min-width: 1224px) {
 	/* Styles */
+
+	
+	
 }
 
 /* Large screens ----------- */
@@ -85,7 +92,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
                 //position: absolute;
                 background-color: black;
 
-				//overflow: hidden;
+				overflow: hidden;
             } 
             .ms-caption {
                margin:20%;
@@ -94,29 +101,19 @@ only screen and (min-device-pixel-ratio: 1.5) {
                 font-family: Arial, Helvetica, sans-serif, sans-serif;
             }
 			.mytext {
-
+				font-size: 20px;
 				position: absolute;
-<<<<<<< HEAD
 				right: 1275%;
-
-				top:60%;
-=======
-
-
-			right: 1275%;
-				top:60%;
-
->>>>>>> refs/remotes/origin/ViewPort
-				left:150%;
-				bottom: 250%;
-				top:120%;
+				left:130%;
+				bottom: 130px;
+				top:55px;
 				
 			}
 			
 
 			.specs {
 				position:absolute;
-				width:24%;
+				width:23%;
 				height:10%;
 				background-color: none;
 				border-style: solid;
@@ -125,7 +122,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 				margin: auto;
 				padding: 10px 10px 10px 15px;
 				vertical-align: middle;
-				bottom:110%;
+				bottom:110px;
 				left: 150%;
 				
 				font-size:110%;
@@ -134,11 +131,15 @@ only screen and (min-device-pixel-ratio: 1.5) {
 				text-decoration: underline;
 			}
 			
+			.spec2 {
+				bottom: 170px;
+			}
+			
 			
 			.revborder {
 				position: absolute;
 				width:28%;
-				height:60%;
+				height:50%;
 				background-color: none;
 				border-style: solid;
 				border-width: 8px;
@@ -146,33 +147,34 @@ only screen and (min-device-pixel-ratio: 1.5) {
 				margin: auto;
 				vertical-align: middle;
 				
-				bottom: 175%;
+				bottom: 250%;
 				left:300%;
 				right: 300%;
 				
 			}
 			
-			.revborder.revtext {
-				
+			.revtext {
+				top: 180px;
+				left: 720%;
 				border-style: none;
 				color: white;
                 font-family: Arial, Helvetica, sans-serif, sans-serif;
-
+				text-align: center;
+				padding: 0px 0px 0px 0px;
+				line-height: 85px;
+			}
+			
+			.revtext2 {
+				left: 695%;
+			}
+			
+			.revtext .heading {
+				font-size: 900%;
+				font-weight: 700;
 				
 			}
-			.revborder.revtext h1 {
-				position: absolute;
-				top: 10%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				font-size: 800%;
-			}
-			.revborder.revtext p {
-				position: absolute;
-				top: 50%;
-				left: 10%;
-				
-				transform: translate(-10%, -10%);				
+			
+			.revtext .subheading {
 				font-size: 200%;
 				font-style: italic;
 			}
@@ -180,12 +182,12 @@ only screen and (min-device-pixel-ratio: 1.5) {
 			.revanimation {
 				position: absolute;
 				width:28%;
-				height:60%;
-				background-color: red;
+				height:50%;
+				background-color: #b8003d;
 				margin: auto;
 				vertical-align: middle;
 				
-				bottom: 175%;
+				bottom: 250%;
 				left:300%;
 				right: 300%;
 				-webkit-animation: myfirst 10s infinite ; /* Chrome, Safari, Opera */
@@ -198,28 +200,39 @@ only screen and (min-device-pixel-ratio: 1.5) {
 			@-webkit-keyframes 
 
 			myfirst {
-				from, 15%  {background:red; height:20px;opacity:.9}
-				26%, 42%  {background:red; height:210px;opacity:.5} 
-				42%, 75%  {background:red; height:190px;opacity:.5}
-				75%, 100% {background:red; height:20px;opacity:.9}
+				from, 15%  {background:#C90809; height:20px;opacity:.9}
+				26%, 42%  {background:#C90809; height:210px;opacity:.5} 
+				42%, 75%  {background:#C90809; height:190px;opacity:.5}
+				75%, 100% {background:#C90809; height:20px;opacity:.9}
 			}
 
+			.text1 {
+				font-size: 114%;
+			}
+			
+			.car1 {
+				width: 60%;
+			}
+			
+			.car2 {
+				width: 50%;
+			}
+			
 			.car3 {
-				width: 70%;
+				width: 100%;
 			}
+			
+			
 
 
-
-
-
-
-
-
-
-
-
-
-
+			
+			
+			
+			
+			
+			
+			
+			
 
 
 /*Master Slider CSS*/
@@ -814,6 +827,139 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	-webkit-animation:none;
 	-o-animation:none;
 }
+
+
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+	/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width: 321px) {
+	/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width: 320px) {
+	/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+	/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape) {
+	/* Styles */
+	
+	
+		
+	.text1 {
+		top: 10px;
+		font-size: 24px;
+	}
+	
+	.text2 {
+		top: 10px;
+		font-size: 25px;
+		
+	}
+
+	.text3 {
+
+		padding-top: 100px;
+			font-size: 26px;
+			top: 10px;
+			
+	}
+
+		
+	.revborder {
+		bottom: 450px;
+		height: 45%;
+		
+	}
+	
+	.revanimation {
+		bottom: 450px;
+		height: 45%;
+		
+	}
+	
+	.revtext {
+		top: 300px;
+	}
+	
+	
+	.car1 {
+		width: 120%;	
+	}
+	
+	.car2 {
+		width: 100%;	
+	}
+	
+	.specs {
+		height: 6%;
+		bottom: 190px;
+	}
+	
+	.spec2 {
+		bottom: 345px;
+	}	
+	
+	
+	 
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait) {
+	/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width: 1224px) {
+	/* Styles */
+
+	
+	
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width: 1824px) {
+	/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+	/* Styles */
+}
+
+
+
+
+
 
 
 

@@ -45,15 +45,18 @@
 					<img src="masterslider/style/blank.gif" data-src="masterslider/images/bg-racetrack.png" alt="bg-racetrack"/>  
 
 					<!-- rev counter -->
-					<div class="ms-layer revanimation"></div>
+					<div class="ms-layer revanimation" data-duration="0"></div>
 					
 					<div class="ms-layer revborder"></div>
 					
-					<div class="ms-layer revborder revtext">
-						<h1>F1</h1>
-						<p>The birth of the red Honda Badge</p>
+					<!-- revtext -->
+					<div class="ms-layer revtext">
+						<div class="heading">F1</div>
+						<div class="subheading">The birth of the red Honda Badge</div>
+						
 					
 					</div>
+					
 					
 					<!--spec block-->
 					<div class="ms-layer specs ">
@@ -64,8 +67,8 @@
 					</div>
 
 					<!-- slide text layer -->
-						<div class="mytext ms-layer ms-caption" 
-							 style="font-size: 112%"
+						<div class="mytext ms-layer ms-caption text1" 
+							 
 							 data-offset-x="20%"
 							 data-offset-y="20%"
 							 data-origin="tl"
@@ -87,19 +90,23 @@
 						</div>
 
 					<!--car image layer-->
-					<img class="ms-layer" alt="car"
-						 data-offset-x="0"
-						 data-offset-y="0"
-						 data-origin="br"
-						 data-type="image"
-						 data-effect="right(long)"
-						 data-duration="1200"
-						 data-ease="linear"
-						 data-delay="800"
-						 data-hide-effect="fade" 
-						 src="masterslider/blank.gif"
-						 data-src="masterslider/images/car-1.png" 
-					/>
+					
+					
+					
+						<img class="ms-layer car1" alt="car"
+							 data-offset-x="50"
+							 data-offset-y="20"
+							 data-origin="br"
+							 data-type="image"
+							 data-effect="right(long)"
+							 data-duration="1200"
+							 data-ease="linear"
+							 data-delay="800"
+							 data-hide-effect="fade" 
+							 src="masterslider/blank.gif"
+							 data-src="masterslider/images/car-1.png" 
+						/>
+					
 		
 				</div>
 				<!-- end of slide -->
@@ -121,18 +128,20 @@
 					<img src="masterslider/style/blank.gif" data-src="masterslider/images/bg-racetrack.png" alt="bg-racetrack"/>     
 
 					<!-- rev counter -->
-					<div class="ms-layer revanimation"></div>
+					<div class="ms-layer revanimation"  ></div>
 					
-					<div class="ms-layer revborder"></div>
+					<div class="ms-layer revborder" data-duration="0"></div>
 					
-					<div class="ms-layer revborder revtext">
-						<h1>F1</h1>
-						<p>The birth of the red Honda Badge</p>
+					<!-- revtext -->
+					<div class="ms-layer revtext revtext2">
+						<div class="heading">WWTC</div>
+						<div class="subheading">FIA World Touring Car Championship</div>
+						
 					
 					</div>
 					
 					<!--spec block-->
-					<div class="ms-layer specs ">
+					<div class="ms-layer specs spec2">
 						Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3.0L Six-cylinder DOHC VTEC <br />
 						Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 280PS / 7,300rpm <br />
 						Maximum  Torque: &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 30.0kg · m / 5,400 rpm
@@ -140,11 +149,8 @@
 					</div>
 
 					<!-- slide text layer -->
-						<div class="mytext ms-layer ms-caption"
-							 style="font-size: 130% top:70%"
-							 data-offset-x="20%"
-							 data-offset-y="20%"
-
+						<div class="mytext ms-layer ms-caption text2"
+							 
 							 data-offset-x="20px"
 							 data-offset-y="20px"
 							 data-origin="tl"
@@ -162,9 +168,9 @@
 						</div>
 
 					<!--car image layer-->
-					<img class="ms-layer" alt="car"
-						 data-offset-x="0"
-						 data-offset-y="0"
+					<img class="ms-layer car2" alt="car"
+						 data-offset-x="130"
+						 data-offset-y="50"
 						 data-origin="br"
 						 data-type="image"
 						 data-effect="right(long)"
@@ -254,14 +260,7 @@
 				
 				
 				
-<<<<<<< HEAD
-				
-				
-				
-				
-				
-=======
->>>>>>> parent of 9596b40... Revert "Loaded text content"
+
 				<!-- 4 new slide -->
 				<div class="ms-slide">
 					 
@@ -332,18 +331,16 @@
 				<!-- end of slide -->
 
 				
-				
-<<<<<<< HEAD
-				
+
 				
 				
 				
 				
 				
-					<!-- 5 new slide -->
-=======
+				
+
 				<!-- 5 new slide -->
->>>>>>> parent of 9596b40... Revert "Loaded text content"
+
 				<div class="ms-slide">
 					 
 					<!-- slide background -->
@@ -1027,7 +1024,7 @@
               {
                 xheight = 700;
               }
-			  alert (aspect);
+			  
 
 				var slider = new MasterSlider();
 				slider.setup('masterslider', {
