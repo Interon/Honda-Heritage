@@ -35,10 +35,19 @@ and (orientation: landscape) {
 	/* Styles */
 	
 	.mytext {
+<<<<<<< HEAD
 
 		padding-top:100px;
 			font-size: 21px;
 
+=======
+<<<<<<< HEAD
+			font-size: 40px;
+=======
+		padding-top:100px;
+			font-size: 21px;
+>>>>>>> refs/remotes/origin/ViewPort
+>>>>>>> parent of 03853cc... Slides 1 and  2
 	}
 	 
 }
@@ -108,13 +117,25 @@ only screen and (min-device-pixel-ratio: 1.5) {
 			.mytext {
 
 				position: absolute;
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+				right: 1275%;
+
+				top:60%;
+=======
+>>>>>>> parent of 03853cc... Slides 1 and  2
 
 
 			right: 1275%;
 				top:60%;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/ViewPort
+>>>>>>> parent of 03853cc... Slides 1 and  2
 				left:150%;
 				bottom: 250%;
 				top:120%;
