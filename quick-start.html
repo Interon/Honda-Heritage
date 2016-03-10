@@ -11,12 +11,15 @@
 
 		<!-- MasterSlider default skin -->
 		<link rel="stylesheet" href="masterslider/skins/light-3/style.css" />
-		 
+
+        <link href="masterslider/skins/jquery.modal.css" rel="stylesheet" />
+
+        
 
 		<!-- Latest version of jQuery from Google CDN -->
 		<!-- You can remove it if jQuery is already included. -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-		 
+        <script src="masterslider/jquery.modal.min.js"></script>
 		<!-- MasterSlider main JS file -->
 		<script src="masterslider/masterslider.min.js"></script>
 
@@ -45,9 +48,15 @@
 					<img src="masterslider/style/blank.gif" data-src="masterslider/images/bg-racetrack.png" alt="bg-racetrack"/>  
 
 					<!-- rev counter -->
-					<div class="ms-layer revanimation" data-duration="0"></div>
 					
-					<div class="ms-layer revborder"></div>
+						
+						<div class="ms-layer revanimation" data-duration="0"></div>
+					
+						
+						<div class="ms-layer revborder"></div>
+				
+					
+					
 					
 					<!-- revtext -->
 					<div class="ms-layer revtext">
@@ -59,7 +68,7 @@
 					
 					
 					<!--spec block-->
-					<div class="ms-layer specs ">
+					<div class="ms-layer specs spec1">
 						Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3.0L Six-cylinder DOHC VTEC <br />
 						Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 280PS / 7,300rpm <br />
 						Maximum  Torque: &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 30.0kg · m / 5,400 rpm
@@ -91,12 +100,13 @@
 
 					<!--car image layer-->
 					
-					
+
 					
 						<img class="ms-layer car1" alt="car"
-							 data-offset-x="50"
-							 data-offset-y="20"
-							 data-origin="br"
+							 data-offset-x="100"
+							 data-offset-y="250"
+							 
+							 data-origin="tr"
 							 data-type="image"
 							 data-effect="right(long)"
 							 data-duration="1200"
@@ -109,6 +119,9 @@
 					
 		
 				</div>
+				
+			
+				
 				<!-- end of slide -->
 				 
 	
@@ -162,16 +175,16 @@
 							The new Honda Civic Type <span style="color:red" ;>R</span> has added motorsport honors to its growing list of plaudits, as Honda Yuasa Racing clinched the drivers and manufacturers championship in the 2015 Dunlop MSA British Touring Car Championship in a tense final round at Brands Hatch.
 							<br />
 							<br />
-							Continuing the success story for the most high performance car ever to wear the red ‘H’ badge, the new Honda Civic Type R was developed with help from the brand’s World Touring Car Team. Vital analysis and feedback from the track informed decisions about performance and styling, supporting the British team to driver and manufacturer titles in its first competitive year.
+							Continuing the success story for the most high performance car ever to wear the red ‘H’ badge, the new Honda Civic Type <span style="color:red" ;>R</span> was developed with help from the brand’s World Touring Car Team. Vital analysis and feedback from the track informed decisions about performance and styling, supporting the British team to driver and manufacturer titles in its first competitive year.
 
 							 
 						</div>
 
 					<!--car image layer-->
-					<img class="ms-layer car2" alt="car"
-						 data-offset-x="130"
-						 data-offset-y="50"
-						 data-origin="br"
+					<img class="ms-layer car2 allcars" alt="car"
+						 data-offset-x="100"
+						 data-offset-y="250"
+						 data-origin="tr"
 						 data-type="image"
 						 data-effect="right(long)"
 						 data-duration="1200"
@@ -205,15 +218,18 @@
 					
 					<div class="ms-layer revborder"></div>
 					
-					<div class="ms-layer revborder revtext">
-						<h1>F1</h1>
-						<p>The birth of the red Honda Badge</p>
+					<!-- revtext -->
+					<div class="ms-layer revtext revtext3">
+						<div class="heading">1992</div>
+						<div class="subheading">1992 First Generation NSX Type R</div> 
+						<div class="subheading">(Available in Japan only)</div>
+						
 					
 					</div>
 					
 					<!--spec block-->
 					
-					<div class="ms-layer specs ">
+					<div class="ms-layer specs spec3">
 						Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3.0L Six-cylinder DOHC VTEC <br />
 						Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 280PS / 7,300rpm <br />
 						Maximum  Torque: &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 30.0kg · m / 5,400 rpm
@@ -221,7 +237,7 @@
 					</div>
 
 					<!-- slide text layer -->
-						<div class="mytext ms-layer ms-caption"
+						<div class="mytext ms-layer ms-caption text3"
 							 data-offset-x="20px"
 							 data-offset-y="20px"
 							 data-origin="tl"
@@ -230,31 +246,31 @@
 							 data-duration="800"
 							 data-ease="easeOutQuart">
 
-						This car marked the beginning of the Type R story. The aim was to develop a car that delivered overwhelming driving pleasure and the speed of a racing car. The design language of NSX Type R echoes the image of an F1 racing machine. This was also the first time that the red Honda emblem and championship white body colour was introduced.
+						This car marked the beginning of the Type <span style="color:red" ;>R</span> story. The aim was to develop a car that delivered overwhelming driving pleasure and the speed of a racing car. The design language of NSX Type <span style="color:red" ;>R</span> echoes the image of an F1 racing machine. This was also the first time that the red Honda emblem and championship white body colour was introduced.
 
 						
 						</div>
 
 					<!--car image layer-->
-					<img class="ms-layer car3" alt="car"
-						 data-offset-x="0"
-						 data-offset-y="0"
-						 data-origin="br"
-						 data-type="image"
-						 data-effect="right(long)"
-						 data-duration="1200"
-						 data-ease="linear"
-						 data-delay="800"
-						 data-hide-effect="fade" 
-						 src="masterslider/blank.gif"
-						 data-src="masterslider/images/car-3.png" 
-					/>
-					
-					<!-- rev counter -->
-						<div class = "div0">
-							<div class = "div1"></div>
-						</div>
-				</div>
+                    <a href="#ex1" rel="modal:open">
+                        <img class="ms-layer car3" alt="car"
+                             data-offset-x="100"
+                             data-offset-y="270"
+                             data-origin="tr"
+                             data-type="image"
+                             data-effect="right(long)"
+                             data-duration="1200"
+                             data-ease="linear"
+                             data-delay="800"
+                             data-hide-effect="fade"
+                             src="masterslider/blank.gif"
+                             data-src="masterslider/images/car-3.png" />
+                     </a>
+                        <!-- rev counter -->
+                        <div class="div0">
+                            <div class="div1"></div>
+                        </div>
+</div>
 				<!-- end of slide -->
 
 				
@@ -272,15 +288,18 @@
 					
 					<div class="ms-layer revborder"></div>
 					
-					<div class="ms-layer revborder revtext">
-						<h1>F1</h1>
-						<p>The birth of the red Honda Badge</p>
+					<!-- revtext -->
+					<div class="ms-layer revtext revtext4">
+						<div class="heading">1995</div>
+						<div class="subheading">1995 First Generation Integra Type R</div> 
+						<div class="subheading">(Available in Japan only)</div>
+						
 					
 					</div>
 					
 					<!--spec block-->
 					
-					<div class="ms-layer specs ">
+					<div class="ms-layer specs spec4">
 						Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.8L Four-cylinder DOHC VTEC <br />
 						Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 200PS / 8,000 rpm <br />
 						Maximum  Torque: &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 18.5kg · m / 7,500 rpm
@@ -300,7 +319,7 @@
 							 data-ease="easeOutQuart">
 
 							
-						In 1995 Honda introduced the Integra Type R. This was a more down to earth car accessible to customers. The Integra had a reputation of delivering nimble handling and Honda engineers applied similar principles to those applied to the NSX Type R, reducing the base weight of the car and applying hard “track ready” suspension. Following this level of fine tuning and testing, the piston speed of this car was said to be faster than that of the F1 cars of the time.
+						In 1995 Honda introduced the Integra Type <span style="color:red" ;>R</span>. This was a more down to earth car accessible to customers. The Integra had a reputation of delivering nimble handling and Honda engineers applied similar principles to those applied to the NSX Type <span style="color:red" ;>R</span>, reducing the base weight of the car and applying hard “track ready” suspension. Following this level of fine tuning and testing, the piston speed of this car was said to be faster than that of the F1 cars of the time.
 
 
 
@@ -309,10 +328,10 @@
 						</div>
 
 					<!--car image layer-->
-					<img class="ms-layer" alt="car"
-						 data-offset-x="0"
-						 data-offset-y="0"
-						 data-origin="br"
+					<img class="ms-layer car4" alt="car"
+						 data-offset-x="100"
+						 data-offset-y="300"
+						 data-origin="tr"
 						 data-type="image"
 						 data-effect="right(long)"
 						 data-duration="1200"
@@ -351,15 +370,18 @@
 					
 					<div class="ms-layer revborder"></div>
 					
-					<div class="ms-layer revborder revtext">
-						<h1>F1</h1>
-						<p>The birth of the red Honda Badge</p>
+					<!-- revtext -->
+					<div class="ms-layer revtext revtext3">
+						<div class="heading">1992</div>
+						<div class="subheading">1992 First Generation NSX Type R</div> 
+						<div class="subheading">(Available in Japan only)</div>
+						
 					
 					</div>
 					
 					<!--spec block-->
 					
-					<div class="ms-layer specs ">
+					<div class="ms-layer specs spec5">
 						Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.6L Four-cylinder DOHC VTEC <br />
 						Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 185PS / 8,200 rpm <br />
 						Maximum  Torque: &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 16.3kg · m / 7,500 rpm
@@ -378,9 +400,9 @@
 							 data-duration="800"
 							 data-ease="easeOutQuart">
 
-							The Civic Type R became the first Civic to receive the honor of the red H badge. 
+							The Civic Type <span style="color:red" ;>R</span> became the first Civic to receive the honor of the red H badge. 
 							<br />
-							Before it could meet the challenge of being classed as a Type R we needed to implement some major changes to what was a popular 3-door hatchback. Alterations to improve the handling included reducing overall weight, returning the suspension and increasing the rigidity of the chassis. 
+							Before it could meet the challenge of being classed as a Type <span style="color:red" ;>R</span> we needed to implement some major changes to what was a popular 3-door hatchback. Alterations to improve the handling included reducing overall weight, returning the suspension and increasing the rigidity of the chassis. 
 
 						</div>
 
@@ -420,15 +442,18 @@
 					
 					<div class="ms-layer revborder"></div>
 					
-					<div class="ms-layer revborder revtext">
-						<h1>F1</h1>
-						<p>The birth of the red Honda Badge</p>
+					<!-- revtext -->
+					<div class="ms-layer revtext revtext3">
+						<div class="heading">1992</div>
+						<div class="subheading">1992 First Generation NSX Type R</div> 
+						<div class="subheading">(Available in Japan only)</div>
+						
 					
 					</div>
 					
 					<!--spec block-->
 					
-					<div class="ms-layer specs ">
+					<div class="ms-layer specs spec6">
 						Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.8L Four-cylinder DOHC VTEC <br />
 						Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2190PS / 8,000 rpm <br />
 						Maximum  Torque: &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 178 N · m / 7,300 rpm
@@ -448,7 +473,7 @@
 							 data-duration="800"
 							 data-ease="easeOutQuart">
 
-							The first Integra Type R to reach European and American shores, and what a car to achieve that. There’s the thinner windscreen glass, lack of sound-deadening, a stiffer chassis and limited slip diff. It weighed in at just 1100kg, could reach 0-60mph in 6.5 seconds and top out at 143mph.
+							The first Integra Type <span style="color:red" ;>R</span> to reach European and American shores, and what a car to achieve that. There’s the thinner windscreen glass, lack of sound-deadening, a stiffer chassis and limited slip diff. It weighed in at just 1100kg, could reach 0-60mph in 6.5 seconds and top out at 143mph.
 
 						
 						</div>
@@ -491,15 +516,18 @@
 					
 					<div class="ms-layer revborder"></div>
 					
-					<div class="ms-layer revborder revtext">
-						<h1>F1</h1>
-						<p>The birth of the red Honda Badge</p>
+					<!-- revtext -->
+					<div class="ms-layer revtext revtext3">
+						<div class="heading">1992</div>
+						<div class="subheading">1992 First Generation NSX Type R</div> 
+						<div class="subheading">(Available in Japan only)</div>
+						
 					
 					</div>
 					
 					<!--spec block-->
 					
-					<div class="ms-layer specs ">
+					<div class="ms-layer specs spec7">
 						Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.2L Four-cylinder DOHC i-VTEC <br />
 						Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 212PS / 7,200 rpm <br />
 						Maximum  Torque: &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 215N · m / 6,700 rpm
@@ -518,7 +546,7 @@
 							 data-duration="800"
 							 data-ease="easeOutQuart">
 
-							For those wanting a bit more space in their practical performance Honda, in 1999 the Accord Type R went on sale. All the usual Type R flourishes applied - stiffer chassis, slippy diff, alloys, some R-based interior appointments and a high-revving motor. It featured a 2.2-litre VTEC engine with 215bhp, as well as a limited-slip differential and a host of upgrades over the standard Accord. Like the earlier Integra Type R, this model was fantastic to drive.
+							For those wanting a bit more space in their practical performance Honda, in 1999 the Accord Type <span style="color:red" ;>R</span> went on sale. All the usual Type <span style="color:red" ;>R</span> flourishes applied - stiffer chassis, slippy diff, alloys, some <span style="color:red" ;>R</span>-based interior appointments and a high-revving motor. It featured a 2.2-litre VTEC engine with 215bhp, as well as a limited-slip differential and a host of upgrades over the standard Accord. Like the earlier Integra Type <span style="color:red" ;>R</span>, this model was fantastic to drive.
 
 						
 						</div>
@@ -563,15 +591,18 @@
 					
 					<div class="ms-layer revborder"></div>
 					
-					<div class="ms-layer revborder revtext">
-						<h1>F1</h1>
-						<p>The birth of the red Honda Badge</p>
+					<!-- revtext -->
+					<div class="ms-layer revtext revtext3">
+						<div class="heading">1992</div>
+						<div class="subheading">1992 First Generation NSX Type R</div> 
+						<div class="subheading">(Available in Japan only)</div>
+						
 					
 					</div>
 					
 					<!--spec block-->
 					
-					<div class="ms-layer specs ">
+					<div class="ms-layer specs spec8">
 						Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.0L Four-cylinder DOHC i-VTEC <br />
 						Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 162kW [220PS] / 8,000 rpm <br />
 						Maximum  Torque: &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 206N · m [21.0kg · m] / 7,000 rpm
@@ -587,7 +618,7 @@
 							 data-duration="800"
 							 data-ease="easeOutQuart">
 
-							The next IntegraType R to appear in showrooms was released in 2001. It featured a high-revving VTEC engine. It came with a 2.0-litre engine (with 144lb ft of torque), a stiffer chassis, excellent close-ratio six-speed gearbox. 
+							The next IntegraType <span style="color:red" ;>R</span> to appear in showrooms was released in 2001. It featured a high-revving VTEC engine. It came with a 2.0-litre engine (with 144lb ft of torque), a stiffer chassis, excellent close-ratio six-speed gearbox. 
 
 						
 						</div>
@@ -628,15 +659,18 @@
 					
 					<div class="ms-layer revborder"></div>
 					
-					<div class="ms-layer revborder revtext">
-						<h1>F1</h1>
-						<p>The birth of the red Honda Badge</p>
+					<!-- revtext -->
+					<div class="ms-layer revtext revtext3">
+						<div class="heading">1992</div>
+						<div class="subheading">1992 First Generation NSX Type R</div> 
+						<div class="subheading">(Available in Japan only)</div>
+						
 					
 					</div>
 					
 					<!--spec block-->
 					
-					<div class="ms-layer specs ">
+					<div class="ms-layer specs spec9">
 						Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.0L Four-cylinder DOHC i-VTEC <br />
 						Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 200PS / 7,400 rpm <br />
 						Maximum  Torque: &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 196N · m / 5,900 rpm
@@ -653,7 +687,7 @@
 							 data-duration="800"
 							 data-ease="easeOutQuart">
 
-							The next Civic Type R to appear in showrooms was released in 2001, and enthusiasts know it as the EP3 model. As with all the other Type Rs so far, it featured a high-revving VTEC engine. It came with a 197bhp 2.0-litre engine (with 144lb ft of torque), a stiffer chassis, excellent close-ratio six-speed gearbox and a world of handling fun. This version of the Civic Type R is arguably what made the red badge such a well-known icon.
+							The next Civic Type <span style="color:red" ;>R</span> to appear in showrooms was released in 2001, and enthusiasts know it as the EP3 model. As with all the other Type <span style="color:red" ;>R</span>s so far, it featured a high-revving VTEC engine. It came with a 197bhp 2.0-litre engine (with 144lb ft of torque), a stiffer chassis, excellent close-ratio six-speed gearbox and a world of handling fun. This version of the Civic Type <span style="color:red" ;>R</span> is arguably what made the red badge such a well-known icon.
 
 						
 						</div>
@@ -694,15 +728,18 @@
 					
 					<div class="ms-layer revborder"></div>
 					
-					<div class="ms-layer revborder revtext">
-						<h1>F1</h1>
-						<p>The birth of the red Honda Badge</p>
+					<!-- revtext -->
+					<div class="ms-layer revtext revtext3">
+						<div class="heading">1992</div>
+						<div class="subheading">1992 First Generation NSX Type R</div> 
+						<div class="subheading">(Available in Japan only)</div>
+						
 					
 					</div>
 					
 					<!--spec block-->
 					
-					<div class="ms-layer specs ">
+					<div class="ms-layer specs spec10">
 						Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3.2L 6 cylinder DOHC VTEC <br />
 						Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 206kW [280PS] / 7,300 rpm <br />
 						Maximum  Torque: &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 304N · m [31.0kg · m] / 5,300 rpm
@@ -728,7 +765,7 @@
 							 data-duration="800"
 							 data-ease="easeOutQuart">
 
-							Second generation NSX Type R - another JDM special, featuring a 3.2-litre V6 with 276bhp and 224lb ft of torque. It received the same meticulous attention to weight loss as its predecessor (lack of sound insulation, nor air-con, no power steering, thinner glass, 
+							Second generation NSX Type <span style="color:red" ;>R</span> - another JDM special, featuring a 3.2-litre V6 with 276bhp and 224lb ft of torque. It received the same meticulous attention to weight loss as its predecessor (lack of sound insulation, nor air-con, no power steering, thinner glass, 
 							Recaro seats), and weighed in at around 1270kg. 
 							<br />
 							It was also, as you would have guessed, simply magnificent.
@@ -776,15 +813,18 @@
 					
 					<div class="ms-layer revborder"></div>
 					
-					<div class="ms-layer revborder revtext">
-						<h1>F1</h1>
-						<p>The birth of the red Honda Badge</p>
+					<!-- revtext -->
+					<div class="ms-layer revtext revtext3">
+						<div class="heading">1992</div>
+						<div class="subheading">1992 First Generation NSX Type R</div> 
+						<div class="subheading">(Available in Japan only)</div>
+						
 					
 					</div>
 					
 					<!--spec block-->
 					
-					<div class="ms-layer specs ">
+					<div class="ms-layer specs spec11">
 						Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.0L Four-cylinder DOHC i-VTEC <br />
 						Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 165kW [225PS] / 8,000 rpm <br />
 						Maximum  Torque: &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 215N · m [21.9kg · m] / 6,100 rpm
@@ -803,7 +843,7 @@
 							 data-duration="800"
 							 data-ease="easeOutQuart">
 
-							The next version of the Civic Type R appeared, featuring the same engine and drivetrain as the previous model, but with a sleek new shape. Power remained at 197bhp, though torque dipped slightly to 142lb ft. Still, wrapped up in its new aerodynamic outfit and packing that lovely close-ratio six-speed gearbox, it remained a decent hot hatch.
+							The next version of the Civic Type <span style="color:red" ;>R</span> appeared, featuring the same engine and drivetrain as the previous model, but with a sleek new shape. Power remained at 197bhp, though torque dipped slightly to 142lb ft. Still, wrapped up in its new aerodynamic outfit and packing that lovely close-ratio six-speed gearbox, it remained a decent hot hatch.
 
 						
 						
@@ -848,15 +888,18 @@
 					
 					<div class="ms-layer revborder"></div>
 					
-					<div class="ms-layer revborder revtext">
-						<h1>F1</h1>
-						<p>The birth of the red Honda Badge</p>
+					<!-- revtext -->
+					<div class="ms-layer revtext revtext3">
+						<div class="heading">1992</div>
+						<div class="subheading">1992 First Generation NSX Type R</div> 
+						<div class="subheading">(Available in Japan only)</div>
+						
 					
 					</div>
 					
 					<!--spec block-->
 					
-					<div class="ms-layer specs ">
+					<div class="ms-layer specs spec12">
 						Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.0L Four-cylinder DOHC i-VTEC <br />
 						Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 148kW [201PS] / 7,800 rpm <br />
 						Maximum  Torque: &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 193N · m /5,600 rpm
@@ -874,10 +917,10 @@
 							 data-duration="800"
 							 data-ease="easeOutQuart">
 
-							The Honda Civic Type R, indisputably one of the most eagerly awaited performance hatchbacks in South Africa, finally makes its local debut this month. The launch marks the first time the Type R nameplate has been made available to local punters.
+							The Honda Civic Type <span style="color:red" ;>R</span>, indisputably one of the most eagerly awaited performance hatchbacks in South Africa, finally makes its local debut this month. The launch marks the first time the Type <span style="color:red" ;>R</span> nameplate has been made available to local punters.
 							<br />
 							<br />
-							Developed by Honda engineers in Japan and Europe, and manufactured at Honda’s state-of-the-art vehicle plant in Swindon, UK, the all-new Type R is based on a three-door version of the latest generation Honda Civic hatchback. 
+							Developed by Honda engineers in Japan and Europe, and manufactured at Honda’s state-of-the-art vehicle plant in Swindon, UK, the all-new Type <span style="color:red" ;>R</span> is based on a three-door version of the latest generation Honda Civic hatchback. 
 
 						
 						
@@ -920,15 +963,18 @@
 					
 					<div class="ms-layer revborder"></div>
 					
-					<div class="ms-layer revborder revtext">
-						<h1>F1</h1>
-						<p>The birth of the red Honda Badge</p>
+					<!-- revtext -->
+					<div class="ms-layer revtext revtext3">
+						<div class="heading">1992</div>
+						<div class="subheading">1992 First Generation NSX Type R</div> 
+						<div class="subheading">(Available in Japan only)</div>
+						
 					
 					</div>
 					
 					<!--spec block-->
 					
-					<div class="ms-layer specs ">
+					<div class="ms-layer specs spec13">
 						Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.0L Four-cylinder DOHC i-VTEC <br />
 						Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 148kW [201PS] / 7,800 rpm <br />
 						Maximum  Torque: &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 193N · m /5,600 rpm
@@ -950,7 +996,7 @@
 							 data-duration="800"
 							 data-ease="easeOutQuart">
 
-							The all-new Type R is here to illustrate just how much racing is entrenched in Honda’s DNA. If you are looking for the best performance either on the racetrack or the road, look no further than the new Honda Civic Type R. The Honda Civic Type R also set a new front-drive nurburgring record (7:41). 
+							The all-new Type <span style="color:red" ;>R</span> is here to illustrate just how much racing is entrenched in Honda’s DNA. If you are looking for the best performance either on the racetrack or the road, look no further than the new Honda Civic Type <span style="color:red" ;>R</span>. The Honda Civic Type <span style="color:red" ;>R</span> also set a new front-drive nurburgring record (7:41). 
 
 						
 						</div>
@@ -979,7 +1025,7 @@
 				
 				
 				<div  style="width:100%;text-align:center">
-					 <div id = "chainblock"  style ="position:relative;height:20px;width:580px;top:-50px;margin-left:auto;margin-right:auto">
+					 <div id = "chainblock"  style ="position:relative;height:20px;width:580px; bottom: 50px; margin-left:auto;margin-right:auto">
 						 <div onclick="slider.api.gotoSlide(0);" class="chainball" data-position ="0" style="background-repeat:no-repeat;background-image:url('masterslider/images/start.png');height:13px;width:13px;float:left;cursor:pointer;"> </div>
 						 <div onclick="slider.api.gotoSlide(1);" class="chainball" data-position ="1" style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"> </div>
 						 <div onclick="slider.api.gotoSlide(2);"  class="chainball" data-position ="2"  style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"> </div>
@@ -1003,7 +1049,66 @@
 
 			<!--end of content class-->
 		</div>
-				
+		
+        <div id="ex1" style="display:none;">
+            <div class="master-slider ms-skin-default" id="popupslider1">
+                <!-- new slide -->
+                <div class="ms-slide">
+
+                    <!-- slide background -->
+                    <img src="masterslider/blank.gif" data-src="masterslider/images/inner-slide1.png" alt="lorem ipsum dolor sit" />
+
+                    <!-- slide text layer -->
+                    <div class="ms-layer ms-caption" style="top:10px; left:30px;">
+                        Lorem ipsum dolor sit amet
+                    </div>
+
+                </div>
+                <!-- end of slide -->
+                <!-- new slide -->
+                <div class="ms-slide">
+
+                    <!-- slide background -->
+                    <img src="masterslider/blank.gif" data-src="masterslider/images/inner-slide2.png" alt="lorem ipsum dolor sit" />
+
+                    <!-- slide text layer -->
+                    <div class="ms-layer ms-caption" style="top:10px; left:30px;">
+                        Lorem ipsum dolor sit amet
+                    </div>
+
+                    <!-- linked slide -->
+                    <a href="http://codecanyon.net/user/averta">Averta</a>
+
+                </div>
+                <!-- end of slide -->
+                <!-- new slide -->
+                <div class="ms-slide">
+
+                    <!-- slide background -->
+                    <img src="masterslider/blank.gif" data-src="masterslider/images/inner-slide3.png" alt="lorem ipsum dolor sit" />
+
+                    <!-- slide text layer -->
+                    <div class="ms-layer ms-caption" style="top:10px; left:30px;">
+                        Lorem ipsum dolor sit amet
+                    </div>
+
+                    <!-- youtube video -->
+                    <a href="http://www.youtube.com/embed/YHWkro9-e9Q?hd=1&wmode=opaque&controls=1&showinfo=0" data-type="video">Youtube video</a>
+
+                </div>
+                <!-- end of slide -->
+
+            </div>
+        </div>
+
+        
+     
+        
+        
+        
+        
+        
+        		
 	</body>
 			
 			<script type="text/javascript">
@@ -1020,10 +1125,15 @@
               {
                 xheight = 1100;
               }
+              if(aspect=='16:9')
+              {
+                xheight = 680;
+              }
               if(aspect=='455:256')
               {
                 xheight = 700;
               }
+			  
 			  
 
 				var slider = new MasterSlider();
@@ -1053,6 +1163,19 @@
 				slider.control('arrows');
 
 				
+				//popupslider
+				
+				var popupslider1 = new MasterSlider();
+					popupslider1.setup('popupslider1', {
+					width: 600,    // slider standard width
+					height: 400,   // slider standard height
+					space: 5
+					// more slider options goes here...
+					// check slider options section in documentation for more options.
+				});
+				// adds Arrows navigation control to the slider.
+				popupslider1.control('arrows');
+		
 
 		slider.api.addEventListener(MSSliderEvent.CHANGE_START , function(){
 			 chainEffect();
