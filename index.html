@@ -33,7 +33,7 @@
 </head>
 
 <body>
-<div style="font-family:verdana;font-size:9px;position:absolute;top:0px;right:0px;height:50px;width:150px;background-color:black;"
+<div style="font-family:verdana;font-size:9px;position:absolute;top:0px;right:0px;height:150px;width:150px;background-color:black;"
      id="screeninfo">
     <table style="color:red;z-index: 99999;">
         <tr>
@@ -2012,29 +2012,49 @@
         return (b == 0) ? a : gcd(b, a % b);
     }
     var ratio = window.devicePixelRatio || 1;
-    var w = screen.width * ratio;
-    var h = screen.height * ratio;
-    var r = gcd(screen.width, screen.height);
-    var aspect = screen.width / r + ':' + screen.height / r;
-    var hr = screen.height / r;
-    var wr = screen.width / r;
+    var w = window.screen.width;
+    var h = window.screen.height;
+    var r = gcd(window.screen.width, window.screen.height);
+    var aspect = window.screen.width / r + ':' + window.screen.height / r;
+    var hr = window.screen.height / r;
+    var wr = window.screen.width / r;
+
+
     var xheight = 800;
     $("#scrres").html(screen.width + '/' + screen.height);
     $("#aspect").html(aspect);
-    if (aspect == '4:3') {
-        xheight = 1000;
-    }
-    if (aspect == '16:9') {
 
-        if (screen.width == 1920) {
+    switch (aspect) {
+        case '4:3':
+            if (w == 1024) {
+                xheight = 1100;
+            }
+            break;
+        case '3:4':
+            if (w == 768) {
+                xheight = 2100;
+            }
+            break;
+        case '16:9':
+            if (w == 1920) {
+                xheight = 800;
+            }
+            if (w == 1366) {
+                xheight = 700;
+            }
+            break;
+        case '8:5':
+            if (w == 1440) {
+                xheight = 700;
+            }
+            break;
+        case '16:9':
+            if (w == 1920) {
+                xheight = 800;
+            }
+            break;
+        default:
             xheight = 800;
-        }
-        if (screen.width == 1366) {
-            xheight = 600;
-        }
-    }
-    if (aspect == '455:256') {
-        xheight = 700;
     }
 
 
