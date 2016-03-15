@@ -1,4 +1,4 @@
-<!--aj Version 1.2.4--> new version
+<!--Anton Version 1.2.6--> popup slider working
 
 <!DOCTYPE html>
 <html lang="en">
@@ -1627,9 +1627,10 @@
         <div class="ms-slide">
 
             <!-- slide background -->
-            <img src="masterslider/blank.gif"
+
+            <img class="popupimages" src="masterslider/blank.gif"
                  data-src="masterslider/images/inner-slide1.png"
-                 alt="lorem ipsum dolor sit"/>
+                 alt="1"/>
 
         </div>
         <!-- end of slide -->
@@ -1639,7 +1640,7 @@
             <!-- slide background -->
             <img src="masterslider/blank.gif"
                  data-src="masterslider/images/inner-slide2.png"
-                 alt="lorem ipsum dolor sit"/>
+                 alt="2"/>
 
         </div>
         <!-- end of slide -->
@@ -1649,7 +1650,7 @@
             <!-- slide background -->
             <img src="masterslider/blank.gif"
                  data-src="masterslider/images/inner-slide3.png"
-                 alt="lorem ipsum dolor sit"/>
+                 alt="3"/>
 
         </div>
         <!-- end of slide -->
@@ -1842,16 +1843,18 @@
 
     var popupslider1 = new MasterSlider();
     popupslider1.setup('popupslider1', {
-        width: 600,    // slider standard width
-        height: 400,   // slider standard height
+        width: 500,    // slider standard width
+        height:400,   // slider standard height
         space: 5,
-        layout: "fillscreen"
+        view: 'basic',
+        autoHeight: true,
         // more slider options goes here...
         // check slider options section in documentation for more options.
     });
     // adds Arrows navigation control to the slider.
     popupslider1.control('arrows');
 
+    //popupslider page 11
 
     var popupslider2 = new MasterSlider();
     popupslider2.setup('popupslider2', {
@@ -1864,6 +1867,7 @@
     // adds Arrows navigation control to the slider.
     popupslider1.control('arrows');
 
+    //popupslider page 12
 
     var popupslider3 = new MasterSlider();
     popupslider3.setup('popupslider3', {
