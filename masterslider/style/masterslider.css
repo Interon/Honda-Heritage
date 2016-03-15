@@ -165,6 +165,10 @@
 			.text4 {
 				font-size:24px;
 			}
+
+			.text13 {
+				font-size:23px;
+			}
 			
 	
 			/*
@@ -965,15 +969,18 @@ and (orientation: landscape) {
 		
 	.text1 {
 		
-		font-size: 24px;
+		font-size: 22px;
 	}
 	
 	.text2 {
 		
-		font-size: 28px;
+		font-size: 26px;
 		
 	}
 
+	.text13 {
+		font-size: 24px;
+	}
 
 
 		
@@ -1074,58 +1081,59 @@ and (orientation: landscape) {
 	
 	.specs {
 		height: 6%;
-		top: 810%;
+
 	}
 	.spec1 {
-		top: 810%;
+		bottom: 20%;
 	}
 	
 	.spec2 {
-		top: 760%;;
-	}	
+		bottom: 15%;
+	}
 	
 	.spec3 {
-		top: 520%;
+		bottom: 40%;
 	}
 	
 	.spec4 {
-		top: 660%;
+		bottom: 40%;
 	}
 	
 	.spec5 {
-		top: 565%;
+		bottom: 40%;
 	}
 	
 	.spec6 {
-		top: 450%;
+		bottom: 40%;
 	}
 	
 	.spec7 {
-		top: 620%
+		bottom: 40%;
 	}
 	
 	.spec8 {
-		top: 380%;
+		bottom: 40%;
 	}
 	
 	.spec9 {
-		top: 600%
+		bottom: 40%;
 	}
 	
 	.spec10 {
-		top: 565%;
+		bottom: 40%;
 	}
 	
 	.spec11 {
-		top: 520%;
+		bottom: 40%;
 	}
 	
 	.spec12 {
-		top: 690%;
+		bottom: 40%;
 	}
 	
 	.spec13 {
-		top: 490%;
+		bottom: 500%;
+
 	}
 	
 	
