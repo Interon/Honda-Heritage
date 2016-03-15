@@ -1,4 +1,4 @@
-<!--Master Version 1.1-->
+<!--Master Version 1.2--> Added screen width to Javascript
 
 <!DOCTYPE html>
 <html lang="en">
@@ -1801,12 +1801,20 @@
     var h = screen.height * ratio;
     var r = gcd(screen.width, screen.height);
     var aspect = screen.width / r + ':' + screen.height / r;
+    var hr = screen.height / r;
+    var wr = screen.width / r;
     var xheight = 800;
     if (aspect == '4:3') {
-        xheight = 1100;
+        xheight = 1000;
     }
     if (aspect == '16:9') {
-        xheight = 680;
+
+        if (screen.width == 1920) {
+            xheight = 800;
+        }
+        if (screen.width == 1366) {
+            xheight = 600;
+        }
     }
     if (aspect == '455:256') {
         xheight = 700;
