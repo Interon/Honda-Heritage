@@ -1,4 +1,4 @@
-<!--aj Version 1.2.16--> re-push4 social media and kingofthehell functions
+<!--aj Version 1.2.18 Removed Bootstrap-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +25,7 @@
     <!-- Latest version of jQuery from Google CDN -->
     <!-- You can remove it if jQuery is already included. -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="masterslider/jquery.modal.min.js"></script>
+    <script src="masterslider/jquery.modal.min.js"></script>a
     <!-- MasterSlider main JS file -->
     <script src="masterslider/masterslider.min.js"></script>
 
@@ -43,6 +43,10 @@
         <tr>
             <td>Aspect</td>
             <td id="aspect"></td>
+        </tr>
+        <tr>
+            <td>XHeight</td>
+            <td id="xheight"></td>
         </tr>
     </table>
 </div>
@@ -2037,7 +2041,7 @@
         xheight = 700;
     }
 
-
+    $("#xheight").html(aspect);
     var slider = new MasterSlider();
     slider.setup('masterslider', {
         width: 1920,    // slider standard width
