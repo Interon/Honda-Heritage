@@ -3,10 +3,8 @@
  */
 
 body {
-/ / position: absolute;
-    background-color: black;
-
-/ / overflow: hidden;
+  font-family: "HelveticaNeue-Light", Helvetica, sans-serif, sans-serif;
+ 
 }
 
 .ms-caption {
@@ -15,11 +13,12 @@ body {
     font-family: Helvetica, sans-serif, sans-serif;
 }
 
-.mytext {
+.mytext,.popuptext {
     margin: 20%;
     font-size: 24px;
     width: 25%;
     font-style: italic;
+    line-height:20px !important;
 
 }
 
@@ -104,24 +103,23 @@ body {
     font-style: italic;
 }
 
-.text1 {
+.text1{
     font-size: 20px;
+      line-height:18px !important;
 }
-
-.text2 {
+.text2,.text3 {
     font-size: 20px;
-}
-
-.text3 {
-
+      line-height:18px !important;
 }
 
 .text4 {
     font-size: 24px;
+      line-height:13px !important;
 }
 
 .text13 {
     font-size: 23px;
+      line-height:13px !important;
 }
 
 /*
