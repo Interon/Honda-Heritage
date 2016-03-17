@@ -1,10 +1,9 @@
 /**
- *  <!-- aj Version 1.2.24 fixed popup text, popup arrows, phone bug fixes on phone, added rev animation to media queries for ipad compatibility-->
+ *  <!-- Anton Version 1.2.30 Ipad Fixes-->
  */
 
 body {
-  font-family: "HelveticaNeue-Light", Helvetica, sans-serif, sans-serif;
-
+    font-family: "HelveticaNeue-Light", Helvetica, sans-serif, sans-serif;
 }
 
 .ms-caption {
@@ -13,13 +12,12 @@ body {
     font-family: Helvetica, sans-serif, sans-serif;
 }
 
-.mytext,.popuptext {
+.mytext, .popuptext {
     margin: 20%;
     font-size: 22px;
     width: 25%;
     font-style: italic;
-    line-height:20px !important;
-
+    line-height: 20px !important;
 }
 
 .popupimages {
@@ -31,12 +29,10 @@ body {
     margin-top: 20px !important;
     margin-left: 20px !important;
     width: 500px;
-
 }
 
 .specs {
     position: absolute;
-
     background-color: transparent;
     border-style: solid;
     border-width: 1px;
@@ -44,10 +40,8 @@ body {
     margin: auto;
     padding: 10px 10px 15px 10px;
     vertical-align: middle;
-
     top: 510%;
     left: 150%;
-
     font-size: 110%;
     color: white;
     font-family: Helvetica, Arial, sans-serif, sans-serif;
@@ -64,22 +58,18 @@ body {
     border-color: black;
     margin: auto;
     vertical-align: middle;
-
 }
 
 .revtext {
     position: fixed;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-
     top: 20%;
     border-style: none;
     color: white;
-
     text-align: center;
     padding: 0px 0px 0px 0px;
     margin: auto;
     width: 28%;
-
 }
 
 .heading {
@@ -87,7 +77,6 @@ body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 900%;
     font-weight: 700;
-
 }
 
 .subheading {
@@ -105,7 +94,7 @@ body {
 
 .text1 {
     font-size: 17px;
-     line-height:17px !important;
+    line-height: 17px !important;
 }
 
 .text2 {
@@ -114,7 +103,7 @@ body {
 
 .text4 {
     font-size: 24px;
-      line-height:13px !important;
+    line-height: 13px !important;
 }
 
 .text13 {
@@ -247,7 +236,6 @@ body {
 
 .revtext3 {
     bottom: 300%;
-
 }
 
 .revtext4 {
@@ -283,17 +271,17 @@ body {
         height: 5%;
         opacity: 1;
     }
+
     26%, 42% {
         background: #C90809;
         height: 10%;
         opacity: .6;
     }
-    
+
     75%, 100% {
         background: #C90809;
         height: 5%;
         opacity: 1;
-
     }
 }
 
@@ -302,7 +290,6 @@ body {
 /*rev animation slide 2*/
 
 .revanimation2 {
-
     width: 100%;
     height: 100%;
     background-color: #b8003d;
@@ -328,17 +315,17 @@ body {
         height: 5%;
         opacity: 1;
     }
+
     26%, 42% {
         background: #C90809;
         height: 15%;
         opacity: .6;
     }
-    
+
     75%, 100% {
         background: #C90809;
         height: 5%;
         opacity: 1;
-
     }
 }
 
@@ -347,7 +334,6 @@ body {
 /*rev animation slide 3*/
 
 .revanimation3 {
-
     width: 100%;
     height: 100%;
     background-color: #b8003d;
@@ -373,17 +359,17 @@ body {
         height: 5%;
         opacity: 1;
     }
+
     26%, 42% {
         background: #C90809;
         height: 20%;
         opacity: .6;
     }
-    
+
     75%, 100% {
         background: #C90809;
         height: 5%;
         opacity: 1;
-
     }
 }
 
@@ -392,7 +378,6 @@ body {
 /*rev animation slide 4*/
 
 .revanimation4 {
-
     width: 100%;
     height: 100%;
     background-color: #b8003d;
@@ -418,17 +403,17 @@ body {
         height: 5%;
         opacity: 1;
     }
+
     26%, 42% {
         background: #C90809;
         height: 25%;
         opacity: .6;
     }
-    
+
     75%, 100% {
         background: #C90809;
         height: 5%;
         opacity: 1;
-
     }
 }
 
@@ -437,7 +422,6 @@ body {
 /*rev animation slide 5*/
 
 .revanimation5 {
-
     width: 100%;
     height: 100%;
     background-color: #b8003d;
@@ -463,17 +447,17 @@ body {
         height: 5%;
         opacity: 1;
     }
+
     26%, 42% {
         background: #C90809;
         height: 30%;
         opacity: .6;
     }
-    
+
     75%, 100% {
         background: #C90809;
         height: 5%;
         opacity: 1;
-
     }
 }
 
@@ -482,7 +466,6 @@ body {
 /*rev animation slide 6*/
 
 .revanimation6 {
-
     width: 100%;
     height: 100%;
     background-color: #b8003d;
@@ -508,17 +491,17 @@ body {
         height: 5%;
         opacity: 1;
     }
+
     26%, 42% {
         background: #C90809;
         height: 35%;
         opacity: .6;
     }
-    
+
     75%, 100% {
         background: #C90809;
         height: 5%;
         opacity: 1;
-
     }
 }
 
@@ -527,7 +510,6 @@ body {
 /*rev animation slide 7*/
 
 .revanimation7 {
-
     width: 100%;
     height: 100%;
     background-color: #b8003d;
@@ -553,17 +535,17 @@ body {
         height: 5%;
         opacity: 1;
     }
+
     26%, 42% {
         background: #C90809;
         height: 40%;
         opacity: .6;
     }
-    
+
     75%, 100% {
         background: #C90809;
         height: 5%;
         opacity: 1;
-
     }
 }
 
@@ -572,7 +554,6 @@ body {
 /*rev animation slide 8*/
 
 .revanimation8 {
-
     width: 100%;
     height: 100%;
     background-color: #b8003d;
@@ -598,17 +579,17 @@ body {
         height: 5%;
         opacity: 1;
     }
+
     26%, 42% {
         background: #C90809;
         height: 45%;
         opacity: .6;
     }
-    
+
     75%, 100% {
         background: #C90809;
         height: 5%;
         opacity: 1;
-
     }
 }
 
@@ -617,7 +598,6 @@ body {
 /*rev animation slide 9*/
 
 .revanimation9 {
-
     width: 100%;
     height: 100%;
     background-color: #b8003d;
@@ -643,17 +623,17 @@ body {
         height: 5%;
         opacity: 1;
     }
+
     26%, 42% {
         background: #C90809;
         height: 50%;
         opacity: .6;
     }
-    
+
     75%, 100% {
         background: #C90809;
         height: 5%;
         opacity: 1;
-
     }
 }
 
@@ -662,7 +642,6 @@ body {
 /*rev animation slide 10*/
 
 .revanimation10 {
-
     width: 100%;
     height: 100%;
     background-color: #b8003d;
@@ -688,17 +667,17 @@ body {
         height: 5%;
         opacity: 1;
     }
+
     26%, 42% {
         background: #C90809;
         height: 50%;
         opacity: .6;
     }
-    
+
     75%, 100% {
         background: #C90809;
         height: 5%;
         opacity: 1;
-
     }
 }
 
@@ -707,7 +686,6 @@ body {
 /*rev animation slide 11*/
 
 .revanimation11 {
-
     width: 100%;
     height: 100%;
     background-color: #b8003d;
@@ -733,17 +711,17 @@ body {
         height: 5%;
         opacity: 1;
     }
+
     26%, 42% {
         background: #C90809;
         height: 50%;
         opacity: .6;
     }
-    
+
     75%, 100% {
         background: #C90809;
         height: 5%;
         opacity: 1;
-
     }
 }
 
@@ -752,7 +730,6 @@ body {
 /*rev animation slide 12*/
 
 .revanimation12 {
-
     width: 100%;
     height: 100%;
     background-color: #b8003d;
@@ -778,17 +755,17 @@ body {
         height: 5%;
         opacity: 1;
     }
+
     26%, 42% {
         background: #C90809;
         height: 52%;
         opacity: .6;
     }
-    
+
     75%, 100% {
         background: #C90809;
         height: 5%;
         opacity: 1;
-
     }
 }
 
@@ -818,6 +795,7 @@ body {
         opacity: .7;
     }
 }
+
 @-moz-document url-prefix() {
     .revanimation3 {
         width: 100%;
@@ -905,6 +883,7 @@ body {
         opacity: .7;
     }
 }
+
 @-moz-document url-prefix() {
     .revanimation11 {
         width: 100%;
@@ -940,24 +919,24 @@ body {
     -moz-transform: translate3d(0, 0, 0);
 }
 
-.master-slider a {
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
-}
+    .master-slider a {
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
 
-.master-slider, .master-slider * {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-}
+    .master-slider, .master-slider * {
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+    }
 
-.master-slider.before-init {
-}
+        .master-slider.before-init {
+        }
 
-.master-slider.ms-fullheight {
-    height: 100%;
-}
+        .master-slider.ms-fullheight {
+            height: 100%;
+        }
 
 .ms-layout-partialview .ms-view {
     overflow: visible;
@@ -1045,9 +1024,9 @@ body {
     perspective: 2000px;
 }
 
-.ms-view .ms-slide-container {
-    position: relative;
-}
+    .ms-view .ms-slide-container {
+        position: relative;
+    }
 
 .ms-slide {
     position: absolute;
@@ -1116,7 +1095,7 @@ body {
 
 .ms-slide .ms-layer, .ms-fixed-layers .ms-layer {
     position: absolute;
-    pointer-events: auto
+    pointer-events: auto;
 }
 
 .ms-slide .ms-slide-layers,
@@ -1187,13 +1166,13 @@ body {
     color: #FFF;
 }
 
-.ms-default-btn:hover {
-    background-color: #0098D5;
-}
+    .ms-default-btn:hover {
+        background-color: #0098D5;
+    }
 
-.ms-default-btn:active {
-    top: 1px;
-}
+    .ms-default-btn:active {
+        top: 1px;
+    }
 
 .ms-btn-s {
     padding: 14px 17px;
@@ -1243,13 +1222,13 @@ body {
     background: black;
 }
 
-.ms-layer.video-box iframe {
-    padding: 0;
-    margin: 0;
-    border: none;
-    position: absolute;
-    z-index: 111;
-}
+    .ms-layer.video-box iframe {
+        padding: 0;
+        margin: 0;
+        border: none;
+        position: absolute;
+        z-index: 111;
+    }
 
 .ms-slide .ms-slide-vpbtn, .ms-slide .ms-video-btn {
     position: absolute;
@@ -1276,17 +1255,17 @@ body {
     z-index: 113;
 }
 
-.ms-slide-vcbtn-mobile .ms-vcbtn-txt {
-    text-transform: uppercase;
-    font-family: sans-serif;
-    font-size: 0.75em;
-    display: inline-block;
-    background: url(video-close-btn.png) no-repeat 0px 3px;
-    padding-left: 15px;
-    height: 15px;
-    color: #DBDBDB;
-    margin-top: 7px;
-}
+    .ms-slide-vcbtn-mobile .ms-vcbtn-txt {
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-size: 0.75em;
+        display: inline-block;
+        background: url(video-close-btn.png) no-repeat 0px 3px;
+        padding-left: 15px;
+        height: 15px;
+        color: #DBDBDB;
+        margin-top: 7px;
+    }
 
 .ms-wk .ms-slide .ms-slide-vcbtn,
 .ms-wk .ms-slide .ms-slide-layers,
@@ -1318,14 +1297,14 @@ body {
     position: absolute;
 }
 
-.ms-thumb-list.ms-dir-h {
-    width: 100%;
-}
+    .ms-thumb-list.ms-dir-h {
+        width: 100%;
+    }
 
-.ms-thumb-list.ms-dir-v {
-    height: 100%;
-    top: 0;
-}
+    .ms-thumb-list.ms-dir-v {
+        height: 100%;
+        top: 0;
+    }
 
 .ms-thumbs-cont {
     position: relative;
@@ -1384,9 +1363,9 @@ body {
     z-index: 140;
 }
 
-.ms-tabs.ms-dir-h.ms-align-top .ms-thumb-frame {
-    margin-top: -12px;
-}
+    .ms-tabs.ms-dir-h.ms-align-top .ms-thumb-frame {
+        margin-top: -12px;
+    }
 
 .ms-tabs .ms-thumb {
     padding: 20px 20px;
@@ -1480,23 +1459,23 @@ body {
     left: auto;
 }
 
-.ms-thumb-list.ms-dir-h .ms-thumblist-fwd:after, .ms-thumb-list.ms-dir-h .ms-thumblist-bwd:after {
-    content: close-quote;
-    top: 43%;
-    position: relative;
-    border: solid rgba(0, 0, 0, 0);
-    border-width: 5px 5px 5px 0px;
-    display: block;
-    border-right-color: #FFF;
-    width: 6px;
-    height: 1px;
-}
+    .ms-thumb-list.ms-dir-h .ms-thumblist-fwd:after, .ms-thumb-list.ms-dir-h .ms-thumblist-bwd:after {
+        content: close-quote;
+        top: 43%;
+        position: relative;
+        border: solid rgba(0, 0, 0, 0);
+        border-width: 5px 5px 5px 0px;
+        display: block;
+        border-right-color: #FFF;
+        width: 6px;
+        height: 1px;
+    }
 
-.ms-thumb-list.ms-dir-h .ms-thumblist-bwd:after {
-    border-width: 5px 0px 5px 5px;
-    border-left-color: #FFF;
-    left: 7px;
-}
+    .ms-thumb-list.ms-dir-h .ms-thumblist-bwd:after {
+        border-width: 5px 0px 5px 5px;
+        border-left-color: #FFF;
+        left: 7px;
+    }
 
 /* vertical thumblist arrows */
 .ms-thumb-list.ms-dir-v .ms-thumblist-fwd, .ms-thumb-list.ms-dir-v .ms-thumblist-bwd {
@@ -1515,24 +1494,24 @@ body {
     top: auto;
 }
 
-.ms-thumb-list.ms-dir-v .ms-thumblist-fwd:after, .ms-thumb-list.ms-dir-v .ms-thumblist-bwd:after {
-    content: close-quote;
-    left: 43%;
-    position: relative;
-    border: solid rgba(0, 0, 0, 0);
-    border-width: 0px 5px 5px 5px;
-    display: block;
-    border-bottom-color: #FFF;
-    height: 1px;
-    top: 5px;
-    width: 0;
-}
+    .ms-thumb-list.ms-dir-v .ms-thumblist-fwd:after, .ms-thumb-list.ms-dir-v .ms-thumblist-bwd:after {
+        content: close-quote;
+        left: 43%;
+        position: relative;
+        border: solid rgba(0, 0, 0, 0);
+        border-width: 0px 5px 5px 5px;
+        display: block;
+        border-bottom-color: #FFF;
+        height: 1px;
+        top: 5px;
+        width: 0;
+    }
 
-.ms-thumb-list.ms-dir-v .ms-thumblist-bwd:after {
-    border-width: 5px 5px 0px 5px;
-    border-top-color: #FFF;
-    top: 7px;
-}
+    .ms-thumb-list.ms-dir-v .ms-thumblist-bwd:after {
+        border-width: 5px 5px 0px 5px;
+        border-top-color: #FFF;
+        top: 7px;
+    }
 
 .ms-bullet {
     cursor: pointer;
@@ -1551,9 +1530,9 @@ body {
     top: 50%;
 }
 
-.ms-bullets.ms-dir-v .ms-bullet {
-    float: none;
-}
+    .ms-bullets.ms-dir-v .ms-bullet {
+        float: none;
+    }
 
 .ms-bullets.ms-dir-h .ms-bullets-count {
     position: relative;
@@ -1564,36 +1543,36 @@ body {
     position: absolute;
 }
 
-.ms-sbar.ms-dir-h {
-    left: 10px;
-    right: 10px;
-    top: 5px
-}
+    .ms-sbar.ms-dir-h {
+        left: 10px;
+        right: 10px;
+        top: 5px;
+    }
 
-.ms-sbar.ms-dir-v {
-    top: 10px;
-    bottom: 10px;
-    right: 5px
-}
+    .ms-sbar.ms-dir-v {
+        top: 10px;
+        bottom: 10px;
+        right: 5px;
+    }
 
-.ms-sbar .ms-bar {
-    height: 4px;
-    background: #333;
-    border-radius: 4px;
-}
+    .ms-sbar .ms-bar {
+        height: 4px;
+        background: #333;
+        border-radius: 4px;
+    }
 
-.ms-sbar.ms-dir-v .ms-bar {
-    width: 4px;
-}
+    .ms-sbar.ms-dir-v .ms-bar {
+        width: 4px;
+    }
 
-.ms-sbar .ms-bar {
-    position: relative;
-    -webkit-transition: opacity 300ms;
-    -moz-transition: opacity 300ms;
-    -ms-transition: opacity 300ms;
-    -o-transition: opacity 300ms;
-    transition: opacity 300ms;
-}
+    .ms-sbar .ms-bar {
+        position: relative;
+        -webkit-transition: opacity 300ms;
+        -moz-transition: opacity 300ms;
+        -ms-transition: opacity 300ms;
+        -o-transition: opacity 300ms;
+        transition: opacity 300ms;
+    }
 
 .ms-timerbar {
     width: 100%;
@@ -1617,7 +1596,6 @@ body {
     -ms-transition: width 120ms linear;
     -o-transition: width 120ms linear;
     transition: width 120ms linear;
-
 }
 
 .ms-ie7 .ms-tooltip-arrow {
@@ -1628,13 +1606,13 @@ body {
     position: absolute;
 }
 
-.ms-slide-info.ms-dir-v {
-    top: 0;
-}
+    .ms-slide-info.ms-dir-v {
+        top: 0;
+    }
 
-.ms-slide-info.ms-dir-h {
-    width: 100%;
-}
+    .ms-slide-info.ms-dir-h {
+        width: 100%;
+    }
 
 @keyframes point-anim {
     0% {
@@ -1645,6 +1623,7 @@ body {
         -ms-transform: scale(0.5);
         opacity: 1;
     }
+
     100% {
         transform: scale(0.5);
         -webkit-transform: scale(0.5);
@@ -1660,6 +1639,7 @@ body {
         -webkit-transform: scale(0.5);
         opacity: 1;
     }
+
     100% {
         -webkit-transform: scale(1.5);
         opacity: 0;
@@ -1675,36 +1655,27 @@ body {
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     /* Styles */
 }
 
 /* Smartphones (landscape) ----------- */
-@media only screen
-and (min-width: 321px) {
+@media only screen and (min-width: 321px) {
     /* Styles */
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen
-and (max-width: 320px) {
+@media only screen and (max-width: 320px) {
     /* Styles */
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     /* Styles */
 }
 
 /* iPads (landscape) ----------- */
-@media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px)
-and (orientation: landscape) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     /* Styles */
     .mytext {
         top: 100%;
@@ -1712,15 +1683,12 @@ and (orientation: landscape) {
     }
 
     .text1 {
-
         font-size: 20px;
-        line-height:13px !important;
+        line-height: 13px !important;
     }
 
     .text2 {
-
         font-size: 20px;
-
     }
 
     .text13 {
@@ -1730,13 +1698,11 @@ and (orientation: landscape) {
     .revborder {
         bottom: 450px;
         height: 45%;
-
     }
 
     .revanimation {
         bottom: 450px;
         height: 45%;
-
     }
 
     .revtext {
@@ -1810,7 +1776,6 @@ and (orientation: landscape) {
 
     .specs {
         height: 6%;
-
     }
 
     .spec1 {
@@ -1863,35 +1828,277 @@ and (orientation: landscape) {
 
     .spec13 {
         bottom: 550%;
-
     }
 
     .subheading6 {
-
     }
 
+    @-webkit-keyframes myfirst {
 
+        from, 15% {
+            background: #C90809;
+            height: 5%;
+            opacity: 1;
+        }
 
+        26%, 42% {
+            background: #C90809;
+            height: 24%;
+            opacity: .6;
+        }
+
+        75%, 100% {
+            background: #C90809;
+            height: 5%;
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes mysecond {
+
+        from, 15% {
+            background: #C90809;
+            height: 5%;
+            opacity: 1;
+        }
+
+        26%, 42% {
+            background: #C90809;
+            height: 26%;
+            opacity: .6;
+        }
+
+        75%, 100% {
+            background: #C90809;
+            height: 5%;
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes mythird {
+
+        from, 15% {
+            background: #C90809;
+            height: 5%;
+            opacity: 1;
+        }
+
+        26%, 42% {
+            background: #C90809;
+            height: 28%;
+            opacity: .6;
+        }
+
+        75%, 100% {
+            background: #C90809;
+            height: 5%;
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes myfourth {
+
+        from, 15% {
+            background: #C90809;
+            height: 5%;
+            opacity: 1;
+        }
+
+        26%, 42% {
+            background: #C90809;
+            height: 30%;
+            opacity: .6;
+        }
+
+        75%, 100% {
+            background: #C90809;
+            height: 5%;
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes myfith {
+
+        from, 15% {
+            background: #C90809;
+            height: 5%;
+            opacity: 1;
+        }
+
+        26%, 42% {
+            background: #C90809;
+            height: 32%;
+            opacity: .6;
+        }
+
+        75%, 100% {
+            background: #C90809;
+            height: 5%;
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes mysixth {
+
+        from, 15% {
+            background: #C90809;
+            height: 5%;
+            opacity: 1;
+        }
+
+        26%, 42% {
+            background: #C90809;
+            height: 34%;
+            opacity: .6;
+        }
+
+        75%, 100% {
+            background: #C90809;
+            height: 5%;
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes myseventh {
+
+        from, 15% {
+            background: #C90809;
+            height: 5%;
+            opacity: 1;
+        }
+
+        26%, 42% {
+            background: #C90809;
+            height: 36%;
+            opacity: .6;
+        }
+
+        75%, 100% {
+            background: #C90809;
+            height: 5%;
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes myeighth {
+
+        from, 15% {
+            background: #C90809;
+            height: 5%;
+            opacity: 1;
+        }
+
+        26%, 42% {
+            background: #C90809;
+            height: 38%;
+            opacity: .6;
+        }
+
+        75%, 100% {
+            background: #C90809;
+            height: 5%;
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes myninth {
+
+        from, 15% {
+            background: #C90809;
+            height: 5%;
+            opacity: 1;
+        }
+
+        26%, 42% {
+            background: #C90809;
+            height: 40%;
+            opacity: .6;
+        }
+
+        75%, 100% {
+            background: #C90809;
+            height: 5%;
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes mytenth {
+
+        from, 15% {
+            background: #C90809;
+            height: 5%;
+            opacity: 1;
+        }
+
+        26%, 42% {
+            background: #C90809;
+            height: 42%;
+            opacity: .6;
+        }
+
+        75%, 100% {
+            background: #C90809;
+            height: 5%;
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes myeleventh {
+
+        from, 15% {
+            background: #C90809;
+            height: 5%;
+            opacity: 1;
+        }
+
+        26%, 42% {
+            background: #C90809;
+            height: 45%;
+            opacity: .6;
+        }
+
+        75%, 100% {
+            background: #C90809;
+            height: 5%;
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes mytwelth {
+
+        from, 15% {
+            background: #C90809;
+            height: 5%;
+            opacity: 1;
+        }
+
+        26%, 42% {
+            background: #C90809;
+            height: 47%;
+            opacity: .6;
+        }
+
+        75%, 100% {
+            background: #C90809;
+            height: 5%;
+            opacity: 1;
+        }
+    }
 }
 
 /* iPads (portrait) ----------- */
-@media only screen
-and (min-device-width: 768px)
-and (max-device-width: 1024px)
-and (orientation: portrait) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
     /* Styles */
 }
 
 /* Desktops and laptops ----------- */
-@media only screen
-and (min-width: 1224px) {
+@media only screen and (min-width: 1224px) {
     /* Styles */
 
 }
 
 /* Large screens ----------- */
-@media only screen
-and (min-width: 1824px) {
+@media only screen and (min-width: 1824px) {
     /* Styles */
 }
 
@@ -1899,11 +2106,3 @@ and (min-width: 1824px) {
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
     /* Styles */
 }
-
-
-
-
-
-
-
-
