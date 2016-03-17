@@ -1,5 +1,5 @@
 /**
- *  <!-- aj Version 1.2.23 Changed font sizes for bootstrap compatibility -->
+ *  <!-- aj Version 1.2.24 fixed popup text, popup arrows, phone bug fixes on phone, added rev animation to media queries for ipad compatibility-->
  */
 
 body {
@@ -120,7 +120,7 @@ body {
 }
 
 .text13 {
-    font-size: 23px;
+    font-size: 20px;
 }
 
 /*
@@ -239,7 +239,7 @@ body {
 }
 
 .spec13 {
-    top: 335%;
+    top: 260%;
     width: 23%;
 }
 
@@ -272,6 +272,7 @@ body {
     -webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
     transition-timing-function: ease-in-out;
 }
+
 
 .anim1height {
     height: 50px;
@@ -831,6 +832,141 @@ body {
 }
 
 /*-----------------end of rev animation-------*/
+
+
+/*firefox revbar--------*/
+
+@-moz-document url-prefix() {
+    .revanimation1 {
+        width: 100%;
+        height: 5%;
+        background-color: #cc0000;
+        margin: auto;
+        vertical-align: middle;
+        opacity: .7;
+    }
+}
+
+@-moz-document url-prefix() {
+    .revanimation2 {
+        width: 100%;
+        height: 10%;
+        background-color: #cc0000;
+        margin: auto;
+        vertical-align: middle;
+        opacity: .7;
+    }
+}
+@-moz-document url-prefix() {
+    .revanimation3 {
+        width: 100%;
+        height: 15%;
+        background-color: #cc0000;
+        margin: auto;
+        vertical-align: middle;
+        opacity: .7;
+    }
+}
+
+@-moz-document url-prefix() {
+    .revanimation4 {
+        width: 100%;
+        height: 20%;
+        background-color: #cc0000;
+        margin: auto;
+        vertical-align: middle;
+        opacity: .7;
+    }
+}
+
+@-moz-document url-prefix() {
+    .revanimation5 {
+        width: 100%;
+        height: 25%;
+        background-color: #cc0000;
+        margin: auto;
+        vertical-align: middle;
+        opacity: .7;
+    }
+}
+
+@-moz-document url-prefix() {
+    .revanimation6 {
+        width: 100%;
+        height: 30%;
+        background-color: #cc0000;
+        margin: auto;
+        vertical-align: middle;
+        opacity: .7;
+    }
+}
+
+@-moz-document url-prefix() {
+    .revanimation7 {
+        width: 100%;
+        height: 35%;
+        background-color: #cc0000;
+        margin: auto;
+        vertical-align: middle;
+        opacity: .7;
+    }
+}
+
+@-moz-document url-prefix() {
+    .revanimation8 {
+        width: 100%;
+        height: 40%;
+        background-color: #cc0000;
+        margin: auto;
+        vertical-align: middle;
+        opacity: .7;
+    }
+}
+
+@-moz-document url-prefix() {
+    .revanimation9 {
+        width: 100%;
+        height: 45%;
+        background-color: #cc0000;
+        margin: auto;
+        vertical-align: middle;
+        opacity: .7;
+    }
+}
+
+@-moz-document url-prefix() {
+    .revanimation10 {
+        width: 100%;
+        height: 50%;
+        background-color: #cc0000;
+        margin: auto;
+        vertical-align: middle;
+        opacity: .7;
+    }
+}
+@-moz-document url-prefix() {
+    .revanimation11 {
+        width: 100%;
+        height: 52%;
+        background-color: #cc0000;
+        margin: auto;
+        vertical-align: middle;
+        opacity: .7;
+    }
+}
+
+@-moz-document url-prefix() {
+    .revanimation12 {
+        width: 100%;
+        height: 52%;
+        background-color: #cc0000;
+        margin: auto;
+        vertical-align: middle;
+        opacity: .7;
+    }
+}
+
+
 
 
 
@@ -1611,22 +1747,22 @@ and (orientation: landscape) {
     /* Styles */
     .mytext {
         top: 100%;
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .text1 {
 
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .text2 {
 
-        font-size: 26px;
+        font-size: 20px;
 
     }
 
     .text13 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .revborder {
@@ -1764,9 +1900,618 @@ and (orientation: landscape) {
     }
 
     .spec13 {
-        bottom: 500%;
+        bottom: 550%;
 
     }
+
+    .subheading6 {
+
+    }
+
+
+    /*rev animation slide 1*/
+
+    .revanimation1 {
+
+        width: 100%;
+        height: 100%;
+        background-color: #b8003d;
+        margin: auto;
+        vertical-align: middle;
+        /*left:300%;*/
+        /*right: 248%;*/
+        -webkit-animation: myfirst 10s infinite; /* Chrome, Safari, Opera */
+        animation: myfirst 10s infinite;
+        -webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+        transition-timing-function: ease-in-out;
+    }
+
+
+    .anim1height {
+        height: 50px;
+    }
+
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes myfirst {
+
+        from, 15% {
+            background: #C90809;
+            height: 5%;
+            opacity: .9
+        }
+        26%, 42% {
+            background: #C90809;
+            height: 48%;
+            opacity: .7
+        }
+        42%, 75% {
+            background: #C90809;
+            height: 45%;
+            opacity: .6
+        }
+        75%, 100% {
+            background: #C90809;
+            height: 5%;
+            opacity: .9
+        }
+    }
+
+    /*-----------------end of rev animation-------*/
+
+    /*rev animation slide 2*/
+
+    .revanimation2 {
+
+        width: 100%;
+        height: 100%;
+        background-color: #b8003d;
+        margin: auto;
+        vertical-align: middle;
+        /*left:300%;*/
+        /*right: 248%;*/
+        -webkit-animation: mysecond 10s infinite; /* Chrome, Safari, Opera */
+        animation: mysecond 10s infinite;
+        -webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+        transition-timing-function: ease-in-out;
+    }
+
+    .anim1height {
+        height: 50px;
+    }
+
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes mysecond {
+
+        from, 15% {
+            background: #C90809;
+            height: 9%;
+            opacity: .9
+        }
+        26%, 42% {
+            background: #C90809;
+            height: 48%;
+            opacity: .7
+        }
+        42%, 75% {
+            background: #C90809;
+            height: 45%;
+            opacity: .6
+        }
+        75%, 100% {
+            background: #C90809;
+            height:9%;
+            opacity: .9
+        }
+    }
+
+    /*-----------------end of rev animation-------*/
+
+    /*rev animation slide 3*/
+
+    .revanimation3 {
+
+        width: 100%;
+        height: 100%;
+        background-color: #b8003d;
+        margin: auto;
+        vertical-align: middle;
+        /*left:300%;*/
+        /*right: 248%;*/
+        -webkit-animation: mythird 10s infinite; /* Chrome, Safari, Opera */
+        animation: mythird 10s infinite;
+        -webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+        transition-timing-function: ease-in-out;
+    }
+
+    .anim1height {
+        height: 50px;
+    }
+
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes mythird {
+
+        from, 15% {
+            background: #C90809;
+            height: 13%;
+            opacity: .9
+        }
+        26%, 42% {
+            background: #C90809;
+            height: 48%;
+            opacity: .7
+        }
+        42%, 75% {
+            background: #C90809;
+            height: 45%;
+            opacity: .6
+        }
+        75%, 100% {
+            background: #C90809;
+            height: 13%;
+            opacity: .9
+        }
+    }
+
+    /*-----------------end of rev animation-------*/
+
+    /*rev animation slide 4*/
+
+    .revanimation4 {
+
+        width: 100%;
+        height: 100%;
+        background-color: #b8003d;
+        margin: auto;
+        vertical-align: middle;
+        /*left:300%;*/
+        /*right: 248%;*/
+        -webkit-animation: myfourth 10s infinite; /* Chrome, Safari, Opera */
+        animation: myfourth 10s infinite;
+        -webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+        transition-timing-function: ease-in-out;
+    }
+
+    .anim1height {
+        height: 50px;
+    }
+
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes myfourth {
+
+        from, 15% {
+            background: #C90809;
+            height: 16%;
+            opacity: .9
+        }
+        26%, 42% {
+            background: #C90809;
+            height: 48%;
+            opacity: .7
+        }
+        42%, 75% {
+            background: #C90809;
+            height: 45%;
+            opacity: .6
+        }
+        75%, 100% {
+            background: #C90809;
+            height: 16%;
+            opacity: .9
+        }
+    }
+
+    /*-----------------end of rev animation-------*/
+
+    /*rev animation slide 5*/
+
+    .revanimation5 {
+
+        width: 100%;
+        height: 100%;
+        background-color: #b8003d;
+        margin: auto;
+        vertical-align: middle;
+        /*left:300%;*/
+        /*right: 248%;*/
+        -webkit-animation: myfith 10s infinite; /* Chrome, Safari, Opera */
+        animation: myfith 10s infinite;
+        -webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+        transition-timing-function: ease-in-out;
+    }
+
+    .anim1height {
+        height: 50px;
+    }
+
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes myfith {
+
+        from, 15% {
+            background: #C90809;
+            height:20%;
+            opacity: .9
+        }
+        26%, 42% {
+            background: #C90809;
+            height: 48%;
+            opacity: .7
+        }
+        42%, 75% {
+            background: #C90809;
+            height: 45%;
+            opacity: .6
+        }
+        75%, 100% {
+            background: #C90809;
+            height: 20%;
+            opacity: .9
+        }
+    }
+
+    /*-----------------end of rev animation-------*/
+
+    /*rev animation slide 6*/
+
+    .revanimation6 {
+
+        width: 100%;
+        height: 100%;
+        background-color: #b8003d;
+        margin: auto;
+        vertical-align: middle;
+        /*left:300%;*/
+        /*right: 248%;*/
+        -webkit-animation: mysixth 10s infinite; /* Chrome, Safari, Opera */
+        animation: mysixth 10s infinite;
+        -webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+        transition-timing-function: ease-in-out;
+    }
+
+    .anim1height {
+        height: 50px;
+    }
+
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes mysixth {
+
+        from, 15% {
+            background: #C90809;
+            height: 25%;
+            opacity: .9
+        }
+        26%, 42% {
+            background: #C90809;
+            height: 48%;
+            opacity: .7
+        }
+        42%, 75% {
+            background: #C90809;
+            height: 45%;
+            opacity: .6
+        }
+        75%, 100% {
+            background: #C90809;
+            height: 25%;
+            opacity: .9
+        }
+    }
+
+    /*-----------------end of rev animation-------*/
+
+    /*rev animation slide 7*/
+
+    .revanimation7 {
+
+        width: 100%;
+        height: 100%;
+        background-color: #b8003d;
+        margin: auto;
+        vertical-align: middle;
+        /*left:300%;*/
+        /*right: 248%;*/
+        -webkit-animation: myseventh 10s infinite; /* Chrome, Safari, Opera */
+        animation: myseventh 10s infinite;
+        -webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+        transition-timing-function: ease-in-out;
+    }
+
+    .anim1height {
+        height: 50px;
+    }
+
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes myseventh {
+
+        from, 15% {
+            background: #C90809;
+            height: 30%;
+            opacity: .9
+        }
+        26%, 42% {
+            background: #C90809;
+            height: 48%;
+            opacity: .7
+        }
+        42%, 75% {
+            background: #C90809;
+            height: 45%;
+            opacity: .6
+        }
+        75%, 100% {
+            background: #C90809;
+            height: 30%;
+            opacity: .9
+        }
+    }
+
+    /*-----------------end of rev animation-------*/
+
+    /*rev animation slide 8*/
+
+    .revanimation8 {
+
+        width: 100%;
+        height: 100%;
+        background-color: #b8003d;
+        margin: auto;
+        vertical-align: middle;
+        /*left:300%;*/
+        /*right: 248%;*/
+        -webkit-animation: myeighth 10s infinite; /* Chrome, Safari, Opera */
+        animation: myeighth 10s infinite;
+        -webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+        transition-timing-function: ease-in-out;
+    }
+
+    .anim1height {
+        height: 50px;
+    }
+
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes myeighth {
+
+        from, 15% {
+            background: #C90809;
+            height: 35%;
+            opacity: .9
+        }
+        26%, 42% {
+            background: #C90809;
+            height: 48%;
+            opacity: .7
+        }
+        42%, 75% {
+            background: #C90809;
+            height: 45%;
+            opacity: .6
+        }
+        75%, 100% {
+            background: #C90809;
+            height: 35%;
+            opacity: .9
+        }
+    }
+
+    /*-----------------end of rev animation-------*/
+
+    /*rev animation slide 9*/
+
+    .revanimation9 {
+
+        width: 100%;
+        height: 100%;
+        background-color: #b8003d;
+        margin: auto;
+        vertical-align: middle;
+        /*left:300%;*/
+        /*right: 248%;*/
+        -webkit-animation: myninth 10s infinite; /* Chrome, Safari, Opera */
+        animation: myninth 10s infinite;
+        -webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+        transition-timing-function: ease-in-out;
+    }
+
+    .anim1height {
+        height: 50px;
+    }
+
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes myninth {
+
+        from, 15% {
+            background: #C90809;
+            height: 40%;
+            opacity: .9
+        }
+        26%, 42% {
+            background: #C90809;
+            height: 48%;
+            opacity: .7
+        }
+        42%, 75% {
+            background: #C90809;
+            height: 45%;
+            opacity: .6
+        }
+        75%, 100% {
+            background: #C90809;
+            height: 40%;
+            opacity: .9
+        }
+    }
+
+    /*-----------------end of rev animation-------*/
+
+    /*rev animation slide 10*/
+
+    .revanimation10 {
+
+        width: 100%;
+        height: 100%;
+        background-color: #b8003d;
+        margin: auto;
+        vertical-align: middle;
+        /*left:300%;*/
+        /*right: 248%;*/
+        -webkit-animation: mytenth 10s infinite; /* Chrome, Safari, Opera */
+        animation: mytenth 10s infinite;
+        -webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+        transition-timing-function: ease-in-out;
+    }
+
+    .anim1height {
+        height: 50px;
+    }
+
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes mytenth {
+
+        from, 15% {
+            background: #C90809;
+            height: 43%;
+            opacity: .9
+        }
+        26%, 42% {
+            background: #C90809;
+            height: 48%;
+            opacity: .7
+        }
+        42%, 75% {
+            background: #C90809;
+            height: 45%;
+            opacity: .6
+        }
+        75%, 100% {
+            background: #C90809;
+            height: 43%;
+            opacity: .9
+        }
+    }
+
+    /*-----------------end of rev animation-------*/
+
+    /*rev animation slide 11*/
+
+    .revanimation11 {
+
+        width: 100%;
+        height: 100%;
+        background-color: #b8003d;
+        margin: auto;
+        vertical-align: middle;
+        /*left:300%;*/
+        /*right: 248%;*/
+        -webkit-animation: myeleventh 10s infinite; /* Chrome, Safari, Opera */
+        animation: myeleventh 10s infinite;
+        -webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+        transition-timing-function: ease-in-out;
+    }
+
+    .anim1height {
+        height: 50px;
+    }
+
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes myeleventh {
+
+        from, 15% {
+            background: #C90809;
+            height: 48%;
+            opacity: .9
+        }
+        26%, 42% {
+            background: #C90809;
+            height: 48%;
+            opacity: .7
+        }
+        42%, 75% {
+            background: #C90809;
+            height: 48%;
+            opacity: .6
+        }
+        75%, 100% {
+            background: #C90809;
+            height: 48%;
+            opacity: .9
+        }
+    }
+
+    /*-----------------end of rev animation-------*/
+
+    /*rev animation slide 12*/
+
+    .revanimation12 {
+
+        width: 100%;
+        height: 100%;
+        background-color: #b8003d;
+        margin: auto;
+        vertical-align: middle;
+        /*left:300%;*/
+        /*right: 248%;*/
+        -webkit-animation: mytwelth 10s infinite; /* Chrome, Safari, Opera */
+        animation: mytwelth 10s infinite;
+        -webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
+        transition-timing-function: ease-in-out;
+    }
+
+    .anim1height {
+        height: 50px;
+    }
+
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes mytwelth {
+
+        from, 15% {
+            background: #C90809;
+            height: 48%;
+            opacity: .9
+        }
+        26%, 42% {
+            background: #C90809;
+            height: 48%;
+            opacity: .7
+        }
+        42%, 75% {
+            background: #C90809;
+            height:48%;
+            opacity: .6
+        }
+        75%, 100% {
+            background: #C90809;
+            height: 48%;
+            opacity: .9
+        }
+    }
+
+    /*-----------------end of rev animation-------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 

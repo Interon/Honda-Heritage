@@ -1,4 +1,4 @@
-<!--aj Version 1.2.20 phone-->
+﻿<!-- aj Version 1.2.24 tweaked popup text, popup arrows, phone bug fixes, phone background fix, added rev animation to media queries for ipad compatibility, checked cross-browser compatability-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +9,7 @@
     <title>index</title>
     <meta http-equiv="X-UA-Compatible"
           content="IE=edge,chrome=1"/>
-
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- Base MasterSlider style sheet -->
     <link rel="stylesheet"
           href="masterslider/style/masterslider.css"/>
@@ -24,8 +24,9 @@
 
     <!-- Latest version of jQuery from Google CDN -->
     <!-- You can remove it if jQuery is already included. -->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="masterslider/jquery.modal.min.js"></script>a
+    <script src="masterslider/jquery.modal.min.js"></script>
     <!-- MasterSlider main JS file -->
     <script src="masterslider/masterslider.min.js"></script>
 
@@ -33,408 +34,158 @@
 </head>
 
 <body>
-<div style="font-family:verdana;font-size:9px;position:absolute;top:0px;right:0px;height:150px;width:150px;background-color:black;"
-     id="screeninfo">
-    <table style="color:red;z-index: 99999;">
-        <tr>
-            <td>Screen</td>
-            <td id="scrres"></td>
-        </tr>
-        <tr>
-            <td>Aspect</td>
-            <td id="aspect"></td>
-        </tr>
-        <tr>
-            <td>XHeight</td>
-            <td id="xheight"></td>
-        </tr>
-    </table>
-</div>
-<!--header to be moved to fixed position infront of content-->
+    <div style="font-family:verdana;font-size:9px;position:absolute;top:0px;right:0px;height:150px;width:150px;background-color:black;"
+         id="screeninfo">
+        <table style="color:red;z-index: 99999;">
+            <tr>
+                <td>Screen</td>
+                <td id="scrres"></td>
+            </tr>
+            <tr>
+                <td>Aspect</td>
+                <td id="aspect"></td>
+            </tr>
+            <tr>
+                <td>XHeight</td>
+                <td id="xheight"></td>
+            </tr>
+        </table>
+    </div>
+    <!--header to be moved to fixed position infront of content-->
 
-<div style="width:100%; height:165px; margin:auto; margin-top:-20px; background: #fff;">
-    <h1>Honda Header Banner Size</h1>
-</div>
-
-
-<div class="content">
-
-    <!-- masterslider -->
-    <div class="master-slider ms-skin-light-3"
-         id="masterslider">
-
-        <!-- 1 new slide -->
-        <div class="ms-slide">
-
-            <!-- slide background -->
-            <img src="masterslider/style/blank.gif"
-                 data-src="masterslider/images/bg-racetrack.png"
-                 alt="bg-racetrack"/>
+    <div style="width:100%; height:165px; margin:auto; margin-top:-20px; background: #fff;">
+        <h1>Honda Header Banner Size</h1>
+    </div>
 
 
-            <div class="ms-layer revanimation1"
-                 style="bottom: 280%; width: 540%;"
-                 data-offset-x="0"
-                 data-offset-y="300"
-                 data-origin="bc"
-                 data-duration="0"></div>
+    <div class="content">
+
+        <!-- masterslider -->
+        <div class="master-slider ms-skin-light-3"
+             id="masterslider">
+
+            <!-- 1 new slide -->
+            <div class="ms-slide">
+
+                <!-- slide background -->
+                <img src="masterslider/style/blank.gif"
+                     data-src="masterslider/images/bg-racetrack.png"
+                     alt="bg-racetrack" />
 
 
-            <!-- rev counter -->
-            <div class="ms-layer revborder ms-caption"
-
-                 data-offset-x="0"
-                 data-offset-y="300"
-                 data-origin="bc"
-                 data-type="text"
-                 data-effect="fade"
-                 data-duration="0"
-                 data-delay="0"
-                 data-ease="easeOutQuart">
-
-                <!-- revtext -->
-
-                <div class="ms-layer ms-caption heading"
+                <div class="ms-layer revanimation1"
+                     style="bottom: 280%; width: 540%"
                      data-offset-x="0"
-                     data-offset-y="460"
+                     data-offset-y="300"
                      data-origin="bc"
-                     data-type="text"
-                     data-effect="fade"
-                     data-duration="3800"
-                     data-ease="easeOutQuart">
-                    F1
-                </div>
-
-
-                <div class="ms-layer ms-caption subheading"
-                     data-offset-x="0"
-                     data-offset-y="450"
-                     data-origin="bc"
-                     data-type="text"
-                     data-effect="fade"
-                     data-duration="3800"
-                     data-ease="easeOutQuart">
-                    The birth of the red Honda Badge
-                </div>
-
-            </div>
-
-
-            <!--spec block-->
-            <div class="ms-layer specs spec1 ms-caption"
-
-                 data-offset-x="150"
-                 data-offset-y="620"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="bottom(200|800)"
-                 data-duration="1800"
-                 data-delay="0"
-                 data-ease="easeOutQuart">
-
-                Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp;3.0L Six-cylinder DOHC VTEC <br/>
-                Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 280PS / 7,300rpm <br/>
-                Maximum Torque: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 30.0kg · m / 5,400 rpm
-
-            </div>
-
-            <!-- slide text layer -->
-            <div class="mytext ms-layer ms-caption text1"
-
-                 data-offset-x="126"
-                 data-offset-y="80"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="left(long)"
-                 data-duration="2000"
-                 data-ease="easeOutQuart">
-
-                Type <span style="color:red"
-                           ;>R</span> - The “<span style="color:red"
-                                                   ;>R</span>” stands for Racing.
-                <br/>
-                <br/>
-                The Type <span style="color:red"
-                               ;>R</span> brand delivers speed and excitement that stimulates the driver and enhances
-                the driving experience. All Type <span style="color:red"
-                                                       ;>R</span> cars are immersed in Honda’s racing DNA and the
-                knowledge and expertise of Honda’s engineers. When creating a Type <span style="color:red"
-                                                                                         ;> R </span> car, Honda aim to
-                create the ultimate driving machine.
-                <br/>
-                <br/>
-                The spirit of Type <span style="color:red"
-                                         ;>R</span> was first seen in 1964, long before the first Type
-                <span style="color:red"
-                      ;>R</span> model was built. This was the year that Honda first joined Formula One. At the time
-                Honda was still a relatively small car manufacturer but with the dedication of our engineers we met
-                challenging targets and achieved what often seemed unachievable.
-                <br/>
-                <br/>
-                The first Honda Formula One machine to compete in a Grand Prix (Germany) was painted in Ivory White and
-                featured the Honda emblem in red…these colours have been passed on to all Honda Type
-                <span style="color:red"
-                      ;>R</span> cars.
-
-
-            </div>
-
-            <!--car image layer-->
-
-
-            <img class="ms-layer car1"
-                 alt="car"
-                 data-offset-x="20"
-                 data-offset-y="20"
-                 data-origin="br"
-                 data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
-                 data-ease="linear"
-                 data-delay="800"
-                 data-hide-effect="fade"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/car-1.png"
-            />
-
-
-        </div>
-
-
-        <!-- end of slide -->
-
-
-        <!-- 2 new slide -->
-        <div class="ms-slide">
-
-            <!-- slide background -->
-            <img src="masterslider/style/blank.gif"
-                 data-src="masterslider/images/bg-racetrack.png"
-                 alt="bg-racetrack"/>
-
-            <div class="ms-layer revanimation2"
-                 style="bottom: 280%; width: 540%;"
-                 data-offset-x="0"
-                 data-offset-y="300"
-                 data-origin="bc"
-                 data-duration="0"></div>
-
-            <!-- rev counter -->
-            <div class="ms-layer revborder ms-caption"
-
-                 data-offset-x="0"
-                 data-offset-y="300"
-                 data-origin="bc"
-                 data-type="text"
-                 data-effect="fade"
-                 data-duration="0"
-                 data-ease="easeOutQuart">
-
-
-                <!--<div class="revanimation"-->
-                <!--data-duration="0"></div>-->
-
-                <!-- revtext -->
-
-
-                <div class="ms-layer ms-caption heading"
-                     data-offset-x="0"
-                     data-offset-y="460"
-                     data-origin="bc"
-                     data-type="text"
-                     data-effect="fade"
-                     data-duration="3800"
-                     data-ease="easeOutQuart">
-                    WWTC
-                </div>
-
-
-                <div class="ms-layer ms-caption subheading"
-                     data-offset-x="5"
-                     data-offset-y="450"
-                     data-origin="bc"
-                     data-type="text"
-                     data-effect="fade"
-                     data-duration="3800"
-                     data-ease="easeOutQuart">
-                    FIA World Touring Car Championship
-                </div>
-
-            </div>
-
-
-            <!-- slide text layer -->
-            <div class="mytext ms-layer ms-caption text2"
-
-                 data-offset-x="126"
-                 data-offset-y="80"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="left(long)"
-                 data-duration="2000"
-                 data-ease="easeOutQuart">
-
-
-                The new Honda Civic Type <span style="color:red"
-                                               ;>R</span> has added motorsport honors to its growing list of plaudits,
-                as Honda Yuasa Racing clinched the drivers and manufacturers championship in the 2015 Dunlop MSA British
-                Touring Car Championship in a tense final round at Brands Hatch.
-                <br/>
-                <br/>
-                Continuing the success story for the most high performance car ever to wear the red ‘H’ badge, the new
-                Honda Civic Type <span style="color:red"
-                                       ;>R</span> was developed with help from the brand’s World Touring Car Team. Vital
-                analysis and feedback from the track informed decisions about performance and styling, supporting the
-                British team to driver and manufacturer titles in its first competitive year.
-
-            </div>
-
-            <!--spec block-->
-            <div class="ms-layer specs spec2 ms-caption"
-                 data-offset-x="150"
-                 data-offset-y="480"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="bottom(200|800)"
-                 data-duration="1800"
-                 data-ease="easeOutQuart">
-
-                Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp;3.0L Six-cylinder DOHC VTEC <br/>
-                Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 280PS / 7,300rpm <br/>
-                Maximum Torque: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 30.0kg · m / 5,400 rpm
-
-            </div>
-
-
-            <!--car image layer-->
-            <img class="ms-layer car2 allcars"
-                 alt="car"
-                 data-offset-x="-100"
-                 data-offset-y="0"
-                 data-origin="br"
-                 data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
-                 data-ease="linear"
-                 data-delay="800"
-                 data-hide-effect="fade"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/car-2.png"
-            />
-
-
-        </div>
-        <!-- end of slide -->
-
-
-        <!-- 3 new slide -->
-        <div class="ms-slide">
-
-            <!-- slide background -->
-            <img src="masterslider/style/blank.gif"
-                 data-src="masterslider/images/bg-garage.png"
-                 alt="bg-racetrack"/>
-
-            <div class="ms-layer revanimation3"
-                 style="bottom: 280%; width: 540%;"
-                 data-offset-x="0"
-                 data-offset-y="300"
-                 data-origin="bc"
-                 data-duration="0"></div>
-
-            <!-- rev counter -->
-            <div class="ms-layer revborder ms-caption"
-
-                 data-offset-x="0"
-                 data-offset-y="300"
-                 data-origin="bc"
-                 data-type="text"
-                 data-effect="fade"
-                 data-duration="0"
-                 data-ease="easeOutQuart">
-
-
-                <div class="revanimation"
                      data-duration="0"></div>
 
-                <!-- revtext -->
 
-
-                <div class="ms-layer ms-caption heading"
+                <!-- rev counter -->
+                <div class="ms-layer revborder ms-caption"
                      data-offset-x="0"
-                     data-offset-y="460"
+                     data-offset-y="300"
                      data-origin="bc"
                      data-type="text"
                      data-effect="fade"
-                     data-duration="3800"
+                     data-duration="0"
+                     data-delay="0"
                      data-ease="easeOutQuart">
-                    1992
+
+                    <!-- revtext -->
+
+                    <div class="ms-layer ms-caption heading"
+                         data-offset-x="0"
+                         data-offset-y="460"
+                         data-origin="bc"
+                         data-type="text"
+                         data-effect="fade"
+                         data-duration="3800"
+                         data-ease="easeOutQuart">
+                        F1
+                    </div>
+
+
+                    <div class="ms-layer ms-caption subheading"
+                         data-offset-x="0"
+                         data-offset-y="450"
+                         data-origin="bc"
+                         data-type="text"
+                         data-effect="fade"
+                         data-duration="3800"
+                         data-ease="easeOutQuart">
+                        The birth of the red Honda Badge
+                    </div>
+
                 </div>
 
 
-                <div class="ms-layer ms-caption subheading"
-                     data-offset-x="0"
-                     data-offset-y="420"
-                     data-origin="bc"
+                <!--spec block-->
+                <div class="ms-layer specs spec1 ms-caption"
+                     data-offset-x="150"
+                     data-offset-y="600"
+                     data-origin="tl"
                      data-type="text"
-                     data-effect="fade"
-                     data-duration="3800"
+                     data-effect="bottom(200|800)"
+                     data-duration="1800"
+                     data-delay="0"
                      data-ease="easeOutQuart">
-                    1992 First Generation NSX Type R <br/> (Available in Japan only)
+
+                    Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp;3.0L Six-cylinder DOHC VTEC <br />
+                    Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 280PS / 7,300rpm <br />
+                    Maximum Torque: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 30.0kg · m / 5,400 rpm
+
                 </div>
 
-            </div>
+                <!-- slide text layer -->
+                <div class="mytext ms-layer ms-caption text1"
+                     data-offset-x="126"
+                     data-offset-y="80"
+                     data-origin="tl"
+                     data-type="text"
+                     data-effect="left(long)"
+                     data-duration="2000"
+                     data-ease="easeOutQuart">
+
+                    Type <span style="color:red"
+                               ;>R</span> - The “<span style="color:red"
+                                                       ;>R</span>” stands for Racing.
+                    <br />
+                    <br />
+                    The Type <span style="color:red"
+                                   ;>R</span> brand delivers speed and excitement that stimulates the driver and enhances
+                    the driving experience. All Type <span style="color:red"
+                                                           ;>R</span> cars are immersed in Honda’s racing DNA and the
+                    knowledge and expertise of Honda’s engineers. When creating a Type <span style="color:red"
+                                                                                             ;>R</span> car, Honda aim to
+                    create the ultimate driving machine.
+                    <br />
+                    <br />
+                    The spirit of Type <span style="color:red"
+                                             ;>R</span> was first seen in 1964, long before the first Type
+                    <span style="color:red"
+                          ;>R</span> model was built. This was the year that Honda first joined Formula One. At the time
+                    Honda was still a relatively small car manufacturer but with the dedication of our engineers we met
+                    challenging targets and achieved what often seemed unachievable.
+                    <br />
+                    <br />
+                    The first Honda Formula One machine to compete in a Grand Prix (Germany) was painted in Ivory White and
+                    featured the Honda emblem in red…these colours have been passed on to all Honda Type
+                    <span style="color:red"
+                          ;>R</span> cars.
 
 
-            <!--spec block-->
+                </div>
 
-            <div class="ms-layer specs spec3 ms-caption"
-                 data-offset-x="150"
-                 data-offset-y="400"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="bottom(200|800)"
-                 data-duration="1800"
-                 data-ease="easeOutQuart">
-
-                Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp;3.0L Six-cylinder DOHC VTEC <br/>
-                Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 280PS / 7,300rpm <br/>
-                Maximum Torque: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 30.0kg · m / 5,400 rpm
-
-            </div>
-
-            <!-- slide text layer -->
-            <div class="mytext ms-layer ms-caption text3"
-                 data-offset-x="126"
-                 data-offset-y="80"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="left(long)"
-                 data-duration="2000"
-                 data-ease="easeOutQuart">
-
-                This car marked the beginning of the Type <span style="color:red"
-                                                                ;>R</span> story. The aim was to develop a car that
-                delivered overwhelming driving pleasure and the speed of a racing car. The design language of NSX Type
-                <span style="color:red"
-                      ;>R</span> echoes the image of an F1 racing machine. This was also the first time that the red
-                Honda emblem and championship white body colour was introduced.
+                <!--car image layer-->
 
 
-            </div>
-
-            <!--car image layer-->
-            <a href="#ex1"
-               rel="modal:open">
-                <img class="ms-layer car3"
+                <img class="ms-layer car1"
                      alt="car"
-
-                     data-offset-x="1000"
-                     data-offset-y="-50"
-                     data-origin="bl"
+                     data-offset-x="20"
+                     data-offset-y="20"
+                     data-origin="br"
                      data-type="image"
                      data-effect="right(long)"
                      data-duration="1200"
@@ -442,994 +193,1062 @@
                      data-delay="800"
                      data-hide-effect="fade"
                      src="masterslider/blank.gif"
-                     data-src="masterslider/images/car-3.png"/>
-            </a>
+                     data-src="masterslider/images/car-1.png" />
 
 
-        </div>
-        <!-- end of slide -->
+            </div>
 
 
-        <!-- 4 new slide -->
-        <div class="ms-slide">
+            <!-- end of slide -->
+            <!-- 2 new slide -->
+            <div class="ms-slide">
 
-            <!-- slide background -->
-            <img src="masterslider/style/blank.gif"
-                 data-src="masterslider/images/bg-garage.png"
-                 alt="bg-racetrack"/>
+                <!-- slide background -->
+                <img src="masterslider/style/blank.gif"
+                     data-src="masterslider/images/bg-racetrack.png"
+                     alt="bg-racetrack" />
 
-            <div class="ms-layer revanimation4"
-                 style="bottom: 280%; width: 540%;"
-                 data-offset-x="0"
-                 data-offset-y="300"
-                 data-origin="bc"
-                 data-duration="0"></div>
-
-            <!-- rev counter -->
-            <div class="ms-layer revborder ms-caption"
-
-                 data-offset-x="0"
-                 data-offset-y="300"
-                 data-origin="bc"
-                 data-type="text"
-                 data-effect="fade"
-                 data-duration="0"
-                 data-ease="easeOutQuart">
-
-
-                <div class="revanimation"
+                <div class="ms-layer revanimation2"
+                     style="bottom: 280%; width: 540%;"
+                     data-offset-x="0"
+                     data-offset-y="300"
+                     data-origin="bc"
                      data-duration="0"></div>
 
-                <!-- revtext -->
-
-
-                <div class="ms-layer ms-caption heading"
+                <!-- rev counter -->
+                <div class="ms-layer revborder ms-caption"
                      data-offset-x="0"
-                     data-offset-y="460"
+                     data-offset-y="300"
                      data-origin="bc"
                      data-type="text"
                      data-effect="fade"
-                     data-duration="3800"
+                     data-duration="0"
                      data-ease="easeOutQuart">
-                    1995
+
+
+                    <!--<div class="revanimation"-->
+                    <!--data-duration="0"></div>-->
+                    <!-- revtext -->
+
+
+                    <div class="ms-layer ms-caption heading"
+                         data-offset-x="0"
+                         data-offset-y="460"
+                         data-origin="bc"
+                         data-type="text"
+                         data-effect="fade"
+                         data-duration="3800"
+                         data-ease="easeOutQuart">
+                        WWTC
+                    </div>
+
+
+                    <div class="ms-layer ms-caption subheading"
+                         data-offset-x="5"
+                         data-offset-y="450"
+                         data-origin="bc"
+                         data-type="text"
+                         data-effect="fade"
+                         data-duration="3800"
+                         data-ease="easeOutQuart">
+                        FIA World Touring Car Championship
+                    </div>
+
                 </div>
 
 
-                <div class="ms-layer ms-caption subheading"
-                     data-offset-x="10"
-                     data-offset-y="420"
-                     data-origin="bc"
+                <!-- slide text layer -->
+                <div class="mytext ms-layer ms-caption text2"
+                     data-offset-x="126"
+                     data-offset-y="80"
+                     data-origin="tl"
                      data-type="text"
-                     data-effect="fade"
-                     data-duration="3800"
+                     data-effect="left(long)"
+                     data-duration="2000"
                      data-ease="easeOutQuart">
-                    1995 First Generation Integra Type R <br/> (Available in Japan only)
+
+
+                    The new Honda Civic Type <span style="color:red"
+                                                   ;>R</span> has added motorsport honors to its growing list of plaudits,
+                    as Honda Yuasa Racing clinched the drivers and manufacturers championship in the 2015 Dunlop MSA British
+                    Touring Car Championship in a tense final round at Brands Hatch.
+                    <br />
+                    <br />
+                    Continuing the success story for the most high performance car ever to wear the red ‘H’ badge, the new
+                    Honda Civic Type <span style="color:red"
+                                           ;>R</span> was developed with help from the brand’s World Touring Car Team. Vital
+                    analysis and feedback from the track informed decisions about performance and styling, supporting the
+                    British team to driver and manufacturer titles in its first competitive year.
+
                 </div>
 
-            </div>
+                <!--spec block-->
+                <div class="ms-layer specs spec2 ms-caption"
+                     data-offset-x="150"
+                     data-offset-y="480"
+                     data-origin="tl"
+                     data-type="text"
+                     data-effect="bottom(200|800)"
+                     data-duration="1800"
+                     data-ease="easeOutQuart">
+
+                    Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp;3.0L Six-cylinder DOHC VTEC <br />
+                    Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 280PS / 7,300rpm <br />
+                    Maximum Torque: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 30.0kg · m / 5,400 rpm
+
+                </div>
 
 
-            <!--spec block-->
-
-            <div class="ms-layer specs spec4 ms-caption"
-                 data-offset-x="150"
-                 data-offset-y="480"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="bottom(200|800)"
-                 data-duration="1800"
-                 data-ease="easeOutQuart">
-
-                Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.8L
-                Four-cylinder DOHC VTEC <br/>
-                Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 200PS / 8,000 rpm <br/>
-                Maximum Torque: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 18.5kg · m / 7,500 rpm
-
-            </div>
-
-
-            <!-- slide text layer -->
-            <div class="mytext ms-layer ms-caption"
-                 data-offset-x="126"
-                 data-offset-y="80"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="left(long)"
-                 data-duration="2000"
-                 data-ease="easeOutQuart">
-
-
-                In 1995 Honda introduced the Integra Type <span style="color:red"
-                                                                ;>R</span>. This was a more down to earth car accessible
-                to customers. The Integra had a reputation of delivering nimble handling and Honda engineers applied
-                similar principles to those applied to the NSX Type <span style="color:red"
-                                                                          ;>R</span>, reducing the base weight of the
-                car and applying hard “track ready” suspension. Following this level of fine tuning and testing, the
-                piston speed of this car was said to be faster than that of the F1 cars of the time.
+                <!--car image layer-->
+                <img class="ms-layer car2 allcars"
+                     alt="car"
+                     data-offset-x="-100"
+                     data-offset-y="0"
+                     data-origin="br"
+                     data-type="image"
+                     data-effect="right(long)"
+                     data-duration="1200"
+                     data-ease="linear"
+                     data-delay="800"
+                     data-hide-effect="fade"
+                     src="masterslider/blank.gif"
+                     data-src="masterslider/images/car-2.png" />
 
 
             </div>
+            <!-- end of slide -->
+            <!-- 3 new slide -->
+            <div class="ms-slide">
 
-            <!--car image layer-->
-            <img class="ms-layer car4"
-                 alt="car"
-                 data-offset-x="-230"
-                 data-offset-y="10"
-                 data-origin="br"
-                 data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
-                 data-ease="linear"
-                 data-delay="800"
-                 data-hide-effect="fade"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/car-4.png"
-            />
+                <!-- slide background -->
+                <img src="masterslider/style/blank.gif"
+                     data-src="masterslider/images/bg-garage.png"
+                     alt="bg-racetrack" />
 
-        </div>
-        <!-- end of slide -->
-
-
-        <!-- 5 new slide -->
-
-        <div class="ms-slide">
-
-            <!-- slide background -->
-            <img src="masterslider/style/blank.gif"
-                 data-src="masterslider/images/bg-garage.png"
-                 alt="bg-racetrack"/>
-
-            <div class="ms-layer revanimation5"
-                 style="bottom: 280%; width: 540%;"
-                 data-offset-x="0"
-                 data-offset-y="300"
-                 data-origin="bc"
-                 data-duration="0"></div>
-
-            <!-- rev counter -->
-            <div class="ms-layer revborder ms-caption"
-
-                 data-offset-x="0"
-                 data-offset-y="300"
-                 data-origin="bc"
-                 data-type="text"
-                 data-effect="fade"
-                 data-duration="0"
-                 data-ease="easeOutQuart">
-
-
-                <!-- revtext -->
-
-
-                <div class="ms-layer ms-caption heading"
+                <div class="ms-layer revanimation3"
+                     style="bottom: 280%; width: 540%;"
                      data-offset-x="0"
-                     data-offset-y="460"
+                     data-offset-y="300"
                      data-origin="bc"
-                     data-type="text"
-                     data-effect="fade"
-                     data-duration="3800"
-                     data-ease="easeOutQuart">
-                    1997
-                </div>
-
-
-                <div class="ms-layer ms-caption subheading"
-                     data-offset-x="0"
-                     data-offset-y="420"
-                     data-origin="bc"
-                     data-type="text"
-                     data-effect="fade"
-                     data-duration="3800"
-                     data-ease="easeOutQuart">
-                    1997 First Generation Civic Type R <br/> (Available in Japan only)
-                </div>
-
-            </div>
-
-
-            <!--spec block-->
-
-            <div class="ms-layer specs spec5"
-                 data-offset-x="150"
-                 data-offset-y="430"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="bottom(200|800)"
-                 data-duration="1800"
-                 data-ease="easeOutQuart">
-
-                Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.6L
-                Four-cylinder DOHC VTEC <br/>
-                Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 185PS / 8,200 rpm <br/>
-                Maximum Torque: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 16.3kg · m / 7,500 rpm
-
-            </div>
-
-
-            <!-- slide text layer -->
-            <div class="mytext ms-layer ms-caption"
-                 data-offset-x="126"
-                 data-offset-y="80"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="left(long)"
-                 data-duration="2000"
-                 data-ease="easeOutQuart">
-
-                The Civic Type <span style="color:red"
-                                     ;>R</span> became the first Civic to receive the honor of the red H badge.
-                <br/>
-                Before it could meet the challenge of being classed as a Type <span style="color:red"
-                                                                                    ;>R</span> we needed to implement
-                some major changes to what was a popular 3-door hatchback. Alterations to improve the handling included
-                reducing overall weight, returning the suspension and increasing the rigidity of the chassis.
-
-            </div>
-
-            <!--car image layer-->
-            <img class="ms-layer car5"
-                 alt="car"
-                 data-offset-x="-300"
-                 data-offset-y="5"
-                 data-origin="br"
-                 data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
-                 data-ease="linear"
-                 data-delay="800"
-                 data-hide-effect="fade"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/car-5.png"
-            />
-
-
-        </div>
-        <!-- end of slide -->
-
-
-        <!-- 6 new slide -->
-        <div class="ms-slide">
-
-            <!-- slide background -->
-            <img src="masterslider/style/blank.gif"
-                 data-src="masterslider/images/bg-garage.png"
-                 alt="bg-racetrack"/>
-
-            <div class="ms-layer revanimation6"
-                 style="bottom: 280%; width: 540%;"
-                 data-offset-x="0"
-                 data-offset-y="300"
-                 data-origin="bc"
-                 data-duration="0"></div>
-
-            <!-- rev counter -->
-            <div class="ms-layer revborder ms-caption"
-
-                 data-offset-x="0"
-                 data-offset-y="300"
-                 data-origin="bc"
-                 data-type="text"
-                 data-effect="fade"
-                 data-duration="0"
-                 data-ease="easeOutQuart">
-
-
-                <!-- revtext -->
-                <div class="ms-layer ms-caption heading"
-                     data-offset-x="0"
-                     data-offset-y="460"
-                     data-origin="bc"
-                     data-type="text"
-                     data-effect="fade"
-                     data-duration="3800"
-                     data-ease="easeOutQuart">
-                    1998
-                </div>
-
-
-                <div class="ms-layer ms-caption subheading"
-                     data-offset-x="0"
-                     data-offset-y="410"
-                     data-origin="bc"
-                     data-type="text"
-                     data-effect="fade"
-                     data-duration="3800"
-                     data-ease="easeOutQuart">
-                    <span style="font-size:16px">1998 Integra Type R <br/> (Available in Europe and U.S.) This was the first <br/> Type R model introduced in Europe</span>
-                </div>
-
-            </div>
-
-            <!--spec block-->
-
-            <div class="ms-layer specs spec6"
-                 data-offset-x="150"
-                 data-offset-y="370"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="bottom(200|800)"
-                 data-duration="1800"
-                 data-ease="easeOutQuart">
-                Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.8L
-                Four-cylinder DOHC VTEC <br/>
-                Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2190PS / 8,000 rpm <br/>
-                Maximum Torque: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 178 N · m / 7,300 rpm
-
-            </div>
-
-
-            <!-- slide text layer -->
-            <div class="mytext ms-layer ms-caption"
-                 data-offset-x="126"
-                 data-offset-y="80"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="left(long)"
-                 data-duration="2000"
-                 data-ease="easeOutQuart">
-
-                The first Integra Type <span style="color:red"
-                                             ;>R</span> to reach European and American shores, and what a car to achieve
-                that. There’s the thinner windscreen glass, lack of sound-deadening, a stiffer chassis and limited slip
-                diff. It weighed in at just 1100kg, could reach 0-60mph in 6.5 seconds and top out at 143mph.
-
-
-            </div>
-
-            <!--car image layer-->
-            <img class="ms-layer car6"
-                 alt="car"
-                 data-offset-x="-200"
-                 data-offset-y="0"
-                 data-origin="br"
-                 data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
-                 data-ease="linear"
-                 data-delay="800"
-                 data-hide-effect="fade"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/car-6.png"
-            />
-
-            <!-- rev counter -->
-            <div class="div0">
-                <div class="div1"></div>
-            </div>
-        </div>
-        <!-- end of slide -->
-
-
-        <!-- 7 new slide -->
-        <div class="ms-slide">
-
-            <!-- slide background -->
-            <img src="masterslider/style/blank.gif"
-                 data-src="masterslider/images/bg-garage.png"
-                 alt="bg-racetrack"/>
-
-            <div class="ms-layer revanimation7"
-                 style="bottom: 280%; width: 540%;"
-                 data-offset-x="0"
-                 data-offset-y="300"
-                 data-origin="bc"
-                 data-duration="0"></div>
-
-            <!-- rev counter -->
-            <div class="ms-layer revborder ms-caption"
-
-                 data-offset-x="0"
-                 data-offset-y="300"
-                 data-origin="bc"
-                 data-type="text"
-                 data-effect="fade"
-                 data-duration="0"
-                 data-ease="easeOutQuart">
-
-
-                <div class="revanimation"
                      data-duration="0"></div>
 
-                <!-- revtext -->
-
-
-                <div class="ms-layer ms-caption heading"
+                <!-- rev counter -->
+                <div class="ms-layer revborder ms-caption"
                      data-offset-x="0"
-                     data-offset-y="460"
+                     data-offset-y="300"
                      data-origin="bc"
                      data-type="text"
                      data-effect="fade"
-                     data-duration="3800"
+                     data-duration="0"
                      data-ease="easeOutQuart">
-                    1999
+
+
+                    <div class="revanimation"
+                         data-duration="0"></div>
+
+                    <!-- revtext -->
+
+
+                    <div class="ms-layer ms-caption heading"
+                         data-offset-x="0"
+                         data-offset-y="460"
+                         data-origin="bc"
+                         data-type="text"
+                         data-effect="fade"
+                         data-duration="3800"
+                         data-ease="easeOutQuart">
+                        1992
+                    </div>
+
+
+                    <div class="ms-layer ms-caption subheading"
+                         data-offset-x="0"
+                         data-offset-y="420"
+                         data-origin="bc"
+                         data-type="text"
+                         data-effect="fade"
+                         data-duration="3800"
+                         data-ease="easeOutQuart">
+                        1992 First Generation NSX Type R <br /> (Available in Japan only)
+                    </div>
+
                 </div>
 
 
-                <div class="ms-layer ms-caption subheading"
-                     data-offset-x="0"
-                     data-offset-y="420"
-                     data-origin="bc"
+                <!--spec block-->
+
+                <div class="ms-layer specs spec3 ms-caption"
+                     data-offset-x="150"
+                     data-offset-y="400"
+                     data-origin="tl"
                      data-type="text"
-                     data-effect="fade"
-                     data-duration="3800"
+                     data-effect="bottom(200|800)"
+                     data-duration="1800"
                      data-ease="easeOutQuart">
-                    1999 Accord Type R <br/> (Available in Europe only)
+
+                    Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp;3.0L Six-cylinder DOHC VTEC <br />
+                    Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 280PS / 7,300rpm <br />
+                    Maximum Torque: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 30.0kg · m / 5,400 rpm
+
                 </div>
 
-            </div>
+                <!-- slide text layer -->
+                <div class="mytext ms-layer ms-caption "
+                     data-offset-x="126"
+                     data-offset-y="80"
+                     data-origin="tl"
+                     data-type="text"
+                     data-effect="left(long)"
+                     data-duration="2000"
+                     data-ease="easeOutQuart">
 
-            <!--spec block-->
-
-            <div class="ms-layer specs spec7"
-                 data-offset-x="150"
-                 data-offset-y="460"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="bottom(200|800)"
-                 data-duration="1800"
-                 data-ease="easeOutQuart">
-
-                Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.2L
-                Four-cylinder DOHC i-VTEC <br/>
-                Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 212PS / 7,200 rpm <br/>
-                Maximum Torque: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 215N · m / 6,700 rpm
-
-            </div>
+                    This car marked the beginning of the Type <span style="color:red"
+                                                                    ;>R</span> story. The aim was to develop a car that
+                    delivered overwhelming driving pleasure and the speed of a racing car. The design language of NSX Type
+                    <span style="color:red"
+                          ;>R</span> echoes the image of an F1 racing machine. This was also the first time that the red
+                    Honda emblem and championship white body colour was introduced.
 
 
-            <!-- slide text layer -->
-            <div class="mytext ms-layer ms-caption"
-                 data-offset-x="126"
-                 data-offset-y="80"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="left(long)"
-                 data-duration="2000"
-                 data-ease="easeOutQuart">
+                </div>
 
-                For those wanting a bit more space in their practical performance Honda, in 1999 the Accord Type
-                <span style="color:red"
-                      ;>R</span> went on sale. All the usual Type <span style="color:red"
-                                                                        ;>R</span> flourishes applied - stiffer chassis,
-                slippy diff, alloys, some <span style="color:red"
-                                                ;>R</span>-based interior appointments and a high-revving motor. It
-                featured a 2.2-litre VTEC engine with 215bhp, as well as a limited-slip differential and a host of
-                upgrades over the standard Accord. Like the earlier Integra Type <span style="color:red"
-                                                                                       ;>R</span>, this model was
-                fantastic to drive.
+                <!--car image layer-->
+                <a href="#ex1"
+                   rel="modal:open">
+                    <img class="ms-layer car3"
+                         alt="car"
+                         data-offset-x="1000"
+                         data-offset-y="-50"
+                         data-origin="bl"
+                         data-type="image"
+                         data-effect="right(long)"
+                         data-duration="1200"
+                         data-ease="linear"
+                         data-delay="800"
+                         data-hide-effect="fade"
+                         src="masterslider/blank.gif"
+                         data-src="masterslider/images/car-3.png" />
+                </a>
 
 
             </div>
+            <!-- end of slide -->
+            <!-- 4 new slide -->
+            <div class="ms-slide">
 
-            <!--car image layer-->
-            <img class="ms-layer car7"
-                 alt="car"
-                 data-offset-x="-200"
-                 data-offset-y="0"
-                 data-origin="br"
-                 data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
-                 data-ease="linear"
-                 data-delay="800"
-                 data-hide-effect="fade"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/car-7.png"
-            />
+                <!-- slide background -->
+                <img src="masterslider/style/blank.gif"
+                     data-src="masterslider/images/bg-garage.png"
+                     alt="bg-racetrack" />
 
-            <!-- rev counter -->
-            <div class="div0">
-                <div class="div1"></div>
-            </div>
-        </div>
-        <!-- end of slide -->
-
-
-        <!-- 8 new slide -->
-        <div class="ms-slide">
-
-            <!-- slide background -->
-            <img src="masterslider/style/blank.gif"
-                 data-src="masterslider/images/bg-garage.png"
-                 alt="bg-racetrack"/>
-
-            <div class="ms-layer revanimation8"
-                 style="bottom: 280%; width: 540%;"
-                 data-offset-x="0"
-                 data-offset-y="300"
-                 data-origin="bc"
-                 data-duration="0"></div>
-
-            <!-- rev counter -->
-            <div class="ms-layer revborder ms-caption"
-
-                 data-offset-x="0"
-                 data-offset-y="300"
-                 data-origin="bc"
-                 data-type="text"
-                 data-effect="fade"
-                 data-duration="0"
-                 data-ease="easeOutQuart">
-
-
-                <div class="revanimation"
+                <div class="ms-layer revanimation4"
+                     style="bottom: 280%; width: 540%;"
+                     data-offset-x="0"
+                     data-offset-y="300"
+                     data-origin="bc"
                      data-duration="0"></div>
 
-                <!-- revtext -->
-
-
-                <div class="ms-layer ms-caption heading"
+                <!-- rev counter -->
+                <div class="ms-layer revborder ms-caption"
                      data-offset-x="0"
+                     data-offset-y="300"
+                     data-origin="bc"
+                     data-type="text"
+                     data-effect="fade"
+                     data-duration="0"
+                     data-ease="easeOutQuart">
+
+
+                    <div class="revanimation"
+                         data-duration="0"></div>
+
+                    <!-- revtext -->
+
+
+                    <div class="ms-layer ms-caption heading"
+                         data-offset-x="0"
+                         data-offset-y="460"
+                         data-origin="bc"
+                         data-type="text"
+                         data-effect="fade"
+                         data-duration="3800"
+                         data-ease="easeOutQuart">
+                        1995
+                    </div>
+
+
+                    <div class="ms-layer ms-caption subheading"
+                         data-offset-x="10"
+                         data-offset-y="420"
+                         data-origin="bc"
+                         data-type="text"
+                         data-effect="fade"
+                         data-duration="3800"
+                         data-ease="easeOutQuart">
+                        1995 First Generation Integra Type R <br /> (Available in Japan only)
+                    </div>
+
+                </div>
+
+
+                <!--spec block-->
+
+                <div class="ms-layer specs spec4 ms-caption"
+                     data-offset-x="150"
+                     data-offset-y="480"
+                     data-origin="tl"
+                     data-type="text"
+                     data-effect="bottom(200|800)"
+                     data-duration="1800"
+                     data-ease="easeOutQuart">
+
+                    Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.8L
+                    Four-cylinder DOHC VTEC <br />
+                    Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 200PS / 8,000 rpm <br />
+                    Maximum Torque: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 18.5kg · m / 7,500 rpm
+
+                </div>
+
+
+                <!-- slide text layer -->
+                <div class="mytext ms-layer ms-caption"
+                     data-offset-x="126"
+                     data-offset-y="80"
+                     data-origin="tl"
+                     data-type="text"
+                     data-effect="left(long)"
+                     data-duration="2000"
+                     data-ease="easeOutQuart">
+
+
+                    In 1995 Honda introduced the Integra Type <span style="color:red"
+                                                                    ;>R</span>. This was a more down to earth car accessible
+                    to customers. The Integra had a reputation of delivering nimble handling and Honda engineers applied
+                    similar principles to those applied to the NSX Type <span style="color:red"
+                                                                              ;>R</span>, reducing the base weight of the
+                    car and applying hard “track ready” suspension. Following this level of fine tuning and testing, the
+                    piston speed of this car was said to be faster than that of the F1 cars of the time.
+
+
+                </div>
+
+                <!--car image layer-->
+                <img class="ms-layer car4"
+                     alt="car"
+                     data-offset-x="-230"
+                     data-offset-y="10"
+                     data-origin="br"
+                     data-type="image"
+                     data-effect="right(long)"
+                     data-duration="1200"
+                     data-ease="linear"
+                     data-delay="800"
+                     data-hide-effect="fade"
+                     src="masterslider/blank.gif"
+                     data-src="masterslider/images/car-4.png" />
+
+            </div>
+            <!-- end of slide -->
+            <!-- 5 new slide -->
+
+            <div class="ms-slide">
+
+                <!-- slide background -->
+                <img src="masterslider/style/blank.gif"
+                     data-src="masterslider/images/bg-garage.png"
+                     alt="bg-racetrack" />
+
+                <div class="ms-layer revanimation5"
+                     style="bottom: 280%; width: 540%;"
+                     data-offset-x="0"
+                     data-offset-y="300"
+                     data-origin="bc"
+                     data-duration="0"></div>
+
+                <!-- rev counter -->
+                <div class="ms-layer revborder ms-caption"
+                     data-offset-x="0"
+                     data-offset-y="300"
+                     data-origin="bc"
+                     data-type="text"
+                     data-effect="fade"
+                     data-duration="0"
+                     data-ease="easeOutQuart">
+
+
+                    <!-- revtext -->
+
+
+                    <div class="ms-layer ms-caption heading"
+                         data-offset-x="0"
+                         data-offset-y="460"
+                         data-origin="bc"
+                         data-type="text"
+                         data-effect="fade"
+                         data-duration="3800"
+                         data-ease="easeOutQuart">
+                        1997
+                    </div>
+
+
+                    <div class="ms-layer ms-caption subheading"
+                         data-offset-x="0"
+                         data-offset-y="420"
+                         data-origin="bc"
+                         data-type="text"
+                         data-effect="fade"
+                         data-duration="3800"
+                         data-ease="easeOutQuart">
+                        1997 First Generation Civic Type R <br /> (Available in Japan only)
+                    </div>
+
+                </div>
+
+
+                <!--spec block-->
+
+                <div class="ms-layer specs spec5"
+                     data-offset-x="150"
+                     data-offset-y="430"
+                     data-origin="tl"
+                     data-type="text"
+                     data-effect="bottom(200|800)"
+                     data-duration="1800"
+                     data-ease="easeOutQuart">
+
+                    Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.6L
+                    Four-cylinder DOHC VTEC <br />
+                    Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 185PS / 8,200 rpm <br />
+                    Maximum Torque: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 16.3kg · m / 7,500 rpm
+
+                </div>
+
+
+                <!-- slide text layer -->
+                <div class="mytext ms-layer ms-caption"
+                     data-offset-x="126"
+                     data-offset-y="80"
+                     data-origin="tl"
+                     data-type="text"
+                     data-effect="left(long)"
+                     data-duration="2000"
+                     data-ease="easeOutQuart">
+
+                    The Civic Type <span style="color:red"
+                                         ;>R</span> became the first Civic to receive the honor of the red H badge.
+                    <br />
+                    Before it could meet the challenge of being classed as a Type <span style="color:red"
+                                                                                        ;>R</span> we needed to implement
+                    some major changes to what was a popular 3-door hatchback. Alterations to improve the handling included
+                    reducing overall weight, returning the suspension and increasing the rigidity of the chassis.
+
+                </div>
+
+                <!--car image layer-->
+                <img class="ms-layer car5"
+                     alt="car"
+                     data-offset-x="-300"
+                     data-offset-y="5"
+                     data-origin="br"
+                     data-type="image"
+                     data-effect="right(long)"
+                     data-duration="1200"
+                     data-ease="linear"
+                     data-delay="800"
+                     data-hide-effect="fade"
+                     src="masterslider/blank.gif"
+                     data-src="masterslider/images/car-5.png" />
+
+
+            </div>
+            <!-- end of slide -->
+            <!-- 6 new slide -->
+            <div class="ms-slide">
+
+                <!-- slide background -->
+                <img src="masterslider/style/blank.gif"
+                     data-src="masterslider/images/bg-garage.png"
+                     alt="bg-racetrack" />
+
+                <div class="ms-layer revanimation6"
+                     style="bottom: 280%; width: 540%;"
+                     data-offset-x="0"
+                     data-offset-y="300"
+                     data-origin="bc"
+                     data-duration="0"></div>
+
+                <!-- rev counter -->
+                <div class="ms-layer revborder ms-caption"
+                     data-offset-x="0"
+                     data-offset-y="300"
+                     data-origin="bc"
+                     data-type="text"
+                     data-effect="fade"
+                     data-duration="0"
+                     data-ease="easeOutQuart">
+
+
+                    <!-- revtext -->
+                    <div class="ms-layer ms-caption heading"
+                         data-offset-x="0"
+                         data-offset-y="460"
+                         data-origin="bc"
+                         data-type="text"
+                         data-effect="fade"
+                         data-duration="3800"
+                         data-ease="easeOutQuart">
+                        1998
+                    </div>
+
+
+                    <div class="ms-layer ms-caption subheading"
+                         data-offset-x="0"
+                         data-offset-y="390"
+                         data-origin="bc"
+                         data-type="text"
+                         data-effect="fade"
+                         data-duration="3800"
+                         data-ease="easeOutQuart">
+                        <span>1998 Integra Type R <br /> (Available in Europe and U.S.) This was the first <br /> Type R model introduced in Europe</span>
+                    </div>
+
+                </div>
+
+                <!--spec block-->
+
+                <div class="ms-layer specs spec6"
+                     data-offset-x="150"
+                     data-offset-y="370"
+                     data-origin="tl"
+                     data-type="text"
+                     data-effect="bottom(200|800)"
+                     data-duration="1800"
+                     data-ease="easeOutQuart">
+                    Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.8L
+                    Four-cylinder DOHC VTEC <br />
+                    Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2190PS / 8,000 rpm <br />
+                    Maximum Torque: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 178 N · m / 7,300 rpm
+
+                </div>
+
+
+                <!-- slide text layer -->
+                <div class="mytext ms-layer ms-caption"
+                     data-offset-x="126"
+                     data-offset-y="80"
+                     data-origin="tl"
+                     data-type="text"
+                     data-effect="left(long)"
+                     data-duration="2000"
+                     data-ease="easeOutQuart">
+
+                    The first Integra Type <span style="color:red"
+                                                 ;>R</span> to reach European and American shores, and what a car to achieve
+                    that. There’s the thinner windscreen glass, lack of sound-deadening, a stiffer chassis and limited slip
+                    diff. It weighed in at just 1100kg, could reach 0-60mph in 6.5 seconds and top out at 143mph.
+
+
+                </div>
+
+                <!--car image layer-->
+                <img class="ms-layer car6"
+                     alt="car"
+                     data-offset-x="-200"
+                     data-offset-y="30"
+                     data-origin="br"
+                     data-type="image"
+                     data-effect="right(long)"
+                     data-duration="1200"
+                     data-ease="linear"
+                     data-delay="800"
+                     data-hide-effect="fade"
+                     src="masterslider/blank.gif"
+                     data-src="masterslider/images/car-6.png" />
+
+                <!-- rev counter -->
+                <div class="div0">
+                    <div class="div1"></div>
+                </div>
+            </div>
+            <!-- end of slide -->
+            <!-- 7 new slide -->
+            <div class="ms-slide">
+
+                <!-- slide background -->
+                <img src="masterslider/style/blank.gif"
+                     data-src="masterslider/images/bg-garage.png"
+                     alt="bg-racetrack" />
+
+                <div class="ms-layer revanimation7"
+                     style="bottom: 280%; width: 540%;"
+                     data-offset-x="0"
+                     data-offset-y="300"
+                     data-origin="bc"
+                     data-duration="0"></div>
+
+                <!-- rev counter -->
+                <div class="ms-layer revborder ms-caption"
+                     data-offset-x="0"
+                     data-offset-y="300"
+                     data-origin="bc"
+                     data-type="text"
+                     data-effect="fade"
+                     data-duration="0"
+                     data-ease="easeOutQuart">
+
+
+                    <div class="revanimation"
+                         data-duration="0"></div>
+
+                    <!-- revtext -->
+
+
+                    <div class="ms-layer ms-caption heading"
+                         data-offset-x="0"
+                         data-offset-y="460"
+                         data-origin="bc"
+                         data-type="text"
+                         data-effect="fade"
+                         data-duration="3800"
+                         data-ease="easeOutQuart">
+                        1999
+                    </div>
+
+
+                    <div class="ms-layer ms-caption subheading"
+                         data-offset-x="0"
+                         data-offset-y="420"
+                         data-origin="bc"
+                         data-type="text"
+                         data-effect="fade"
+                         data-duration="3800"
+                         data-ease="easeOutQuart">
+                        1999 Accord Type R <br /> (Available in Europe only)
+                    </div>
+
+                </div>
+
+                <!--spec block-->
+
+                <div class="ms-layer specs spec7"
+                     data-offset-x="150"
                      data-offset-y="460"
-                     data-origin="bc"
+                     data-origin="tl"
                      data-type="text"
-                     data-effect="fade"
-                     data-duration="3800"
+                     data-effect="bottom(200|800)"
+                     data-duration="1800"
                      data-ease="easeOutQuart">
-                    2001
+
+                    Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.2L
+                    Four-cylinder DOHC i-VTEC <br />
+                    Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 212PS / 7,200 rpm <br />
+                    Maximum Torque: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 215N · m / 6,700 rpm
+
                 </div>
 
 
-                <div class="ms-layer ms-caption subheading"
+                <!-- slide text layer -->
+                <div class="mytext ms-layer ms-caption"
+                     data-offset-x="126"
+                     data-offset-y="80"
+                     data-origin="tl"
+                     data-type="text"
+                     data-effect="left(long)"
+                     data-duration="2000"
+                     data-ease="easeOutQuart">
+
+                    For those wanting a bit more space in their practical performance Honda, in 1999 the Accord Type
+                    <span style="color:red"
+                          ;>R</span> went on sale. All the usual Type <span style="color:red"
+                                                                            ;>R</span> flourishes applied - stiffer chassis,
+                    slippy diff, alloys, some <span style="color:red"
+                                                    ;>R</span>-based interior appointments and a high-revving motor. It
+                    featured a 2.2-litre VTEC engine with 215bhp, as well as a limited-slip differential and a host of
+                    upgrades over the standard Accord. Like the earlier Integra Type <span style="color:red"
+                                                                                           ;>R</span>, this model was
+                    fantastic to drive.
+
+
+                </div>
+
+                <!--car image layer-->
+                <img class="ms-layer car7"
+                     alt="car"
+                     data-offset-x="-200"
+                     data-offset-y="0"
+                     data-origin="br"
+                     data-type="image"
+                     data-effect="right(long)"
+                     data-duration="1200"
+                     data-ease="linear"
+                     data-delay="800"
+                     data-hide-effect="fade"
+                     src="masterslider/blank.gif"
+                     data-src="masterslider/images/car-7.png" />
+
+                <!-- rev counter -->
+                <div class="div0">
+                    <div class="div1"></div>
+                </div>
+            </div>
+            <!-- end of slide -->
+            <!-- 8 new slide -->
+            <div class="ms-slide">
+
+                <!-- slide background -->
+                <img src="masterslider/style/blank.gif"
+                     data-src="masterslider/images/bg-garage.png"
+                     alt="bg-racetrack" />
+
+                <div class="ms-layer revanimation8"
+                     style="bottom: 280%; width: 540%;"
                      data-offset-x="0"
-                     data-offset-y="420"
+                     data-offset-y="300"
+                     data-origin="bc"
+                     data-duration="0"></div>
+
+                <!-- rev counter -->
+                <div class="ms-layer revborder ms-caption"
+                     data-offset-x="0"
+                     data-offset-y="300"
                      data-origin="bc"
                      data-type="text"
                      data-effect="fade"
-                     data-duration="3800"
+                     data-duration="0"
                      data-ease="easeOutQuart">
-                    2001 Second Generation Integra Type R <br/> (Available in Japan)
+
+
+                    <div class="revanimation"
+                         data-duration="0"></div>
+
+                    <!-- revtext -->
+
+
+                    <div class="ms-layer ms-caption heading"
+                         data-offset-x="0"
+                         data-offset-y="460"
+                         data-origin="bc"
+                         data-type="text"
+                         data-effect="fade"
+                         data-duration="3800"
+                         data-ease="easeOutQuart">
+                        2001
+                    </div>
+
+
+                    <div class="ms-layer ms-caption subheading"
+                         data-offset-x="0"
+                         data-offset-y="420"
+                         data-origin="bc"
+                         data-type="text"
+                         data-effect="fade"
+                         data-duration="3800"
+                         data-ease="easeOutQuart">
+                        2001 Second Generation Integra Type R <br /> (Available in Japan)
+                    </div>
+
                 </div>
 
-            </div>
+                <!--spec block-->
 
-            <!--spec block-->
-
-            <div class="ms-layer specs spec8"
-                 data-offset-x="150"
-                 data-offset-y="310"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="bottom(100|800)"
-                 data-duration="1800"
-                 data-ease="easeOutQuart">
+                <div class="ms-layer specs spec8"
+                     data-offset-x="150"
+                     data-offset-y="310"
+                     data-origin="tl"
+                     data-type="text"
+                     data-effect="bottom(100|800)"
+                     data-duration="1800"
+                     data-ease="easeOutQuart">
 
 
-                Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.0L
-                Four-cylinder DOHC i-VTEC <br/>
-                Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 162kW [220PS] / 8,000 rpm <br/>
-                Maximum Torque: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 206N · m [21.0kg · m] / 7,000 rpm
+                    Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.0L
+                    Four-cylinder DOHC i-VTEC <br />
+                    Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 162kW [220PS] / 8,000 rpm <br />
+                    Maximum Torque: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 206N · m [21.0kg · m] / 7,000 rpm
 
-            </div>
-            <!-- slide text layer -->
-            <div class="mytext ms-layer ms-caption"
-                 data-offset-x="126"
-                 data-offset-y="80"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="left(long)"
-                 data-duration="2000"
-                 data-ease="easeOutQuart">
+                </div>
+                <!-- slide text layer -->
+                <div class="mytext ms-layer ms-caption"
+                     data-offset-x="126"
+                     data-offset-y="80"
+                     data-origin="tl"
+                     data-type="text"
+                     data-effect="left(long)"
+                     data-duration="2000"
+                     data-ease="easeOutQuart">
 
-                The next IntegraType <span style="color:red"
+                The next Integra Type <span style="color:red"
                                            ;>R</span> to appear in showrooms was released in 2001. It featured a
                 high-revving VTEC engine. It came with a 2.0-litre engine (with 144lb ft of torque), a stiffer chassis,
                 excellent close-ratio six-speed gearbox.
 
 
-            </div>
-
-            <!--car image layer-->
-            <img class="ms-layer car8"
-                 alt="car"
-                 data-offset-x="-300"
-                 data-offset-y="5"
-                 data-origin="br"
-                 data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
-                 data-ease="linear"
-                 data-delay="800"
-                 data-hide-effect="fade"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/car-8.png"
-            />
-
-
-        </div>
-        <!-- end of slide -->
-
-
-        <!-- 9 new slide -->
-        <div class="ms-slide">
-
-            <!-- slide background -->
-            <img src="masterslider/style/blank.gif"
-                 data-src="masterslider/images/bg-garage.png"
-                 alt="bg-racetrack"/>
-
-            <div class="ms-layer revanimation9"
-                 style="bottom: 280%; width: 540%;"
-                 data-offset-x="0"
-                 data-offset-y="300"
-                 data-origin="bc"
-                 data-duration="0"></div>
-
-            <!-- rev counter -->
-            <div class="ms-layer revborder ms-caption"
-
-                 data-offset-x="0"
-                 data-offset-y="300"
-                 data-origin="bc"
-                 data-type="text"
-                 data-effect="fade"
-                 data-duration="0"
-                 data-ease="easeOutQuart">
-
-
-                <!-- revtext -->
-
-
-                <div class="ms-layer ms-caption heading"
-                     data-offset-x="0"
-                     data-offset-y="460"
-                     data-origin="bc"
-                     data-type="text"
-                     data-effect="fade"
-                     data-duration="3800"
-                     data-ease="easeOutQuart">
-                    2001
                 </div>
 
+                <!--car image layer-->
+                <img class="ms-layer car8"
+                     alt="car"
+                     data-offset-x="-300"
+                     data-offset-y="5"
+                     data-origin="br"
+                     data-type="image"
+                     data-effect="right(long)"
+                     data-duration="1200"
+                     data-ease="linear"
+                     data-delay="800"
+                     data-hide-effect="fade"
+                     src="masterslider/blank.gif"
+                     data-src="masterslider/images/car-8.png" />
 
-                <div class="ms-layer ms-caption subheading"
+
+            </div>
+            <!-- end of slide -->
+            <!-- 9 new slide -->
+            <div class="ms-slide">
+
+                <!-- slide background -->
+                <img src="masterslider/style/blank.gif"
+                     data-src="masterslider/images/bg-garage.png"
+                     alt="bg-racetrack" />
+
+                <div class="ms-layer revanimation9"
+                     style="bottom: 280%; width: 540%;"
                      data-offset-x="0"
-                     data-offset-y="420"
+                     data-offset-y="300"
                      data-origin="bc"
-                     data-type="text"
-                     data-effect="fade"
-                     data-duration="3800"
-                     data-ease="easeOutQuart">
-                    2001 Second Generation Civic Type R <br/> (First Civic Type R available in Europe)
-                </div>
-
-            </div>
-
-            <!--spec block-->
-
-            <div class="ms-layer specs spec9"
-                 data-offset-x="150"
-                 data-offset-y="460"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="bottom(200|800)"
-                 data-duration="1800"
-                 data-ease="easeOutQuart">
-
-                Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.0L
-                Four-cylinder DOHC i-VTEC <br/>
-                Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 200PS / 7,400 rpm <br/>
-                Maximum Torque: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 196N · m / 5,900 rpm
-
-            </div>
-
-            <!-- slide text layer -->
-            <div class="mytext ms-layer ms-caption"
-                 data-offset-x="126"
-                 data-offset-y="80"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="left(long)"
-                 data-duration="2000"
-                 data-ease="easeOutQuart">
-
-                The next Civic Type <span style="color:red"
-                                          ;>R</span> to appear in showrooms was released in 2001, and enthusiasts know
-                it as the EP3 model. As with all the other Type <span style="color:red"
-                                                                      ;>R</span>s so far, it featured a high-revving
-                VTEC engine. It came with a 197bhp 2.0-litre engine (with 144lb ft of torque), a stiffer chassis,
-                excellent close-ratio six-speed gearbox and a world of handling fun. This version of the Civic Type
-                <span style="color:red"
-                      ;>R</span> is arguably what made the red badge such a well-known icon.
-
-
-            </div>
-
-            <!--car image layer-->
-            <img class="ms-layer car9"
-                 alt="car"
-                 data-offset-x="-255"
-                 data-offset-y="0"
-                 data-origin="br"
-                 data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
-                 data-ease="linear"
-                 data-delay="800"
-                 data-hide-effect="fade"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/car-9.png"
-            />
-
-
-        </div>
-        <!-- end of slide -->
-
-
-        <!-- 10 new slide -->
-        <div class="ms-slide">
-
-            <!-- slide background -->
-            <img src="masterslider/style/blank.gif"
-                 data-src="masterslider/images/bg-garage.png"
-                 alt="bg-racetrack"/>
-
-            <div class="ms-layer revanimation10"
-                 style="bottom: 280%; width: 540%;"
-                 data-offset-x="0"
-                 data-offset-y="300"
-                 data-origin="bc"
-                 data-duration="0"></div>
-
-            <!-- rev counter -->
-            <div class="ms-layer revborder ms-caption"
-
-                 data-offset-x="0"
-                 data-offset-y="300"
-                 data-origin="bc"
-                 data-type="text"
-                 data-effect="fade"
-                 data-duration="0"
-                 data-ease="easeOutQuart">
-
-
-                <div class="revanimation"
                      data-duration="0"></div>
 
-                <!-- revtext -->
-
-
-                <div class="ms-layer ms-caption heading"
+                <!-- rev counter -->
+                <div class="ms-layer revborder ms-caption"
                      data-offset-x="0"
+                     data-offset-y="300"
+                     data-origin="bc"
+                     data-type="text"
+                     data-effect="fade"
+                     data-duration="0"
+                     data-ease="easeOutQuart">
+
+
+                    <!-- revtext -->
+
+
+                    <div class="ms-layer ms-caption heading"
+                         data-offset-x="0"
+                         data-offset-y="460"
+                         data-origin="bc"
+                         data-type="text"
+                         data-effect="fade"
+                         data-duration="3800"
+                         data-ease="easeOutQuart">
+                        2001
+                    </div>
+
+
+                    <div class="ms-layer ms-caption subheading"
+                         data-offset-x="0"
+                         data-offset-y="420"
+                         data-origin="bc"
+                         data-type="text"
+                         data-effect="fade"
+                         data-duration="3800"
+                         data-ease="easeOutQuart">
+                        2001 Second Generation Civic Type R <br /> (First Civic Type R available in Europe)
+                    </div>
+
+                </div>
+
+                <!--spec block-->
+
+                <div class="ms-layer specs spec9"
+                     data-offset-x="150"
                      data-offset-y="460"
-                     data-origin="bc"
+                     data-origin="tl"
                      data-type="text"
-                     data-effect="fade"
-                     data-duration="3800"
+                     data-effect="bottom(200|800)"
+                     data-duration="1800"
                      data-ease="easeOutQuart">
-                    2002
+
+                    Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.0L
+                    Four-cylinder DOHC i-VTEC <br />
+                    Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 200PS / 7,400 rpm <br />
+                    Maximum Torque: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 196N · m / 5,900 rpm
+
                 </div>
 
+                <!-- slide text layer -->
+                <div class="mytext ms-layer ms-caption"
+                     data-offset-x="126"
+                     data-offset-y="80"
+                     data-origin="tl"
+                     data-type="text"
+                     data-effect="left(long)"
+                     data-duration="2000"
+                     data-ease="easeOutQuart">
 
-                <div class="ms-layer ms-caption subheading"
+                    The next Civic Type <span style="color:red"
+                                              ;>R</span> to appear in showrooms was released in 2001, and enthusiasts know
+                    it as the EP3 model. As with all the other Type <span style="color:red"
+                                                                          ;>R</span>s so far, it featured a high-revving
+                    VTEC engine. It came with a 197bhp 2.0-litre engine (with 144lb ft of torque), a stiffer chassis,
+                    excellent close-ratio six-speed gearbox and a world of handling fun. This version of the Civic Type
+                    <span style="color:red"
+                          ;>R</span> is arguably what made the red badge such a well-known icon.
+
+
+                </div>
+
+                <!--car image layer-->
+                <img class="ms-layer car9"
+                     alt="car"
+                     data-offset-x="-255"
+                     data-offset-y="0"
+                     data-origin="br"
+                     data-type="image"
+                     data-effect="right(long)"
+                     data-duration="1200"
+                     data-ease="linear"
+                     data-delay="800"
+                     data-hide-effect="fade"
+                     src="masterslider/blank.gif"
+                     data-src="masterslider/images/car-9.png" />
+
+
+            </div>
+            <!-- end of slide -->
+            <!-- 10 new slide -->
+            <div class="ms-slide">
+
+                <!-- slide background -->
+                <img src="masterslider/style/blank.gif"
+                     data-src="masterslider/images/bg-garage.png"
+                     alt="bg-racetrack" />
+
+                <div class="ms-layer revanimation10"
+                     style="bottom: 280%; width: 540%;"
                      data-offset-x="0"
-                     data-offset-y="420"
+                     data-offset-y="300"
                      data-origin="bc"
-                     data-type="text"
-                     data-effect="fade"
-                     data-duration="3800"
-                     data-ease="easeOutQuart">
-                    2002 Second Generation NSX Type R <br> (Available in Japan Only)
-                </div>
+                     data-duration="0"></div>
 
-            </div>
-
-            <!--spec block-->
-
-            <div class="ms-layer specs spec10"
-                 data-offset-x="150"
-                 data-offset-y="430"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="bottom(200|800)"
-                 data-duration="1800"
-                 data-ease="easeOutQuart">
-
-                Engine: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3.2L 6
-                cylinder DOHC VTEC <br/>
-                Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; 206kW [280PS] / 7,300 rpm <br/>
-                Maximum Torque: &nbsp; &nbsp; &nbsp; &nbsp; 304N · m [31.0kg · m] / 5,300 rpm
-
-
-            </div>
-
-
-            <!-- slide text layer -->
-            <div class="mytext ms-layer ms-caption"
-                 data-offset-x="126"
-                 data-offset-y="80"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="left(long)"
-                 data-duration="2000"
-                 data-ease="easeOutQuart">
-
-                Second generation NSX Type <span style="color:red"
-                                                 ;>R</span> - another JDM special, featuring a 3.2-litre V6 with 276bhp
-                and 224lb ft of torque. It received the same meticulous attention to weight loss as its predecessor
-                (lack of sound insulation, nor air-con, no power steering, thinner glass,
-                Recaro seats), and weighed in at around 1270kg.
-                <br/>
-                It was also, as you would have guessed, simply magnificent.
-
-
-            </div>
-
-            <!--car image layer-->
-            <img class="ms-layer car10"
-                 alt="car"
-                 data-offset-x="-450"
-                 data-offset-y="-100"
-                 data-origin="br"
-                 data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
-                 data-ease="linear"
-                 data-delay="800"
-                 data-hide-effect="fade"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/car-10.png"
-            />
-        </div>
-        <!-- end of slide -->
-
-
-        <!-- 11 new slide -->
-        <div class="ms-slide">
-
-            <!-- slide background -->
-            <img src="masterslider/style/blank.gif"
-                 data-src="masterslider/images/bg-garage.png"
-                 alt="bg-racetrack"/>
-
-            <div class="ms-layer revanimation11"
-                 style="bottom: 280%; width: 540%;"
-                 data-offset-x="0"
-                 data-offset-y="300"
-                 data-origin="bc"
-                 data-duration="0"></div>
-
-            <!--Raymonds Story Popup-->
-            <a href="#ex2"
-               rel="modal:open"></a>
-            <img class="ms-layer story"
-                 alt="story"
-                 data-offset-x="0"
-                 data-offset-y="10"
-                 data-origin="tc"
-                 data-type="image"
-                 data-effect="top(long)"
-                 data-duration="1200"
-                 data-ease="linear"
-                 data-delay="800"
-                 data-hide-effect="fade"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/Raymonds-type-R-story.png"
-            />
-            </a>
-
-
-            <!-- rev counter -->
-            <div class="ms-layer revborder ms-caption"
-
-                 data-offset-x="0"
-                 data-offset-y="300"
-                 data-origin="bc"
-                 data-type="text"
-                 data-effect="fade"
-                 data-duration="0"
-                 data-ease="easeOutQuart">
-
-
-                <!-- revtext -->
-
-                <div class="ms-layer ms-caption heading"
+                <!-- rev counter -->
+                <div class="ms-layer revborder ms-caption"
                      data-offset-x="0"
-                     data-offset-y="460"
+                     data-offset-y="300"
                      data-origin="bc"
                      data-type="text"
                      data-effect="fade"
-                     data-duration="3800"
+                     data-duration="0"
                      data-ease="easeOutQuart">
-                    2007
+
+
+                    <div class="revanimation"
+                         data-duration="0"></div>
+
+                    <!-- revtext -->
+
+
+                    <div class="ms-layer ms-caption heading"
+                         data-offset-x="0"
+                         data-offset-y="460"
+                         data-origin="bc"
+                         data-type="text"
+                         data-effect="fade"
+                         data-duration="3800"
+                         data-ease="easeOutQuart">
+                        2002
+                    </div>
+
+
+                    <div class="ms-layer ms-caption subheading"
+                         data-offset-x="0"
+                         data-offset-y="420"
+                         data-origin="bc"
+                         data-type="text"
+                         data-effect="fade"
+                         data-duration="3800"
+                         data-ease="easeOutQuart">
+                        2002 Second Generation NSX Type R <br> (Available in Japan Only)
+                    </div>
+
+                </div>
+
+                <!--spec block-->
+
+                <div class="ms-layer specs spec10"
+                     data-offset-x="150"
+                     data-offset-y="430"
+                     data-origin="tl"
+                     data-type="text"
+                     data-effect="bottom(200|800)"
+                     data-duration="1800"
+                     data-ease="easeOutQuart">
+
+                    Engine: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3.2L 6
+                    cylinder DOHC VTEC <br />
+                    Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; 206kW [280PS] / 7,300 rpm <br />
+                    Maximum Torque: &nbsp; &nbsp; &nbsp; &nbsp; 304N · m [31.0kg · m] / 5,300 rpm
+
+
                 </div>
 
 
-                <div class="ms-layer ms-caption subheading"
+                <!-- slide text layer -->
+                <div class="mytext ms-layer ms-caption"
+                     data-offset-x="126"
+                     data-offset-y="80"
+                     data-origin="tl"
+                     data-type="text"
+                     data-effect="left(long)"
+                     data-duration="2000"
+                     data-ease="easeOutQuart">
+
+                    Second generation NSX Type <span style="color:red"
+                                                     ;>R</span> - another JDM special, featuring a 3.2-litre V6 with 276bhp
+                    and 224lb ft of torque. It received the same meticulous attention to weight loss as its predecessor
+                    (lack of sound insulation, nor air-con, no power steering, thinner glass,
+                    Recaro seats), and weighed in at around 1270kg.
+                    <br />
+                    It was also, as you would have guessed, simply magnificent.
+
+
+                </div>
+
+                <!--car image layer-->
+                <img class="ms-layer car10"
+                     alt="car"
+                     data-offset-x="-450"
+                     data-offset-y="-100"
+                     data-origin="br"
+                     data-type="image"
+                     data-effect="right(long)"
+                     data-duration="1200"
+                     data-ease="linear"
+                     data-delay="800"
+                     data-hide-effect="fade"
+                     src="masterslider/blank.gif"
+                     data-src="masterslider/images/car-10.png" />
+            </div>
+            <!-- end of slide -->
+            <!-- 11 new slide -->
+            <div class="ms-slide">
+
+                <!-- slide background -->
+                <img src="masterslider/style/blank.gif"
+                     data-src="masterslider/images/bg-garage.png"
+                     alt="bg-racetrack" />
+
+                <div class="ms-layer revanimation11"
+                     style="bottom: 280%; width: 540%;"
                      data-offset-x="0"
-                     data-offset-y="450"
+                     data-offset-y="300"
                      data-origin="bc"
-                     data-type="text"
-                     data-effect="fade"
-                     data-duration="3800"
-                     data-ease="easeOutQuart">
-                    2007 Third Generation Civic Type R
-                </div>
+                     data-duration="0"></div>
 
-            </div>
-
-            <!--spec block-->
-
-            <div class="ms-layer specs spec11"
-                 data-offset-x="150"
-                 data-offset-y="400"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="bottom(100|800)"
-                 data-duration="1800"
-                 data-ease="easeOutQuart">
-
-                Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp;2.0L
-                Four-cylinder DOHC i-VTEC <br/>
-                Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 165kW [225PS] / 8,000 rpm <br/>
-                Maximum Torque: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 215N · m [21.9kg · m] / 6,100 rpm
-
-            </div>
-
-
-            <!-- slide text layer -->
-            <div class="mytext ms-layer ms-caption"
-                 data-offset-x="126"
-                 data-offset-y="80"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="left(long)"
-                 data-duration="2000"
-                 data-ease="easeOutQuart">
-
-                The next version of the Civic Type <span style="color:red"
-                                                         ;>R</span> appeared, featuring the same engine and
-                drivetrain
-                as the previous model, but with a sleek new shape. Power remained at 197bhp, though torque dipped
-                slightly to 142lb ft. Still, wrapped up in its new aerodynamic outfit and packing that lovely
-                close-ratio six-speed gearbox, it remained a decent hot hatch.
-
-
-            </div>
-
-            <!--car image layer-->
-            <img class="ms-layer car11"
-                 alt="car"
-                 data-offset-x="-360"
-                 data-offset-y="-30"
-                 data-origin="br"
-                 data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
-                 data-ease="linear"
-                 data-delay="800"
-                 data-hide-effect="fade"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/car-11.png"
-            />
-
-            <!-- rev counter -->
-            <div class="div0">
-                <div class="div1"></div>
-            </div>
-        </div>
-        <!-- end of slide -->
-
-
-        <!-- 12 new slide -->
-        <div class="ms-slide">
-
-            <!-- slide background -->
-            <img src="masterslider/style/blank.gif"
-                 data-src="masterslider/images/bg-garage.png"
-                 alt="bg-racetrack"/>
-
-            <div class="ms-layer revanimation12"
-                 style="bottom: 280%; width: 540%;"
-                 data-offset-x="0"
-                 data-offset-y="300"
-                 data-origin="bc"
-                 data-duration="0"></div>
-
-            <!--Nicks Story Popup-->
-            <a href="#ex3"
-               rel="modal:open">
+                <!--Raymonds Story Popup-->
+                <a href="#ex2"
+                   rel="modal:open"></a>
                 <img class="ms-layer story"
                      alt="story"
                      data-offset-x="0"
@@ -1442,691 +1261,808 @@
                      data-delay="800"
                      data-hide-effect="fade"
                      src="masterslider/blank.gif"
-                     data-src="masterslider/images/Nicks-type-R-story.png"
-                />
-            </a>
-
-            <!-- rev counter -->
-            <div class="ms-layer revborder ms-caption"
-
-                 data-offset-x="0"
-                 data-offset-y="300"
-                 data-origin="bc"
-                 data-type="text"
-                 data-effect="fade"
-                 data-duration="0"
-                 data-ease="easeOutQuart">
+                     data-src="masterslider/images/Raymonds-type-R-story.png" />
+                </a>
 
 
-                <div class="revanimation"
+                <!-- rev counter -->
+                <div class="ms-layer revborder ms-caption"
+                     data-offset-x="0"
+                     data-offset-y="300"
+                     data-origin="bc"
+                     data-type="text"
+                     data-effect="fade"
+                     data-duration="0"
+                     data-ease="easeOutQuart">
+
+
+                    <!-- revtext -->
+
+                    <div class="ms-layer ms-caption heading"
+                         data-offset-x="0"
+                         data-offset-y="460"
+                         data-origin="bc"
+                         data-type="text"
+                         data-effect="fade"
+                         data-duration="3800"
+                         data-ease="easeOutQuart">
+                        2007
+                    </div>
+
+
+                    <div class="ms-layer ms-caption subheading"
+                         data-offset-x="0"
+                         data-offset-y="450"
+                         data-origin="bc"
+                         data-type="text"
+                         data-effect="fade"
+                         data-duration="3800"
+                         data-ease="easeOutQuart">
+                        2007 Third Generation Civic Type R
+                    </div>
+
+                </div>
+
+                <!--spec block-->
+
+                <div class="ms-layer specs spec11"
+                     data-offset-x="150"
+                     data-offset-y="400"
+                     data-origin="tl"
+                     data-type="text"
+                     data-effect="bottom(100|800)"
+                     data-duration="1800"
+                     data-ease="easeOutQuart">
+
+                    Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp;2.0L
+                    Four-cylinder DOHC i-VTEC <br />
+                    Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 165kW [225PS] / 8,000 rpm <br />
+                    Maximum Torque: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 215N · m [21.9kg · m] / 6,100 rpm
+
+                </div>
+
+
+                <!-- slide text layer -->
+                <div class="mytext ms-layer ms-caption"
+                     data-offset-x="126"
+                     data-offset-y="80"
+                     data-origin="tl"
+                     data-type="text"
+                     data-effect="left(long)"
+                     data-duration="2000"
+                     data-ease="easeOutQuart">
+
+                    The next version of the Civic Type <span style="color:red"
+                                                             ;>R</span> appeared, featuring the same engine and
+                    drivetrain
+                    as the previous model, but with a sleek new shape. Power remained at 197bhp, though torque dipped
+                    slightly to 142lb ft. Still, wrapped up in its new aerodynamic outfit and packing that lovely
+                    close-ratio six-speed gearbox, it remained a decent hot hatch.
+
+
+                </div>
+
+                <!--car image layer-->
+                <img class="ms-layer car11"
+                     alt="car"
+                     data-offset-x="-360"
+                     data-offset-y="-30"
+                     data-origin="br"
+                     data-type="image"
+                     data-effect="right(long)"
+                     data-duration="1200"
+                     data-ease="linear"
+                     data-delay="800"
+                     data-hide-effect="fade"
+                     src="masterslider/blank.gif"
+                     data-src="masterslider/images/car-11.png" />
+
+                <!-- rev counter -->
+                <div class="div0">
+                    <div class="div1"></div>
+                </div>
+            </div>
+            <!-- end of slide -->
+            <!-- 12 new slide -->
+            <div class="ms-slide">
+
+                <!-- slide background -->
+                <img src="masterslider/style/blank.gif"
+                     data-src="masterslider/images/bg-garage.png"
+                     alt="bg-racetrack" />
+
+                <div class="ms-layer revanimation12"
+                     style="bottom: 280%; width: 540%;"
+                     data-offset-x="0"
+                     data-offset-y="300"
+                     data-origin="bc"
                      data-duration="0"></div>
 
-                <!-- revtext -->
+                <!--Nicks Story Popup-->
+                <a href="#ex3"
+                   rel="modal:open">
+                    <img class="ms-layer story"
+                         alt="story"
+                         data-offset-x="0"
+                         data-offset-y="10"
+                         data-origin="tc"
+                         data-type="image"
+                         data-effect="top(long)"
+                         data-duration="1200"
+                         data-ease="linear"
+                         data-delay="800"
+                         data-hide-effect="fade"
+                         src="masterslider/blank.gif"
+                         data-src="masterslider/images/Nicks-type-R-story.png" />
+                </a>
 
-
-                <div class="ms-layer ms-caption heading"
+                <!-- rev counter -->
+                <div class="ms-layer revborder ms-caption"
                      data-offset-x="0"
-                     data-offset-y="460"
+                     data-offset-y="300"
                      data-origin="bc"
                      data-type="text"
                      data-effect="fade"
-                     data-duration="3800"
+                     data-duration="0"
                      data-ease="easeOutQuart">
-                    2007
+
+
+                    <div class="revanimation"
+                         data-duration="0"></div>
+
+                    <!-- revtext -->
+
+
+                    <div class="ms-layer ms-caption heading"
+                         data-offset-x="0"
+                         data-offset-y="460"
+                         data-origin="bc"
+                         data-type="text"
+                         data-effect="fade"
+                         data-duration="3800"
+                         data-ease="easeOutQuart">
+                        2007
+                    </div>
+
+
+                    <div class="ms-layer ms-caption subheading"
+                         data-offset-x="0"
+                         data-offset-y="420"
+                         data-origin="bc"
+                         data-type="text"
+                         data-effect="fade"
+                         data-duration="3800"
+                         data-ease="easeOutQuart">
+                        2007 Third Generation <br /> Civic Type R (European Version)
+                    </div>
+
+                </div>
+
+                <!--spec block-->
+
+                <div class="ms-layer specs spec12"
+                     data-offset-x="150"
+                     data-offset-y="510"
+                     data-origin="tl"
+                     data-type="text"
+                     data-effect="bottom(200|800)"
+                     data-duration="1800"
+                     data-ease="easeOutQuart">
+
+
+                    Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp;2.0L
+                    Four-cylinder DOHC i-VTEC <br />
+                    Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 148kW [201PS] / 7,800 rpm <br />
+                    Maximum Torque: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 193N · m /5,600 rpm
+
                 </div>
 
 
-                <div class="ms-layer ms-caption subheading"
-                     data-offset-x="0"
-                     data-offset-y="420"
-                     data-origin="bc"
+                <!-- slide text layer -->
+                <div class="mytext ms-layer ms-caption"
+                     data-offset-x="126"
+                     data-offset-y="80"
+                     data-origin="tl"
+                     data-type="text"
+                     data-effect="left(long)"
+                     data-duration="2000"
+                     data-ease="easeOutQuart">
+
+                    The Honda Civic Type <span style="color:red"
+                                               ;>R</span>, indisputably one of the most eagerly awaited performance
+                    hatchbacks in South Africa, finally makes its local debut this month. The launch marks the first
+                    time
+                    the Type <span style="color:red"
+                                   ;>R</span> nameplate has been made available to local punters.
+                    <br />
+                    <br />
+                    Developed by Honda engineers in Japan and Europe, and manufactured at Honda’s state-of-the-art
+                    vehicle
+                    plant in Swindon, UK, the all-new Type <span style="color:red"
+                                                                 ;>R</span> is based on a three-door version of the
+                    latest
+                    generation Honda Civic hatchback. 
+
+
+                </div>
+
+                <!--car image layer-->
+                <img class="ms-layer car12"
+                     alt="car"
+                     data-offset-x="-200"
+                     data-offset-y="-50"
+                     data-origin="br"
+                     data-type="image"
+                     data-effect="right(long)"
+                     data-duration="1200"
+                     data-ease="linear"
+                     data-delay="800"
+                     data-hide-effect="fade"
+                     src="masterslider/blank.gif"
+                     data-src="masterslider/images/car-12.png" />
+
+
+            </div>
+            <!-- end of slide -->
+            <!-- 13 new slide -->
+            <div class="ms-slide">
+
+                <!-- slide background -->
+                <img src="masterslider/style/blank.gif"
+                     data-src="masterslider/images/bg-garage.png"
+                     alt="bg-racetrack" />
+
+                <!--2016-->
+                <div class="ms-layer ms-caption"
+                     style="font-size: 2000%; color: red; font-weight: 700;"
+                     data-offset-x="40"
+                     data-offset-y="-20"
+                     data-origin="tc"
                      data-type="text"
                      data-effect="fade"
-                     data-duration="3800"
+                     data-duration="0"
                      data-ease="easeOutQuart">
-                    2007 Third Generation <br/> Civic Type R (European Version)
+                    2016
                 </div>
 
+
+                <!--spec block-->
+
+                <div class="ms-layer specs spec13"
+                     data-offset-x="150"
+                     data-offset-y="300"
+                     data-origin="tl"
+                     data-type="text"
+                     data-effect="bottom(90)"
+                     data-duration="800"
+                     data-ease="easeOutQuart">
+
+                    Engine: &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.0L
+                    Four-cylinder DOHC i-VTEC <br />
+                    Maximum Output: &nbsp; &nbsp; &nbsp; 148kW [201PS] / 7,800 rpm <br />
+                    Maximum Torque: &nbsp; &nbsp; &nbsp; 193N · m /5,600 rpm
+
+                </div>
+
+
+                <!-- slide text layer -->
+                <div class="mytext ms-layer ms-caption text13"
+                     data-offset-x="126"
+                     data-offset-y="90"
+                     data-origin="tl"
+                     data-type="text"
+                     data-effect="bottom(90)"
+                     data-duration="800"
+                     data-ease="easeOutQuart">
+
+                    The all-new Type <span style="color:red"
+                                           ;>R</span> is here to illustrate just how much racing is entrenched in
+                    Honda’s
+                    DNA. If you are looking for the best performance either on the racetrack or the road, look no
+                    further
+                    than the new Honda Civic Type <span style="color:red"
+                                                        ;>R</span>. The Honda Civic Type <span style="color:red"
+                                                                                               ;>R</span> also set a new
+                    front-drive nurburgring record (7:41).
+
+
+                </div>
+
+                <!--car image layer-->
+                <img class="ms-layer kinghell"
+                     alt="car"
+                     data-offset-x="0"
+                     data-offset-y="0"
+                     data-origin="br"
+                     data-type="image"
+                     data-effect="fade"
+                     data-duration="1200"
+                     data-ease="linear"
+                     data-delay="800"
+                     data-hide-effect="fade"
+                     src="masterslider/blank.gif"
+                     data-src="masterslider/images/Animation5.gif" />
+
+
+                <!--car image layer-->
+                <img class="ms-layer car13"
+                     alt="car"
+                     data-offset-x="200"
+                     data-offset-y="20"
+                     data-origin="br"
+                     data-type="image"
+                     data-effect="right(long)"
+                     data-duration="1200"
+                     data-ease="linear"
+                     data-delay="800"
+                     data-hide-effect="fade"
+                     src="masterslider/blank.gif"
+                     data-src="masterslider/images/car-13.png" />
+
+
+            </div>
+            <!-- end of slide -->
+            <!--social media-->
+            <div style="width:100%;text-align:left;">
+                <div class="social media"
+                     style="height:35px;width:580px; bottom: 50px; left: 5%;margin-right:auto;position:absolute">
+                    <div onclick="window.open('https://twitter.com/hondasa')"
+                         class="twitter"
+                         style="background-repeat:no-repeat;background-image:url('masterslider/images/social/twitter.png');height:40px;width:40px;float:left;cursor:pointer;">
+                    </div>
+                    <div onclick="window.open('https://www.facebook.com/Hondasa/')"
+                         class="twitter"
+                         style="background-repeat:no-repeat;background-image:url('masterslider/images/social/facebook.png');height:40px;width:40px;float:left;cursor:pointer;">
+                    </div>
+                    <!--<div onclick="window.open('https://www.linkedin.com/company/honda-motor-southern-africa')"
+                         class="twitter"
+                         style="background-repeat:no-repeat;background-image:url('masterslider/images/social/linkedin.png');height:40px;width:40px;float:left;cursor:pointer;">
+                    </div>
+                    <div onclick="window.open('https://plus.google.com/+hondasa')"
+                         class="twitter"
+                         style="background-repeat:no-repeat;background-image:url('masterslider/images/social/googleplus.png');height:40px;width:40px;float:left;cursor:pointer;">
+                    </div>
+                    <div onclick="window.open('https://www.instagram.com/honda_sa/')"
+                         class="twitter"
+                         style="background-repeat:no-repeat;background-image:url('masterslider/images/social/instegram.png');height:40px;width:40px;float:left;cursor:pointer;">
+                    </div>
+                    <div onclick="window.open('https://www.pinterest.com/honda/')"
+                         class="twitter"
+                         style="background-repeat:no-repeat;background-image:url('masterslider/images/social/pintrest.png');height:40px;width:40px;float:left;cursor:pointer;">
+                    </div>
+                    <div onclick="window.open('https://dribbble.com/hondasa')"
+                         class="twitter"
+                         style="background-repeat:no-repeat;background-image:url('masterslider/images/social/idklol.png');height:40px;width:40px;float:left;cursor:pointer;">
+                    </div>-->
+                </div>
             </div>
 
-            <!--spec block-->
 
-            <div class="ms-layer specs spec12"
-                 data-offset-x="150"
-                 data-offset-y="510"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="bottom(200|800)"
-                 data-duration="1800"
-                 data-ease="easeOutQuart">
+            <!--chainblock-->
+            <div style="width:100%;text-align:center">
+                <div id="chainblock"
+                     style="position:relative;height:20px;width:580px; bottom: 50px; margin-left:auto;margin-right:auto">
+                    <div onclick="slider.api.gotoSlide(0);"
+                         class="chainball"
+                         data-position="0"
+                         style="background-repeat:no-repeat;background-image:url('masterslider/images/start.png');height:13px;width:13px;float:left;cursor:pointer;"></div>
+                    <div onclick="slider.api.gotoSlide(1);"
+                         class="chainball"
+                         data-position="1"
+                         style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"></div>
+                    <div onclick="slider.api.gotoSlide(2);"
+                         class="chainball"
+                         data-position="2"
+                         style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"></div>
+                    <div onclick="slider.api.gotoSlide(3);"
+                         class="chainball"
+                         data-position="3"
+                         style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"></div>
+                    <div onclick="slider.api.gotoSlide(4);"
+                         class="chainball"
+                         data-position="4"
+                         style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"></div>
+                    <div onclick="slider.api.gotoSlide(5);"
+                         class="chainball"
+                         data-position="5"
+                         style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"></div>
+                    <div onclick="slider.api.gotoSlide(6);"
+                         class="chainball"
+                         data-position="6"
+                         style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"></div>
+                    <div onclick="slider.api.gotoSlide(7);"
+                         class="chainball"
+                         data-position="7"
+                         style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"></div>
+                    <div onclick="slider.api.gotoSlide(8);"
+                         class="chainball"
+                         data-position="8"
+                         style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"></div>
+                    <div onclick="slider.api.gotoSlide(9);"
+                         class="chainball"
+                         data-position="9"
+                         style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"></div>
+                    <div onclick="slider.api.gotoSlide(10);"
+                         class="chainball"
+                         data-position="10"
+                         style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"></div>
+                    <div onclick="slider.api.gotoSlide(11);"
+                         class="chainball"
+                         data-position="11"
+                         style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"></div>
+                    <div onclick="slider.api.gotoSlide(12);"
+                         class="chainball"
+                         data-position="12"
+                         style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"></div>
 
-
-                Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                &nbsp;2.0L
-                Four-cylinder DOHC i-VTEC <br/>
-                Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 148kW [201PS] / 7,800 rpm <br/>
-                Maximum Torque: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 193N · m /5,600 rpm
-
+                </div>
             </div>
-
-
-            <!-- slide text layer -->
-            <div class="mytext ms-layer ms-caption"
-                 data-offset-x="126"
-                 data-offset-y="80"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="left(long)"
-                 data-duration="2000"
-                 data-ease="easeOutQuart">
-
-                The Honda Civic Type <span style="color:red"
-                                           ;>R</span>, indisputably one of the most eagerly awaited performance
-                hatchbacks in South Africa, finally makes its local debut this month. The launch marks the first
-                time
-                the Type <span style="color:red"
-                               ;>R</span> nameplate has been made available to local punters.
-                <br/>
-                <br/>
-                Developed by Honda engineers in Japan and Europe, and manufactured at Honda’s state-of-the-art
-                vehicle
-                plant in Swindon, UK, the all-new Type <span style="color:red"
-                                                             ;>R</span> is based on a three-door version of the
-                latest
-                generation Honda Civic hatchback. 
-
-
-            </div>
-
-            <!--car image layer-->
-            <img class="ms-layer car12"
-                 alt="car"
-                 data-offset-x="-200"
-                 data-offset-y="-50"
-                 data-origin="br"
-                 data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
-                 data-ease="linear"
-                 data-delay="800"
-                 data-hide-effect="fade"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/car-12.png"
-            />
 
 
         </div>
-        <!-- end of slide -->
-
-
-        <!-- 13 new slide -->
-        <div class="ms-slide">
-
-            <!-- slide background -->
-            <img src="masterslider/style/blank.gif"
-                 data-src="masterslider/images/bg-garage.png"
-                 alt="bg-racetrack"/>
-
-            <!--2016-->
-            <div class="ms-layer ms-caption"
-                 style="font-size: 2000%; color: red; font-weight: 700;"
-                 data-offset-x="40"
-                 data-offset-y="-20"
-                 data-origin="tc"
-                 data-type="text"
-                 data-effect="fade"
-                 data-duration="0"
-                 data-ease="easeOutQuart">2016
-            </div>
-
-
-            <!--spec block-->
-
-            <div class="ms-layer specs spec13"
-                 data-offset-x="150"
-                 data-offset-y="350"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="bottom(90)"
-                 data-duration="800"
-                 data-ease="easeOutQuart">
-
-                Engine: &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.0L
-                Four-cylinder DOHC i-VTEC <br/>
-                Maximum Output: &nbsp; &nbsp; &nbsp; 148kW [201PS] / 7,800 rpm <br/>
-                Maximum Torque: &nbsp; &nbsp; &nbsp; 193N · m /5,600 rpm
-
-            </div>
-
-
-            <!-- slide text layer -->
-            <div class="mytext ms-layer ms-caption text13"
-                 data-offset-x="126"
-                 data-offset-y="90"
-                 data-origin="tl"
-                 data-type="text"
-                 data-effect="bottom(90)"
-                 data-duration="800"
-                 data-ease="easeOutQuart">
-
-                The all-new Type <span style="color:red"
-                                       ;>R</span> is here to illustrate just how much racing is entrenched in
-                Honda’s
-                DNA. If you are looking for the best performance either on the racetrack or the road, look no
-                further
-                than the new Honda Civic Type <span style="color:red"
-                                                    ;>R</span>. The Honda Civic Type <span style="color:red"
-                                                                                           ;>R</span> also set a new
-                front-drive nurburgring record (7:41).
-
-
-            </div>
-
-            <!--car image layer-->
-            <img class="ms-layer car13"
-                 alt="car"
-                 data-offset-x="0"
-                 data-offset-y="0"
-                 data-origin="br"
-                 data-type="image"
-                 data-effect="fade"
-                 data-duration="1200"
-                 data-ease="linear"
-                 data-delay="800"
-                 data-hide-effect="fade"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/Animation5.gif"
-            />
-
-
-            <!--car image layer-->
-            <img class="ms-layer car13"
-                 alt="car"
-                 data-offset-x="200"
-                 data-offset-y="75"
-                 data-origin="br"
-                 data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
-                 data-ease="linear"
-                 data-delay="800"
-                 data-hide-effect="fade"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/car-13.png"
-            />
-
-
-        </div>
-        <!-- end of slide -->
-
-        <!--social media-->
-        <div style="width:100%;text-align:left">
-            <div class="social media"
-                 style="position:relative;height:20px;width:580px; bottom: 50px; margin-left:110px;margin-right:auto">
-                <div onclick="window.open('https://twitter.com/hondasa')"
-                     class="twitter"
-                     style="background-repeat:no-repeat;background-image:url('masterslider/images/social/twitter.png');height:40px;width:40px;float:left;cursor:pointer;">
-                </div>
-                <div onclick="window.open('https://www.facebook.com/Hondasa/')"
-                     class="twitter"
-                     style="background-repeat:no-repeat;background-image:url('masterslider/images/social/facebook.png');height:40px;width:40px;float:left;cursor:pointer;">
-                </div>
-                <div onclick="window.open('https://www.linkedin.com/company/honda-motor-southern-africa')"
-                     class="twitter"
-                     style="background-repeat:no-repeat;background-image:url('masterslider/images/social/linkedin.png');height:40px;width:40px;float:left;cursor:pointer;">
-                </div>
-                <div onclick="window.open('https://plus.google.com/+hondasa')"
-                     class="twitter"
-                     style="background-repeat:no-repeat;background-image:url('masterslider/images/social/googleplus.png');height:40px;width:40px;float:left;cursor:pointer;">
-                </div>
-                <div onclick="window.open('https://www.instagram.com/honda_sa/')"
-                     class="twitter"
-                     style="background-repeat:no-repeat;background-image:url('masterslider/images/social/instegram.png');height:40px;width:40px;float:left;cursor:pointer;">
-                </div>
-                <div onclick="window.open('https://www.pinterest.com/honda/')"
-                     class="twitter"
-                     style="background-repeat:no-repeat;background-image:url('masterslider/images/social/pintrest.png');height:40px;width:40px;float:left;cursor:pointer;">
-                </div>
-                <div onclick="window.open('https://dribbble.com/hondasa')"
-                     class="twitter"
-                     style="background-repeat:no-repeat;background-image:url('masterslider/images/social/idklol.png');height:40px;width:40px;float:left;cursor:pointer;">
-                </div>
-            </div>
-        </div>
-
-
-        <!--chainblock-->
-        <div style="width:100%;text-align:center">
-            <div id="chainblock"
-                 style="position:relative;height:20px;width:580px; bottom: 50px; margin-left:auto;margin-right:auto">
-                <div onclick="slider.api.gotoSlide(0);"
-                     class="chainball"
-                     data-position="0"
-                     style="background-repeat:no-repeat;background-image:url('masterslider/images/start.png');height:13px;width:13px;float:left;cursor:pointer;"></div>
-                <div onclick="slider.api.gotoSlide(1);"
-                     class="chainball"
-                     data-position="1"
-                     style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"></div>
-                <div onclick="slider.api.gotoSlide(2);"
-                     class="chainball"
-                     data-position="2"
-                     style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"></div>
-                <div onclick="slider.api.gotoSlide(3);"
-                     class="chainball"
-                     data-position="3"
-                     style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"></div>
-                <div onclick="slider.api.gotoSlide(4);"
-                     class="chainball"
-                     data-position="4"
-                     style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"></div>
-                <div onclick="slider.api.gotoSlide(5);"
-                     class="chainball"
-                     data-position="5"
-                     style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"></div>
-                <div onclick="slider.api.gotoSlide(6);"
-                     class="chainball"
-                     data-position="6"
-                     style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"></div>
-                <div onclick="slider.api.gotoSlide(7);"
-                     class="chainball"
-                     data-position="7"
-                     style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"></div>
-                <div onclick="slider.api.gotoSlide(8);"
-                     class="chainball"
-                     data-position="8"
-                     style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"></div>
-                <div onclick="slider.api.gotoSlide(9);"
-                     class="chainball"
-                     data-position="9"
-                     style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"></div>
-                <div onclick="slider.api.gotoSlide(10);"
-                     class="chainball"
-                     data-position="10"
-                     style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"></div>
-                <div onclick="slider.api.gotoSlide(11);"
-                     class="chainball"
-                     data-position="11"
-                     style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"></div>
-                <div onclick="slider.api.gotoSlide(12);"
-                     class="chainball"
-                     data-position="12"
-                     style="background-repeat:no-repeat;background-image:url('masterslider/images/open.png');height:13px;width:43px;float:left;cursor:pointer;"></div>
-
-            </div>
-        </div>
-
-
+        <!-- end of masterslider -->
+        <!--end of content class-->
     </div>
-    <!-- end of masterslider -->
 
-    <!--end of content class-->
-</div>
+    <!--Popup Slider Page 3 -->
 
-<!--Popup Slider Page 3 -->
+    <div id="ex1"
+         style="display:none;">
+        <div class="master-slider ms-skin-light-3"
+             id="popupslider1">
+            <!-- new slide -->
+            <div class="ms-slide">
 
-<div id="ex1"
-     style="display:none;">
-    <div class="master-slider ms-skin-light-3"
-         id="popupslider1">
-        <!-- new slide -->
-        <div class="ms-slide">
+                <!-- slide background -->
 
-            <!-- slide background -->
+                <img class="popupimages"
+                     src="masterslider/blank.gif"
+                     data-src="masterslider/images/inner-slide1.png"
+                     alt="1" />
 
-            <img class="popupimages"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/inner-slide1.png"
-                 alt="1"/>
-
-        </div>
-        <!-- end of slide -->
-        <!-- new slide -->
-        <div class="ms-slide">
-
-            <!-- slide background -->
-            <img class="popupimages"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/inner-slide2.png"
-                 alt="2"/>
-
-        </div>
-        <!-- end of slide -->
-        <!-- new slide -->
-        <div class="ms-slide">
-
-            <!-- slide background -->
-            <img class="popupimages"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/inner-slide3.png"
-                 alt="3"/>
-
-        </div>
-        <!-- end of slide -->
-
-    </div>
-</div>
-
-
-<!--Popup Slider Page 11 -->
-
-<div id="ex2"
-     style="display:none;">
-    <div class="master-slider ms-skin-light-3"
-         id="popupslider2">
-        <!-- new slide -->
-        <div class="ms-slide">
-
-
-            <!-- slide text layer -->
-            <div class="popuptext ms-layer ms-caption"
-                 style="top:10px; left:30px;">
-                <span style="font-size:24px;">Raymond Beukes – JDM Civic FD2 Type <span style="color:red;">R</span></span>
-                <span style="font-size:16px;">
-                    <br/><br/>
-                    Well, in fact I'm a very big Japanese car fan. Honda's are well known for their reliability and the Type R's for their man and machine experience/connection you feel when driving. You can drive it as hard as you want and it just wouldn't break. (Bullet proof engines.) The raw screaming of those V-techs are addictive. (German car fans wouldn't understand this) As a Namibian, we're lucky that we can sometimes import car's that's never been launched /released locally. Thus I had the opportunity to import myself a JDM Civic FD2 Type R. (The only one in Namibia) I brought it into the country in 2011 and still enjoying every moment of it. (Trouble free.) This is my first Type R (but second Civic) and have no intentions of selling it unless someone makes me an offer I can't refuse. Unfortunately, there's always a price to pay for exclusivity.  
-                    <br/><br/>
-                    Honda the Power of Dreams. I've achieved my Dream. Drive a Honda and you'll never go back.
-                </span>
             </div>
+            <!-- end of slide -->
+            <!-- new slide -->
+            <div class="ms-slide">
 
+                <!-- slide background -->
+                <img class="popupimages"
+                     src="masterslider/blank.gif"
+                     data-src="masterslider/images/inner-slide2.png"
+                     alt="2" />
 
-        </div>
-        <!-- end of slide -->
-        <!-- new slide -->
-        <div class="ms-slide">
-
-            <!-- slide background -->
-            <img class="popupimages"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/popup/r1.png"
-                 alt="lorem ipsum dolor sit"/>
-
-        </div>
-        <!-- end of slide -->
-
-        <!-- new slide -->
-        <div class="ms-slide">
-
-            <!-- slide background -->
-            <img class="popupimages"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/popup/r2.png"
-                 alt="lorem ipsum dolor sit"/>
-
-        </div>
-        <!-- end of slide -->
-
-        <!-- new slide -->
-        <div class="ms-slide">
-
-            <!-- slide background -->
-            <img class="popupimages"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/popup/r3.png"
-                 alt="lorem ipsum dolor sit"/>
-
-        </div>
-        <!-- end of slide -->
-
-        <!-- new slide -->
-        <div class="ms-slide">
-
-            <!-- slide background -->
-            <img class="popupimages"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/popup/r4.png"
-                 alt="lorem ipsum dolor sit"/>
-
-        </div>
-        <!-- end of slide -->
-
-        <!-- new slide -->
-        <div class="ms-slide">
-
-            <!-- slide background -->
-            <img class="popupimages"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/popup/r5.png"
-                 alt="lorem ipsum dolor sit"/>
-
-        </div>
-        <!-- end of slide -->
-
-        <!-- new slide -->
-        <div class="ms-slide">
-
-            <!-- slide background -->
-            <img class="popupimages"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/popup/r6.png"
-                 alt="lorem ipsum dolor sit"/>
-
-        </div>
-        <!-- end of slide -->
-
-        <!-- new slide -->
-        <div class="ms-slide">
-
-            <!-- slide background -->
-            <img class="popupimages"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/popup/r7.png"
-                 alt="lorem ipsum dolor sit"/>
-
-        </div>
-        <!-- end of slide -->
-
-        <!-- new slide -->
-        <div class="ms-slide">
-
-            <!-- slide background -->
-            <img class="popupimages"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/popup/r8.png"
-                 alt="lorem ipsum dolor sit"/>
-
-        </div>
-        <!-- end of slide -->
-
-        <!-- new slide -->
-        <div class="ms-slide">
-
-            <!-- slide background -->
-            <img class="popupimages"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/popup/r9.png"
-                 alt="lorem ipsum dolor sit"/>
-
-        </div>
-        <!-- end of slide -->
-
-
-    </div>
-</div>
-
-
-<!--Popup Slider Page 12 -->
-
-<div id="ex3"
-     style="display:none;">
-    <div class="master-slider ms-skin-default"
-         id="popupslider3">
-        <!-- new slide -->
-        <div class="ms-slide">
-
-
-            <!-- slide text layer -->
-            <div class="popuptext ms-layer ms-caption"
-                 style="top:10px; left:30px; text-align: left">
-                <span style="font-size:24px;">Nick Tattoos – 2009 Championship edition<span style="color:red;"></span></span>
-                <span style="font-size:16px;">
-                    <br/><br/>
-                    It is over all a great car, I have the 2009 championship edition, and it truly is one of the few cars that truly gives you what you want out of it, I’ve been on the Honda road for 7 years now, and have owned 7 Honda’s. From the old 1997 civic vtec, to the 2008 CRV, I also had a S2000 which I really regret selling. Two of my old civics have been in car magazines, the most recent one making it on the cover of speed and sound last year. I have owned: 2 1997 civic vtecs, 2 accord type S's, CRV, S2000 and my current Type R.
-                </span>
             </div>
+            <!-- end of slide -->
+            <!-- new slide -->
+            <div class="ms-slide">
 
+                <!-- slide background -->
+                <img class="popupimages"
+                     src="masterslider/blank.gif"
+                     data-src="masterslider/images/inner-slide3.png"
+                     alt="3" />
 
-        </div>
-        <!-- end of slide -->
-
-        <!-- new slide -->
-        <div class="ms-slide">
-
-
-            <!-- slide text layer -->
-            <div class="popuptext ms-layer ms-caption"
-                 style="top:10px; left:30px; text-align: left">
-                <span style="font-size:24px;">Nick Tattoos – 2009 Championship edition <span style="color:red;"></span></span>
-                <span style="font-size:16px;">
-                    <br/><br/>
-                    This type R is my 1st type R, but I am already planning to buy another, I have had nothing but joy out of the car, it offers everything you need, from the day to day luxuries (steering control, climate control and etc.), the ride of the car is fantastic, it truly makes you feel like you are driving more than just a daily car to go to work and back in, even the drivers seating position makes you feel like you are piloting something! The only thing I wish it had more of is power, but when you compare it to its rivals like the VW GTI; you quickly realize you actually have a lot more in your hands, considering they are turbo charged. The type R being naturally aspirated offers great power compared to the GTI which is turbo charged.
-                    I will never drive anything other than than a Honda; the reliability and overall quality by far out ways any other car!
-                    <br/><br/>
-                    Thank you Honda for making real cars :D
-                </span>
             </div>
-
-
-        </div>
-        <!-- end of slide -->
-
-        <!-- new slide -->
-        <div class="ms-slide">
-
-            <!-- slide background -->
-            <img class="popupimages"
-                 src="masterslider/blank.gif"
-                 data-src="masterslider/images/popup/n1.png"
-                 alt="lorem ipsum dolor sit"/>
+            <!-- end of slide -->
 
         </div>
-        <!-- end of slide -->
-
     </div>
-</div>
 
 
-</body>
+    <!--Popup Slider Page 11 -->
 
-<script type="text/javascript">
-    function gcd(a, b) {
-        return (b == 0) ? a : gcd(b, a % b);
-    }
-    var ratio = window.devicePixelRatio || 1;
-    var w = screen.width * ratio;
-    var h = screen.height * ratio;
-    var r = gcd(screen.width, screen.height);
-    var aspect = screen.width / r + ':' + screen.height / r;
-    var hr = screen.height / r;
-    var wr = screen.width / r;
-    var xheight = 800;
-    $("#scrres").html(screen.width + '/' + screen.height);
-    $("#aspect").html(aspect);
-    if (aspect == '4:3') {
-        xheight = 1000;
-    }
-    if (aspect == '16:9') {
+    <div id="ex2"
+         style="display:none;">
+        <div class="master-slider ms-skin-light-3"
+             id="popupslider2">
+            <!-- new slide -->
+            <div class="ms-slide">
 
-        if (screen.width == 1920) {
-            xheight = 800;
+
+                <!-- slide text layer -->
+                <div class="popuptext ms-layer ms-caption"
+                     style="top:10px; left:30px;">
+                    <span style="font-size:20px;">Raymond Beukes – JDM Civic FD2 Type <span style="color:red;">R</span></span>
+                    <span style="font-size:14px;">
+                        <br /><br />
+                        Well, in fact I'm a very big Japanese car fan. Honda's are well known for their reliability and the Type R's for their man and machine experience/connection you feel when driving. You can drive it as hard as you want and it just wouldn't break. (Bullet proof engines.) The raw screaming of those V-techs are addictive. (German car fans wouldn't understand this) As a Namibian, we're lucky that we can sometimes import car's that's never been launched /released locally. Thus I had the opportunity to import myself a JDM Civic FD2 Type R. (The only one in Namibia) I brought it into the country in 2011 and still enjoying every moment of it. (Trouble free.) This is my first Type R (but second Civic) and have no intentions of selling it unless someone makes me an offer I can't refuse. Unfortunately, there's always a price to pay for exclusivity.  
+                        <br /><br />
+                        Honda the Power of Dreams. I've achieved my Dream. Drive a Honda and you'll never go back.
+                    </span>
+                </div>
+
+
+            </div>
+            <!-- end of slide -->
+            <!-- new slide -->
+            <div class="ms-slide">
+
+                <!-- slide background -->
+                <img class="popupimages"
+                     src="masterslider/blank.gif"
+                     data-src="masterslider/images/popup/r1.png"
+                     alt="lorem ipsum dolor sit" />
+
+            </div>
+            <!-- end of slide -->
+            <!-- new slide -->
+            <div class="ms-slide">
+
+                <!-- slide background -->
+                <img class="popupimages"
+                     src="masterslider/blank.gif"
+                     data-src="masterslider/images/popup/r2.png"
+                     alt="lorem ipsum dolor sit" />
+
+            </div>
+            <!-- end of slide -->
+            <!-- new slide -->
+            <div class="ms-slide">
+
+                <!-- slide background -->
+                <img class="popupimages"
+                     src="masterslider/blank.gif"
+                     data-src="masterslider/images/popup/r3.png"
+                     alt="lorem ipsum dolor sit" />
+
+            </div>
+            <!-- end of slide -->
+            <!-- new slide -->
+            <div class="ms-slide">
+
+                <!-- slide background -->
+                <img class="popupimages"
+                     src="masterslider/blank.gif"
+                     data-src="masterslider/images/popup/r4.png"
+                     alt="lorem ipsum dolor sit" />
+
+            </div>
+            <!-- end of slide -->
+            <!-- new slide -->
+            <div class="ms-slide">
+
+                <!-- slide background -->
+                <img class="popupimages"
+                     src="masterslider/blank.gif"
+                     data-src="masterslider/images/popup/r5.png"
+                     alt="lorem ipsum dolor sit" />
+
+            </div>
+            <!-- end of slide -->
+            <!-- new slide -->
+            <div class="ms-slide">
+
+                <!-- slide background -->
+                <img class="popupimages"
+                     src="masterslider/blank.gif"
+                     data-src="masterslider/images/popup/r6.png"
+                     alt="lorem ipsum dolor sit" />
+
+            </div>
+            <!-- end of slide -->
+            <!-- new slide -->
+            <div class="ms-slide">
+
+                <!-- slide background -->
+                <img class="popupimages"
+                     src="masterslider/blank.gif"
+                     data-src="masterslider/images/popup/r7.png"
+                     alt="lorem ipsum dolor sit" />
+
+            </div>
+            <!-- end of slide -->
+            <!-- new slide -->
+            <div class="ms-slide">
+
+                <!-- slide background -->
+                <img class="popupimages"
+                     src="masterslider/blank.gif"
+                     data-src="masterslider/images/popup/r8.png"
+                     alt="lorem ipsum dolor sit" />
+
+            </div>
+            <!-- end of slide -->
+            <!-- new slide -->
+            <div class="ms-slide">
+
+                <!-- slide background -->
+                <img class="popupimages"
+                     src="masterslider/blank.gif"
+                     data-src="masterslider/images/popup/r9.png"
+                     alt="lorem ipsum dolor sit" />
+
+            </div>
+            <!-- end of slide -->
+
+
+        </div>
+    </div>
+
+
+    <!--Popup Slider Page 12 -->
+
+    <div id="ex3"
+         style="display:none;">
+        <div class="master-slider ms-skin-light-3"
+             id="popupslider3">
+            <!-- new slide -->
+            <div class="ms-slide">
+
+
+                <!-- slide text layer -->
+                <div class="popuptext ms-layer ms-caption"
+                     style="top:10px; left:30px; text-align: left">
+                    <span style="font-size:20px;">Nick Tattoos – 2009 Championship edition<span style="color:red;"></span></span>
+                    <span style="font-size:14px;">
+                        <br /><br />
+                        It is over all a great car, I have the 2009 championship edition, and it truly is one of the few cars that truly gives you what you want out of it, I’ve been on the Honda road for 7 years now, and have owned 7 Honda’s. From the old 1997 civic vtec, to the 2008 CRV, I also had a S2000 which I really regret selling. Two of my old civics have been in car magazines, the most recent one making it on the cover of speed and sound last year. I have owned: 2 1997 civic vtecs, 2 accord type S's, CRV, S2000 and my current Type R.
+                    </span>
+                </div>
+
+
+            </div>
+            <!-- end of slide -->
+            <!-- new slide -->
+            <div class="ms-slide">
+
+
+                <!-- slide text layer -->
+                <div class="popuptext ms-layer ms-caption"
+                     style="top:10px; left:30px; text-align: left">
+                    <span style="font-size:20px;">Nick Tattoos – 2009 Championship edition <span style="color:red;"></span></span>
+                    <span style="font-size:14px;">
+                        <br /><br />
+                        This type R is my 1st type R, but I am already planning to buy another, I have had nothing but joy out of the car, it offers everything you need, from the day to day luxuries (steering control, climate control and etc.), the ride of the car is fantastic, it truly makes you feel like you are driving more than just a daily car to go to work and back in, even the drivers seating position makes you feel like you are piloting something! The only thing I wish it had more of is power, but when you compare it to its rivals like the VW GTI; you quickly realize you actually have a lot more in your hands, considering they are turbo charged. The type R being naturally aspirated offers great power compared to the GTI which is turbo charged.
+                        I will never drive anything other than than a Honda; the reliability and overall quality by far out ways any other car!
+                        <br /><br />
+                        Thank you Honda for making real cars :D
+                    </span>
+                </div>
+
+
+            </div>
+            <!-- end of slide -->
+            <!-- new slide -->
+            <div class="ms-slide">
+
+                <!-- slide background -->
+                <img class="popupimages"
+                     src="masterslider/blank.gif"
+                     data-src="masterslider/images/popup/n1.png"
+                     alt="lorem ipsum dolor sit" />
+
+            </div>
+            <!-- end of slide -->
+
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        function gcd(a, b) {
+            return (b == 0) ? a : gcd(b, a % b);
         }
-        if (screen.width == 1366) {
-            xheight = 600;
+        var ratio = window.devicePixelRatio || 1;
+        var w = screen.width * ratio;
+        var h = screen.height * ratio;
+        var r = gcd(screen.width, screen.height);
+        var aspect = screen.width / r + ':' + screen.height / r;
+        var hr = screen.height / r;
+        var wr = screen.width / r;
+        var xheight = 800;
+        $("#scrres").html(screen.width + '/' + screen.height);
+        $("#aspect").html(aspect);
+        if (aspect == '4:3') {
+            xheight = 1000;
         }
-    }
-    if (aspect == '455:256') {
-        xheight = 700;
-    }
+        if (aspect == '16:9') {
 
-    $("#xheight").html(aspect);
-    var slider = new MasterSlider();
-    slider.setup('masterslider', {
-        width: 1920,    // slider standard width
-
-        height: xheight,   // slider standard height
-        space: 0,
-        //heightLimit:true;
-        //autoHeight: true;
-        layout: "boxed",
-        //wheel: true;
-        // more slider options goes here...
-        // check slider options section in documentation for more options.
-    });
-    // adds Arrows navigation control to the slider.
-    slider.control('arrows');
-
-
-    //popupslider page 3
-
-    var popupslider1 = new MasterSlider();
-    popupslider1.setup('popupslider1', {
-        width: 600,    // slider standard width
-        height: 400,   // slider standard height
-        space: 5,
-        view: 'basic',
-        autoHeight: true,
-        // more slider options goes here...
-        // check slider options section in documentation for more options.
-    });
-    // adds Arrows navigation control to the slider.
-    popupslider1.control('arrows');
-
-    //popupslider page 11
-
-    var popupslider2 = new MasterSlider();
-    popupslider2.setup('popupslider2', {
-        width: 600,    // slider standard width
-        height: 400,   // slider standard height
-        space: 5,
-        view: 'basic',
-        autoHeight: true,
-        // more slider options goes here...
-        // check slider options section in documentation for more options.
-    });
-    // adds Arrows navigation control to the slider.
-    popupslider2.control('arrows');
-
-    //popupslider page 12
-
-    var popupslider3 = new MasterSlider();
-    popupslider3.setup('popupslider3', {
-        width: 600,    // slider standard width
-        height: 400,   // slider standard height
-        space: 5,
-        view: 'basic',
-        autoHeight: true,
-        // more slider options goes here...
-        // check slider options section in documentation for more options.
-    });
-    // adds Arrows navigation control to the slider.
-    popupslider3.control('arrows');
-
-
-    slider.api.addEventListener(MSSliderEvent.CHANGE_START, function () {
-        chainEffect();
-
-
-    });
-    $(document).ready(function () {
-    });
-    function chainEffect() {
-        $('.chainball').each(function () {
-
-
-            if ($(this).data('position') <= slider.api.index()) {
-
-                $(this).css('background-image', 'url(' + 'masterslider/images/next.png' + ')');
+            if (screen.width == 1920) {
+                xheight = 800;
             }
-            else {
-                $(this).css('background-image', 'url(' + 'masterslider/images/open.png' + ')');
+            if (screen.width == 1366) {
+                xheight = 600;
             }
-            if ($(this).data('position') == "0") {
-                $(this).css('background-image', 'url(' + 'masterslider/images/start.png' + ')');
-            }
+        }
+        if (aspect == '455:256') {
+            xheight = 700;
+        }
+
+        $("#xheight").html(xheight);
+        var slider = new MasterSlider();
+        slider.setup('masterslider', {
+            width: 1920,    // slider standard width
+
+            height: xheight,   // slider standard height
+            space: 0,
+            //heightLimit:true;
+            //autoHeight: true;
+            layout: "boxed",
+            //wheel: true;
+            // more slider options goes here...
+            // check slider options section in documentation for more options.
+        });
+        // adds Arrows navigation control to the slider.
+        slider.control('arrows');
+
+
+        //popupslider page 3
+
+        var popupslider1 = new MasterSlider();
+        popupslider1.setup('popupslider1', {
+            width: 600,    // slider standard width
+            height: 400,   // slider standard height
+            space: 5,
+            view: 'basic',
+            autoHeight: true,
+            // more slider options goes here...
+            // check slider options section in documentation for more options.
+        });
+        popupslider1.control('arrows');
+        // adds Arrows navigation control to the slider.
+        popupslider1.control('arrows');
+
+        //popupslider page 11
+
+        var popupslider2 = new MasterSlider();
+        popupslider2.setup('popupslider2', {
+            width: 600,    // slider standard width
+            height: 400,   // slider standard height
+            space: 5,
+            view: 'basic',
+            autoHeight: true,
+            // more slider options goes here...
+            // check slider options section in documentation for more options.
+        });
+        // adds Arrows navigation control to the slider.
+        popupslider2.control('arrows');
+
+        //popupslider page 12
+
+        var popupslider3 = new MasterSlider();
+        popupslider3.setup('popupslider3', {
+            width: 600,    // slider standard width
+            height: 400,   // slider standard height
+            space: 5,
+            view: 'basic',
+            autoHeight: true,
+            // more slider options goes here...
+            // check slider options section in documentation for more options.
+        });
+        // adds Arrows navigation control to the slider.
+        popupslider3.control('arrows');
+
+
+        slider.api.addEventListener(MSSliderEvent.CHANGE_START, function () {
+            chainEffect();
+
 
         });
+        $(document).ready(function () {
+        });
+        function chainEffect() {
+            $('.chainball').each(function () {
 
-    }
 
-</script>
+                if ($(this).data('position') <= slider.api.index()) {
+
+                    $(this).css('background-image', 'url(' + 'masterslider/images/next.png' + ')');
+                }
+                else {
+                    $(this).css('background-image', 'url(' + 'masterslider/images/open.png' + ')');
+                }
+                if ($(this).data('position') == "0") {
+                    $(this).css('background-image', 'url(' + 'masterslider/images/start.png' + ')');
+                }
+
+            });
+
+        }
+
+    </script>
+</body>
 </html>
