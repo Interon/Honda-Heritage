@@ -5,19 +5,22 @@
  */
 
 body {
-    margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    background-color: black;
+    margin-top: 0px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-color: #111111 ;
+    color: #cccccc;
 }
 
 .revborder {
 /*    position: relative;*/
-    width: 200px;
-    height: 200px;
+
+    width: 230px;
+/*    height: 230px;*/
+
     background-color: darkred;
     border-style: solid;
     border-width: 8px;
     border-color: black;
-/*    margin: auto;*/
+    margin: auto;
     vertical-align: middle;
 }
 
@@ -27,40 +30,78 @@ body {
     top: 100px;
     color: white;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    padding-top: 15%;
+    padding-top: 40px;
     line-height: 1;
     font-size: 80px;
     font-weight: 700;
 
 }
 
+.heading2 {
+    top: 100px;
+    color: white;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    padding-top: 40px;
+    line-height: 1;
+    font-size: 60px;
+    font-weight: 700;
+}
+
 .subheading {
     color: white;
     text-align: center;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    
+    padding-bottom: 40px;
     font-size: 10px;
     font-style: italic;
 }
 
 .image-bg-fluid-height,
-.image-bg-fixed-height {
+.image-bg-fluid-height2,
+.image-bg-fixed-height,
+.image-bg-fixed-height2,
+.image-bg-fixed-height3,
+.image-bg-fixed-height4 {
+
     text-align: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+
+
 }
 
 .image-bg-fluid-height {
-	background: url('/phone/images/bg-racetrack.png') no-repeat center center scroll;
-    padding: 180px 0;
+	background: url('../images/bg-garage.png') no-repeat center center scroll;
+    padding: 5px 0;
+}
+
+.image-bg-fluid-height2 {
+    background: url('../images/bg-racetrack.png') no-repeat center center scroll;
+    padding: 5px 0;
 }
 
 .image-bg-fixed-height {
-	background: url('http://lorempixel.com/g/1920/500/') no-repeat center center scroll;
+	background: url('../images/bg-racetrack.png') no-repeat center center scroll;
+    height: 500px;
+}
+
+.image-bg-fixed-height2 {
+	background: url('../images/bg-garage.png') no-repeat center center scroll;
+    height: 550px;
+}
+
+.image-bg-fixed-height3 {
+	background: url('../images/bg-garage.png') no-repeat center center scroll;
     height: 450px;
 }
+
+.image-bg-fixed-height4 {
+   	background: url('../images/bg-garage.png') no-repeat center center scroll;
+    height: 500px;
+}
+
 
 .img-center {
 	margin: 0 auto;

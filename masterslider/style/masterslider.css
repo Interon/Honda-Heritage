@@ -1,10 +1,10 @@
 /**
- *  aj Version 1.2.18
+ *  <!-- aj Version 1.2.24 fixed popup text, popup arrows, phone bug fixes on phone, added rev animation to media queries for ipad compatibility-->
  */
 
 body {
   font-family: "HelveticaNeue-Light", Helvetica, sans-serif, sans-serif;
- 
+
 }
 
 .ms-caption {
@@ -15,7 +15,7 @@ body {
 
 .mytext,.popuptext {
     margin: 20%;
-    font-size: 24px;
+    font-size: 22px;
     width: 25%;
     font-style: italic;
     line-height:20px !important;
@@ -103,13 +103,13 @@ body {
     font-style: italic;
 }
 
-.text1{
-    font-size: 20px;
-      line-height:18px !important;
+.text1 {
+    font-size: 17px;
+     line-height:17px !important;
 }
-.text2,.text3 {
-    font-size: 20px;
-      line-height:18px !important;
+
+.text2 {
+    font-size: 17px;
 }
 
 .text4 {
@@ -118,8 +118,7 @@ body {
 }
 
 .text13 {
-    font-size: 23px;
-      line-height:13px !important;
+    font-size: 20px;
 }
 
 /*
@@ -238,7 +237,7 @@ body {
 }
 
 .spec13 {
-    top: 335%;
+    top: 260%;
     width: 23%;
 }
 
@@ -270,6 +269,7 @@ body {
     -webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
     transition-timing-function: ease-in-out;
 }
+
 
 .anim1height {
     height: 50px;
@@ -793,6 +793,141 @@ body {
 }
 
 /*-----------------end of rev animation-------*/
+
+
+/*firefox revbar--------*/
+
+@-moz-document url-prefix() {
+    .revanimation1 {
+        width: 100%;
+        height: 5%;
+        background-color: #cc0000;
+        margin: auto;
+        vertical-align: middle;
+        opacity: .7;
+    }
+}
+
+@-moz-document url-prefix() {
+    .revanimation2 {
+        width: 100%;
+        height: 10%;
+        background-color: #cc0000;
+        margin: auto;
+        vertical-align: middle;
+        opacity: .7;
+    }
+}
+@-moz-document url-prefix() {
+    .revanimation3 {
+        width: 100%;
+        height: 15%;
+        background-color: #cc0000;
+        margin: auto;
+        vertical-align: middle;
+        opacity: .7;
+    }
+}
+
+@-moz-document url-prefix() {
+    .revanimation4 {
+        width: 100%;
+        height: 20%;
+        background-color: #cc0000;
+        margin: auto;
+        vertical-align: middle;
+        opacity: .7;
+    }
+}
+
+@-moz-document url-prefix() {
+    .revanimation5 {
+        width: 100%;
+        height: 25%;
+        background-color: #cc0000;
+        margin: auto;
+        vertical-align: middle;
+        opacity: .7;
+    }
+}
+
+@-moz-document url-prefix() {
+    .revanimation6 {
+        width: 100%;
+        height: 30%;
+        background-color: #cc0000;
+        margin: auto;
+        vertical-align: middle;
+        opacity: .7;
+    }
+}
+
+@-moz-document url-prefix() {
+    .revanimation7 {
+        width: 100%;
+        height: 35%;
+        background-color: #cc0000;
+        margin: auto;
+        vertical-align: middle;
+        opacity: .7;
+    }
+}
+
+@-moz-document url-prefix() {
+    .revanimation8 {
+        width: 100%;
+        height: 40%;
+        background-color: #cc0000;
+        margin: auto;
+        vertical-align: middle;
+        opacity: .7;
+    }
+}
+
+@-moz-document url-prefix() {
+    .revanimation9 {
+        width: 100%;
+        height: 45%;
+        background-color: #cc0000;
+        margin: auto;
+        vertical-align: middle;
+        opacity: .7;
+    }
+}
+
+@-moz-document url-prefix() {
+    .revanimation10 {
+        width: 100%;
+        height: 50%;
+        background-color: #cc0000;
+        margin: auto;
+        vertical-align: middle;
+        opacity: .7;
+    }
+}
+@-moz-document url-prefix() {
+    .revanimation11 {
+        width: 100%;
+        height: 52%;
+        background-color: #cc0000;
+        margin: auto;
+        vertical-align: middle;
+        opacity: .7;
+    }
+}
+
+@-moz-document url-prefix() {
+    .revanimation12 {
+        width: 100%;
+        height: 52%;
+        background-color: #cc0000;
+        margin: auto;
+        vertical-align: middle;
+        opacity: .7;
+    }
+}
+
+
 
 
 
@@ -1573,22 +1708,23 @@ and (orientation: landscape) {
     /* Styles */
     .mytext {
         top: 100%;
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .text1 {
 
-        font-size: 22px;
+        font-size: 20px;
+        line-height:13px !important;
     }
 
     .text2 {
 
-        font-size: 26px;
+        font-size: 20px;
 
     }
 
     .text13 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .revborder {
@@ -1726,9 +1862,15 @@ and (orientation: landscape) {
     }
 
     .spec13 {
-        bottom: 500%;
+        bottom: 550%;
 
     }
+
+    .subheading6 {
+
+    }
+
+
 
 }
 
