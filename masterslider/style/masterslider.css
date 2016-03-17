@@ -1,5 +1,5 @@
 /**
- *  aj Version 1.2.18
+ *  <!-- aj Version 1.2.23 Changed font sizes for bootstrap compatibility -->
  */
 
 body {
@@ -17,7 +17,7 @@ body {
 
 .mytext {
     margin: 20%;
-    font-size: 24px;
+    font-size: 22px;
     width: 25%;
     font-style: italic;
 
@@ -104,11 +104,11 @@ body {
 }
 
 .text1 {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .text2 {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .text3 {
