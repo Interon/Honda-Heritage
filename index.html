@@ -1,4 +1,4 @@
-﻿<!--Anton Version 1.2.13--> Phase 1 Pre
+﻿<!--aj Version 1.2.21.1 Fixed Rev Counter -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +25,7 @@
     <!-- Latest version of jQuery from Google CDN -->
     <!-- You can remove it if jQuery is already included. -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="masterslider/jquery.modal.min.js"></script>
+    <script src="masterslider/jquery.modal.min.js"></script>a
     <!-- MasterSlider main JS file -->
     <script src="masterslider/masterslider.min.js"></script>
 
@@ -43,6 +43,10 @@
         <tr>
             <td>Aspect</td>
             <td id="aspect"></td>
+        </tr>
+        <tr>
+            <td>XHeight</td>
+            <td id="xheight"></td>
         </tr>
     </table>
 </div>
@@ -69,7 +73,7 @@
 
 
             <div class="ms-layer revanimation1"
-                 style="bottom: 280%; width: 540%;"
+                 style="bottom: 280%; width: 540%"
                  data-offset-x="0"
                  data-offset-y="300"
                  data-origin="bc"
@@ -87,9 +91,6 @@
                  data-duration="0"
                  data-delay="0"
                  data-ease="easeOutQuart">
-
-                <!--<div class="revanimation"-->
-                <!--data-duration="0"></div>-->
 
                 <!-- revtext -->
 
@@ -2012,52 +2013,32 @@
         return (b == 0) ? a : gcd(b, a % b);
     }
     var ratio = window.devicePixelRatio || 1;
-    var w = window.screen.width;
-    var h = window.screen.height;
-    var r = gcd(window.screen.width, window.screen.height);
-    var aspect = window.screen.width / r + ':' + window.screen.height / r;
-    var hr = window.screen.height / r;
-    var wr = window.screen.width / r;
-
-
+    var w = screen.width * ratio;
+    var h = screen.height * ratio;
+    var r = gcd(screen.width, screen.height);
+    var aspect = screen.width / r + ':' + screen.height / r;
+    var hr = screen.height / r;
+    var wr = screen.width / r;
     var xheight = 800;
     $("#scrres").html(screen.width + '/' + screen.height);
     $("#aspect").html(aspect);
-
-    switch (aspect) {
-        case '4:3':
-            if (w == 1024) {
-                xheight = 1100;
-            }
-            break;
-        case '3:4':
-            if (w == 768) {
-                xheight = 2100;
+    if (aspect == '4:3') {
+        xheight = 1000;
     }
-            break;
-        case '16:9':
-            if (w == 1920) {
+    if (aspect == '16:9') {
+
+        if (screen.width == 1920) {
             xheight = 800;
-        }
-            if (w == 1366) {
+            }
+        if (screen.width == 1366) {
+            xheight = 600;
+            }
+            }
+    if (aspect == '455:256') {
                 xheight = 700;
             }
-            break;
-        case '8:5':
-            if (w == 1440) {
-                xheight = 700;
-        }
-            break;
-        case '16:9':
-            if (w == 1920) {
-                xheight = 800;
-    }
-            break;
-        default:
-            xheight = 800;
-    }
 
-
+    $("#xheight").html(aspect);
     var slider = new MasterSlider();
     slider.setup('masterslider', {
         width: 1920,    // slider standard width

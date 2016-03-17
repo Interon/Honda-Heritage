@@ -1,0 +1,99 @@
+/*!
+ * Start Bootstrap - Full Width Pics HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-color: black;
+}
+
+.revborder {
+/*    position: relative;*/
+    width: 200px;
+    height: 200px;
+    background-color: darkred;
+    border-style: solid;
+    border-width: 8px;
+    border-color: black;
+/*    margin: auto;*/
+    vertical-align: middle;
+}
+
+
+
+.heading {
+    top: 100px;
+    color: white;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    padding-top: 15%;
+    line-height: 1;
+    font-size: 80px;
+    font-weight: 700;
+
+}
+
+.subheading {
+    color: white;
+    text-align: center;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    
+    font-size: 10px;
+    font-style: italic;
+}
+
+.image-bg-fluid-height,
+.image-bg-fixed-height {
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.image-bg-fluid-height {
+	background: url('/phone/images/bg-racetrack.png') no-repeat center center scroll;
+    padding: 180px 0;
+}
+
+.image-bg-fixed-height {
+	background: url('http://lorempixel.com/g/1920/500/') no-repeat center center scroll;
+    height: 450px;
+}
+
+.img-center {
+	margin: 0 auto;
+}
+
+section {
+    padding: 75px 0;
+}
+
+.section-heading {
+    margin: 30px 0;
+    font-size: 4em;
+}
+
+.section-lead {
+    margin: 30px 0;
+}
+
+.section-paragraph {
+    margin: 30px 0;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+@media(max-width:768px) {
+    section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .section-heading {
+        font-size: 2em;
+    }
+}
