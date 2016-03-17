@@ -65,6 +65,7 @@ body {
     border-color: black;
     margin: auto;
     vertical-align: middle;
+   
 }
 
 .revtext {
@@ -259,10 +260,9 @@ body {
 /*rev animation slide 1*/
 
 .revanimation1 {
-
     width: 100%;
     height: 100%;
-    background-color: #b8003d;
+    background-color: #C90809;
     margin: auto;
     vertical-align: middle;
     /*left:300%;*/
@@ -283,22 +283,19 @@ body {
     from, 15% {
         background: #C90809;
         height: 5%;
-        opacity: .9
+        opacity: 1;
     }
     26%, 42% {
         background: #C90809;
-        height: 52.5%;
-        opacity: .7
+        height: 10%;
+        opacity: .6;
     }
-    42%, 75% {
-        background: #C90809;
-        height: 45%;
-        opacity: .6
-    }
-    75%, 100% {
+    
+     75%, 100% {
         background: #C90809;
         height: 5%;
-        opacity: .9
+        opacity: 1;
+
     }
 }
 
@@ -328,25 +325,22 @@ body {
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mysecond {
 
-    from, 15% {
+   from, 15% {
         background: #C90809;
-        height: 9%;
-        opacity: .9
+        height: 5%;
+        opacity: 1;
     }
     26%, 42% {
         background: #C90809;
-        height: 52.5%;
-        opacity: .7
+        height: 15%;
+        opacity: .6;
     }
-    42%, 75% {
+    
+     75%, 100% {
         background: #C90809;
-        height: 45%;
-        opacity: .6
-    }
-    75%, 100% {
-        background: #C90809;
-        height:9%;
-        opacity: .9
+        height: 5%;
+        opacity: 1;
+
     }
 }
 
@@ -378,23 +372,20 @@ body {
 
     from, 15% {
         background: #C90809;
-        height: 13%;
-        opacity: .9
+        height: 5%;
+        opacity: 1;
     }
     26%, 42% {
         background: #C90809;
-        height: 52.5%;
-        opacity: .7
+        height: 20%;
+        opacity: .6;
     }
-    42%, 75% {
+    
+     75%, 100% {
         background: #C90809;
-        height: 45%;
-        opacity: .6
-    }
-    75%, 100% {
-        background: #C90809;
-        height: 13%;
-        opacity: .9
+        height: 5%;
+        opacity: 1;
+
     }
 }
 
@@ -424,25 +415,22 @@ body {
 /* Chrome, Safari, Opera */
 @-webkit-keyframes myfourth {
 
-    from, 15% {
+   from, 15% {
         background: #C90809;
-        height: 16%;
-        opacity: .9
+        height: 5%;
+        opacity: 1;
     }
     26%, 42% {
         background: #C90809;
-        height: 52.5%;
-        opacity: .7
+        height: 25%;
+        opacity: .6;
     }
-    42%, 75% {
+    
+     75%, 100% {
         background: #C90809;
-        height: 45%;
-        opacity: .6
-    }
-    75%, 100% {
-        background: #C90809;
-        height: 16%;
-        opacity: .9
+        height: 5%;
+        opacity: 1;
+
     }
 }
 
@@ -472,25 +460,22 @@ body {
 /* Chrome, Safari, Opera */
 @-webkit-keyframes myfith {
 
-    from, 15% {
+   from, 15% {
         background: #C90809;
-        height:20%;
-        opacity: .9
+        height: 5%;
+        opacity: 1;
     }
     26%, 42% {
         background: #C90809;
-        height: 52.5%;
-        opacity: .7
+        height: 30%;
+        opacity: .6;
     }
-    42%, 75% {
+    
+     75%, 100% {
         background: #C90809;
-        height: 45%;
-        opacity: .6
-    }
-    75%, 100% {
-        background: #C90809;
-        height: 20%;
-        opacity: .9
+        height: 5%;
+        opacity: 1;
+
     }
 }
 
@@ -520,25 +505,22 @@ body {
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mysixth {
 
-    from, 15% {
+   from, 15% {
         background: #C90809;
-        height: 25%;
-        opacity: .9
+        height: 5%;
+        opacity: 1;
     }
     26%, 42% {
         background: #C90809;
-        height: 52.5%;
-        opacity: .7
+        height: 35%;
+        opacity: .6;
     }
-    42%, 75% {
+    
+     75%, 100% {
         background: #C90809;
-        height: 45%;
-        opacity: .6
-    }
-    75%, 100% {
-        background: #C90809;
-        height: 25%;
-        opacity: .9
+        height: 5%;
+        opacity: 1;
+
     }
 }
 
@@ -568,25 +550,22 @@ body {
 /* Chrome, Safari, Opera */
 @-webkit-keyframes myseventh {
 
-    from, 15% {
+   from, 15% {
         background: #C90809;
-        height: 30%;
-        opacity: .9
+        height: 5%;
+        opacity: 1;
     }
     26%, 42% {
         background: #C90809;
-        height: 52.5%;
-        opacity: .7
+        height: 40%;
+        opacity: .6;
     }
-    42%, 75% {
+    
+     75%, 100% {
         background: #C90809;
-        height: 45%;
-        opacity: .6
-    }
-    75%, 100% {
-        background: #C90809;
-        height: 30%;
-        opacity: .9
+        height: 5%;
+        opacity: 1;
+
     }
 }
 
@@ -616,25 +595,22 @@ body {
 /* Chrome, Safari, Opera */
 @-webkit-keyframes myeighth {
 
-    from, 15% {
+   from, 15% {
         background: #C90809;
-        height: 35%;
-        opacity: .9
+        height: 5%;
+        opacity: 1;
     }
     26%, 42% {
         background: #C90809;
-        height: 52.5%;
-        opacity: .7
-    }
-    42%, 75% {
-        background: #C90809;
         height: 45%;
-        opacity: .6
+        opacity: .6;
     }
-    75%, 100% {
+    
+     75%, 100% {
         background: #C90809;
-        height: 35%;
-        opacity: .9
+        height: 5%;
+        opacity: 1;
+
     }
 }
 
@@ -666,23 +642,20 @@ body {
 
     from, 15% {
         background: #C90809;
-        height: 40%;
-        opacity: .9
+        height: 5%;
+        opacity: 1;
     }
     26%, 42% {
         background: #C90809;
-        height: 52.5%;
-        opacity: .7
+        height: 50%;
+        opacity: .6;
     }
-    42%, 75% {
+    
+     75%, 100% {
         background: #C90809;
-        height: 45%;
-        opacity: .6
-    }
-    75%, 100% {
-        background: #C90809;
-        height: 40%;
-        opacity: .9
+        height: 5%;
+        opacity: 1;
+
     }
 }
 
@@ -712,25 +685,22 @@ body {
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mytenth {
 
-    from, 15% {
+   from, 15% {
         background: #C90809;
-        height: 43%;
-        opacity: .9
+        height: 5%;
+        opacity: 1;
     }
     26%, 42% {
         background: #C90809;
-        height: 52.5%;
-        opacity: .7
+        height: 50%;
+        opacity: .6;
     }
-    42%, 75% {
+    
+     75%, 100% {
         background: #C90809;
-        height: 45%;
-        opacity: .6
-    }
-    75%, 100% {
-        background: #C90809;
-        height: 43%;
-        opacity: .9
+        height: 5%;
+        opacity: 1;
+
     }
 }
 
@@ -760,25 +730,22 @@ body {
 /* Chrome, Safari, Opera */
 @-webkit-keyframes myeleventh {
 
-    from, 15% {
+   from, 15% {
         background: #C90809;
-        height: 48%;
-        opacity: .9
+        height: 5%;
+        opacity: 1;
     }
     26%, 42% {
         background: #C90809;
-        height: 52.5%;
-        opacity: .7
+        height: 50%;
+        opacity: .6;
     }
-    42%, 75% {
+    
+     75%, 100% {
         background: #C90809;
-        height: 48%;
-        opacity: .6
-    }
-    75%, 100% {
-        background: #C90809;
-        height: 48%;
-        opacity: .9
+        height: 5%;
+        opacity: 1;
+
     }
 }
 
@@ -810,23 +777,20 @@ body {
 
     from, 15% {
         background: #C90809;
-        height: 52.5%;
-        opacity: .9
+        height: 5%;
+        opacity: 1;
     }
     26%, 42% {
         background: #C90809;
-        height: 52.5%;
-        opacity: .7
+        height: 52%;
+        opacity: .6;
     }
-    42%, 75% {
+    
+     75%, 100% {
         background: #C90809;
-        height: 52.5%;
-        opacity: .6
-    }
-    75%, 100% {
-        background: #C90809;
-        height: 52.5%;
-        opacity: .9
+        height: 5%;
+        opacity: 1;
+
     }
 }
 
