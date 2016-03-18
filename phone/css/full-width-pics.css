@@ -10,7 +10,7 @@ body {
     color: #cccccc;
 }
 
-.revborder {
+.revborder-phone {
 /*    position: relative;*/
 
     width: 230px;
@@ -26,7 +26,7 @@ body {
 
 
 
-.heading {
+.heading-phone {
     top: 100px;
     color: white;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -37,7 +37,7 @@ body {
 
 }
 
-.heading2 {
+.heading2-phone {
     top: 100px;
     color: white;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -47,7 +47,7 @@ body {
     font-weight: 700;
 }
 
-.subheading {
+.subheading-phone {
     color: white;
     text-align: center;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -56,12 +56,12 @@ body {
     font-style: italic;
 }
 
-.image-bg-fluid-height,
-.image-bg-fluid-height2,
-.image-bg-fixed-height,
-.image-bg-fixed-height2,
-.image-bg-fixed-height3,
-.image-bg-fixed-height4 {
+.image-bg-fluid-height-phone,
+.image-bg-fluid-height2-phone,
+.image-bg-fixed-height-phone,
+.image-bg-fixed-height2-phone,
+.image-bg-fixed-height3-phone,
+.image-bg-fixed-height4-phone {
 
     text-align: center;
     -webkit-background-size: cover;
@@ -72,32 +72,32 @@ body {
 
 }
 
-.image-bg-fluid-height {
+.image-bg-fluid-height-phone {
 	background: url('../images/bg-garage.png') no-repeat center center scroll;
     padding: 5px 0;
 }
 
-.image-bg-fluid-height2 {
+.image-bg-fluid-height2-phone {
     background: url('../images/bg-racetrack.png') no-repeat center center scroll;
     padding: 5px 0;
 }
 
-.image-bg-fixed-height {
+.image-bg-fixed-height-phone {
 	background: url('../images/bg-racetrack.png') no-repeat center center scroll;
     height: 500px;
 }
 
-.image-bg-fixed-height2 {
+.image-bg-fixed-height2-phone {
 	background: url('../images/bg-garage.png') no-repeat center center scroll;
     height: 550px;
 }
 
-.image-bg-fixed-height3 {
+.image-bg-fixed-height3-phone {
 	background: url('../images/bg-garage.png') no-repeat center center scroll;
     height: 450px;
 }
 
-.image-bg-fixed-height4 {
+.image-bg-fixed-height4-phone {
    	background: url('../images/bg-garage.png') no-repeat center center scroll;
     height: 500px;
 }
