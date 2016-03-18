@@ -2157,5 +2157,14 @@ body {
     }
 }
 
+@media only screen and (orientation: portrait) {
+    #A {
+        display: none;
+    }
+
+    #B {
+        display: inline;
+    }
+}
 
 
