@@ -4,12 +4,16 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-body {
-    margin-top: 0px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    background-color: #111111;
-    color: #cccccc;
+body
+{
+background-color:black !important;
 }
-
+#B.content, #B p,#B.row, #B.container, section{
+	color: white !important;
+    font-family: 'HelveticaNeueLTStd35Thin' !important;
+	background-color:black !important;
+	
+}
 
 
 .revborder-phone {
