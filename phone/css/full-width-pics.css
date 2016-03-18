@@ -12,9 +12,11 @@ background-color:black !important;
 	color: white !important;
     font-family: 'HelveticaNeueLTStd35Thin' !important;
 	background-color:black !important;
-	
-}
 
+.heading-2016-phone {
+    font-size: 120px;
+    vertical-align: middle;
+}
 
 .revborder-phone {
     position: relative;
@@ -65,7 +67,8 @@ background-color:black !important;
 .image-bg-fixed-height-phone,
 .image-bg-fixed-height2-phone,
 .image-bg-fixed-height3-phone,
-.image-bg-fixed-height4-phone {
+.image-bg-fixed-height4-phone,
+.image-bg-fixed-height5-phone {
 
     text-align: center;
     -webkit-background-size: cover;
@@ -97,7 +100,7 @@ background-color:black !important;
     height: 530px;
 }
 
-/*cars 4, 5, 10, 13*/
+/*cars 4, 5, 10*/
 .image-bg-fixed-height3-phone {
     background: url('../images/bg-garage.png') no-repeat center center scroll;
     height: 520px;
@@ -107,6 +110,12 @@ background-color:black !important;
 .image-bg-fixed-height4-phone {
     background: url('../images/bg-racetrack.png') no-repeat center center scroll;
     height: 550px;
+}
+
+/*car 13*/
+.image-bg-fixed-height5-phone {
+    background: url('../images/bg-garage.png') no-repeat center center scroll;
+    height: 250px;
 }
 
 .spec-phone {
@@ -123,12 +132,10 @@ background-color:black !important;
 .alignleft {
     float: left;
 }
+
 .alignright {
     float: right;
 }
-
-
-
 
 .img-center {
     margin: 0 auto;
@@ -173,9 +180,8 @@ and (min-device-width: 320px)
 and (max-device-width: 480px) {
 
     .spec-phone {
-        font-size: 12px;
+        font-size: 10px;
     }
-
 
 }
 
@@ -184,7 +190,8 @@ and (max-device-width: 480px) {
 and (min-width: 321px) {
 
     .spec-phone {
-        width: 90%;
+        width: 100%;
+
     }
 
 }
@@ -193,9 +200,14 @@ and (min-width: 321px) {
 @media only screen
 and (max-width: 320px) {
 
-    /*.spec-phone {*/
-        /*font-size: 10px;*/
-    /*}*/
+    .heading-2016-phone {
+        font-size: 270px;
+        margin-left: 20%;
+    }
+
+    .spec-phone {
+        font-size: 10px;
+    }
 
 }
 
@@ -205,20 +217,23 @@ and (min-device-width: 768px)
 and (max-device-width: 1024px)
 and (orientation: portrait) {
 
+    .heading-2016-phone {
+        font-size: 230px;
+        margin-left: 20%;
+    }
+
     /*.col-xs-10 {*/
         /*width: 41.66666667%*/
     /*}*/
-
-    .tablet-offset {
-        position: relative;
-        bottom: 30px;
-        line-height: 100%;
-        vertical-align: bottom;
-        margin-left: 0;
-    }
-
+    /*.tablet-offset {*/
+    /*position: relative;*/
+    /*bottom: 30px;*/
+    /*line-height: 100%;*/
+    /*vertical-align: bottom;*/
+    /*margin-left: 0;*/
+    /*}*/
     .spec-phone {
-        width: 100%;
+        width: 60%;
     }
 
 }
