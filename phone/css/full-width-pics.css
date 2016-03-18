@@ -6,17 +6,19 @@
 
 body {
     margin-top: 0px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    background-color: #111111 ;
+    background-color: #111111;
     color: #cccccc;
 }
 
+
+
 .revborder-phone {
-/*    position: relative;*/
+    position: relative;
 
-    width: 230px;
-/*    height: 230px;*/
+    width: 280px;
+    height: 260px;
 
-    background-color: darkred;
+    background-color: rgba(183, 20, 20, 0.83);
     border-style: solid;
     border-width: 8px;
     border-color: black;
@@ -24,26 +26,24 @@ body {
     vertical-align: middle;
 }
 
-
-
 .heading-phone {
-    top: 100px;
+    /*top: 200px;*/
     color: white;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    padding-top: 40px;
+    padding-top: 50px;
     line-height: 1;
-    font-size: 80px;
+    font-size: 120px;
     font-weight: 700;
 
 }
 
 .heading2-phone {
-    top: 100px;
+    /*top: 200px;*/
     color: white;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    padding-top: 40px;
+    padding-top: 60px;
     line-height: 1;
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 700;
 }
 
@@ -52,7 +52,7 @@ body {
     text-align: center;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     padding-bottom: 40px;
-    font-size: 10px;
+    font-size: 12px;
     font-style: italic;
 }
 
@@ -69,11 +69,10 @@ body {
     background-size: cover;
     -o-background-size: cover;
 
-
 }
 
 .image-bg-fluid-height-phone {
-	background: url('../images/bg-garage.png') no-repeat center center scroll;
+    background: url('../images/bg-racetrack.png') no-repeat center center scroll;
     padding: 5px 0;
 }
 
@@ -82,29 +81,53 @@ body {
     padding: 5px 0;
 }
 
+/*default*/
 .image-bg-fixed-height-phone {
-	background: url('../images/bg-racetrack.png') no-repeat center center scroll;
-    height: 500px;
-}
-
-.image-bg-fixed-height2-phone {
-	background: url('../images/bg-garage.png') no-repeat center center scroll;
+    background: url('../images/bg-garage.png') no-repeat center center scroll;
     height: 550px;
 }
 
-.image-bg-fixed-height3-phone {
-	background: url('../images/bg-garage.png') no-repeat center center scroll;
-    height: 450px;
+/*car 1*/
+.image-bg-fixed-height2-phone {
+    background: url('../images/bg-racetrack.png') no-repeat center center scroll;
+    height: 530px;
 }
 
-.image-bg-fixed-height4-phone {
-   	background: url('../images/bg-garage.png') no-repeat center center scroll;
-    height: 500px;
+/*cars 4, 5, 10, 13*/
+.image-bg-fixed-height3-phone {
+    background: url('../images/bg-garage.png') no-repeat center center scroll;
+    height: 520px;
 }
+
+/*car 2*/
+.image-bg-fixed-height4-phone {
+    background: url('../images/bg-racetrack.png') no-repeat center center scroll;
+    height: 550px;
+}
+
+.spec-phone {
+    /*position: absolute;*/
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+    margin: auto;
+    padding: 10px 10px 15px 10px;
+    vertical-align: middle;
+}
+
+.alignleft {
+    float: left;
+}
+.alignright {
+    float: right;
+}
+
+
 
 
 .img-center {
-	margin: 0 auto;
+    margin: 0 auto;
 }
 
 section {
@@ -128,7 +151,7 @@ footer {
     margin: 50px 0;
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
     section {
         padding-top: 25px;
         padding-bottom: 25px;
@@ -137,4 +160,61 @@ footer {
     .section-heading {
         font-size: 2em;
     }
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px) {
+
+    .spec-phone {
+        font-size: 12px;
+    }
+
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width: 321px) {
+
+    .spec-phone {
+        width: 90%;
+    }
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width: 320px) {
+
+    /*.spec-phone {*/
+        /*font-size: 10px;*/
+    /*}*/
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait) {
+
+    /*.col-xs-10 {*/
+        /*width: 41.66666667%*/
+    /*}*/
+
+    .tablet-offset {
+        position: relative;
+        bottom: 30px;
+        line-height: 100%;
+        vertical-align: bottom;
+        margin-left: 0;
+    }
+
+    .spec-phone {
+        width: 100%;
+    }
+
 }
