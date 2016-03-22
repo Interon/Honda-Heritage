@@ -76,42 +76,42 @@ body {
 }
 
 .image-bg-fluid-height-phone {
-    background: url('../images/bg-racetrack.png') no-repeat center center scroll;
+    background: url('/phone/images/bg-racetrack.png') no-repeat center center scroll;
     padding: 5px 0;
 }
 
 .image-bg-fluid-height2-phone {
-    background: url('../images/bg-racetrack.png') no-repeat center center scroll;
+    background: url('/phone/images/bg-racetrack.jpg') no-repeat center center scroll;
     padding: 5px 0;
 }
 
 /*default*/
 .image-bg-fixed-height-phone {
-    background: url('../images/bg-garage.png') no-repeat center center scroll;
+    background: url('/phone/images/bg-garage.jpg') no-repeat center center scroll;
     height: 550px;
 }
 
 /*car 1*/
 .image-bg-fixed-height2-phone {
-    background: url('../images/bg-racetrack.png') no-repeat center center scroll;
+    background: url('/phone/images/bg-racetrack.jpg') no-repeat center center scroll;
     height: 530px;
 }
 
 /*cars 4, 5, 10*/
 .image-bg-fixed-height3-phone {
-    background: url('../images/bg-garage.png') no-repeat center center scroll;
+    background: url('/phone/images/bg-garage.jpg') no-repeat center center scroll;
     height: 520px;
 }
 
 /*car 2*/
 .image-bg-fixed-height4-phone {
-    background: url('../images/bg-racetrack.png') no-repeat center center scroll;
+    background: url('/phone/images/bg-racetrack.jpg') no-repeat center center scroll;
     height: 550px;
 }
 
 /*car 13*/
 .image-bg-fixed-height5-phone {
-    background: url('../images/bg-garage.png') no-repeat center center scroll;
+    background: url('/phone/images/bg-garage.jpg') no-repeat center center scroll;
     height: 250px;
 }
 
