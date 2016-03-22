@@ -8,11 +8,11 @@ body
 {
 background-color:black !important;
 }
-#B.content, #B p,#B.row, #B.container, section{
-	color: white !important;
+#B.content, #B p, #B.row, #B.container, section {
+    color: white !important;
     font-family: 'HelveticaNeueLTStd35Thin' !important;
-	background-color:black !important;
-
+    background-color: black !important;
+}
 .heading-2016-phone {
     font-size: 120px;
     vertical-align: middle;
