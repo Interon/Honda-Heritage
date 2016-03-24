@@ -17,7 +17,7 @@ body {
 .ms-caption {
     /*margin:20%;*/
     color: white;
-    font-family: Helvetica, sans-serif, sans-serif;
+    /*font-family: Helvetica, sans-serif, sans-serif;*/
 }
 
 .mytext, .popuptext {
@@ -26,12 +26,16 @@ body {
     font-size: 22px;
     width: 23%;
     font-style: italic;
-    line-height: 20px !important;
 }
 
 .popupimages {
     margin-top: 0px !important;
     margin-left: 0px !important;
+}
+
+#ex2 .popupimages {
+    width: 75% !important;
+    height: 120% !important;
 }
 
 .popuptext {
@@ -136,7 +140,7 @@ body {
 
 .text1 {
     font-size: 125%;
-    line-height: 150% !important;
+    line-height: 140% !important;
 }
 
 .text2 {
@@ -156,6 +160,14 @@ body {
 .text13 {
     font-size: 150%;
     line-height: 150% !important
+}
+
+#chainblock {
+    top: 10%;
+}
+
+#ex2 {
+    margin-left: 20px !important;
 }
 
 /*
@@ -1911,6 +1923,22 @@ body {
         margin-top: 90%;
     }
 
+    .viewimages {
+        margin-top: 40%;
+    }
+
+    .whiteflare {
+        margin-top: 50%;
+    }
+
+    .story {
+        margin-top: 100%;
+    }
+
+    #chainblock {
+        top: 2%;
+    }
+
 
     @-webkit-keyframes myfirst {
 
@@ -1958,20 +1986,20 @@ body {
 
         from, 15% {
             background: #C90809;
-            height: 5%;
+            height: 0%;
             opacity: 1;
         }
 
         26%, 42% {
             background: #C90809;
-            height: 28%;
-            opacity: .6;
+            height: 20%;
+            opacity: .7;
         }
 
         75%, 100% {
             background: #C90809;
-            height: 5%;
-            opacity: 1;
+            height: 20%;
+            opacity: .6;
         }
     }
 
@@ -1979,19 +2007,19 @@ body {
 
         from, 15% {
             background: #C90809;
-            height: 5%;
+            height: 0%;
             opacity: 1;
         }
 
         26%, 42% {
             background: #C90809;
-            height: 30%;
+            height: 20%;
             opacity: .6;
         }
 
         75%, 100% {
             background: #C90809;
-            height: 5%;
+            height: 20%;
             opacity: 1;
         }
     }
