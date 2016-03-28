@@ -1,8 +1,8 @@
-﻿<!-- aj Version 1.2.51 Compressed Images 17M to 4.2 -->
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8"/><!-- Master Version 1.2.52 King of the hell -->
+
     <meta name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>index</title>
@@ -2141,19 +2141,22 @@
             </div>
 
             <!--car image layer-->
-            <img class="ms-layer kinghell"
-                 alt="car"
-                 data-offset-x="0"
-                 data-offset-y="0"
+           
+                <div class="buzz_wrapper ms-layer"  
+               
                  data-origin="br"
-                 data-type="image"
-                 data-effect="fade"
-                 data-duration="1200"
-                 data-ease="linear"
-                 data-delay="800"
-                 data-hide-effect="fade"
-                 src="/masterslider/blank.gif"
-                 data-src="/masterslider/images/Animation5.gif"/>
+                 data-type="text"
+                 data-effect="right(10)"
+                 data-duration="800"
+                 data-ease="easeOutQuart">
+                    <div class="text">
+                        <span><img src='https://www.hondastaging.co.za/koh.png' /></span>
+                    </div>
+                    <div class="scanline"></div>
+
+                </div>
+
+          
 
 
             <!--car image layer-->
@@ -3777,6 +3780,14 @@
 
 
 <script type="text/javascript">
+    $(function () {
+        for (i = 0; i < 4; i++) {
+            $('.buzz_wrapper .text span').eq(0).clone().prependTo('.buzz_wrapper .text');
+        }
+        for (i = 0; i < 10; i++) {
+            $('.buzz_wrapper .scanline').eq(0).clone().appendTo('.buzz_wrapper');
+        }
+    });
     window.onorientationchange = function () {
         var orientation = window.orientation;
         switch (orientation) {
