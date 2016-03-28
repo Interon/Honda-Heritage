@@ -17,15 +17,15 @@ body {
 .ms-caption {
     /*margin:20%;*/
     color: white;
-    font-family: Helvetica, sans-serif, sans-serif;
+    /*font-family: Helvetica, sans-serif, sans-serif;*/
 }
 
 .mytext, .popuptext {
+    text-align: justify;
     margin: 20%;
     font-size: 22px;
-    width: 25%;
+    width: 23%;
     font-style: italic;
-    line-height: 20px !important;
 }
 
 .popupimages {
@@ -33,10 +33,38 @@ body {
     margin-left: 0px !important;
 }
 
+#ex2 .popupimages {
+    width: 75% !important;
+    height: 120% !important;
+}
+
 .popuptext {
     margin-top: 20px !important;
     margin-left: 20px !important;
     width: 500px;
+}
+
+.viewimages {
+    font-size: 150%;
+    text-align: center;
+    color: #eb2629;
+/*
+    height: 80px;
+    width: 80px;
+*/
+    border-color: #eb2629;
+    border-width: 2px;
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 50%;
+    line-height: 30px;
+    vertical-align:  middle;
+
+    padding-bottom: 30%;
+    padding-top: 30%;
+    padding-left: 20%;
+    padding-right: 20%;
+
 }
 
 .specs {
@@ -48,8 +76,8 @@ body {
     margin: auto;
     padding: 10px 10px 15px 10px;
     vertical-align: middle;
-    top: 510%;
-    left: 150%;
+    /*top: 510%;*/
+    /*left: 150%;*/
     font-size: 110%;
     color: white;
     font-family: Helvetica, Arial, sans-serif, sans-serif;
@@ -59,7 +87,7 @@ body {
 .revborder {
     position: relative;
     width: 28%;
-    height: 50%;
+    height: 45%;
     background-color: transparent;
     border-style: solid;
     border-width: 8px;
@@ -85,13 +113,23 @@ body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 900%;
     font-weight: 700;
+
+}
+
+.f1 {
+    font-size: 1200%;
+}
+
+.date {
+    color: black;
 }
 
 .subheading {
     text-align: center;
     position: fixed;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 24px;
+    font-size: 30px;
+    font-weight: 100;
     font-style: italic;
 }
 
@@ -101,21 +139,35 @@ body {
 }
 
 .text1 {
-    font-size: 17px;
-    line-height: 17px !important;
+    font-size: 125%;
+    line-height: 140% !important;
 }
 
 .text2 {
-    font-size: 17px;
+    font-size: 130%;
+    line-height: 160% !important
+}
+
+.textdefault {
+    font-size: 150%;
+    line-height: 150% !important
 }
 
 .text4 {
-    font-size: 24px;
-    line-height: 13px !important;
+
 }
 
 .text13 {
-    font-size: 20px;
+    font-size: 150%;
+    line-height: 150% !important
+}
+
+#chainblock {
+    top: 10%;
+}
+
+#ex2 {
+    margin-left: 20px !important;
 }
 
 /*
@@ -177,98 +229,87 @@ body {
 */
 
 .spec1 {
-    top: 490%;
+
 }
 
 .spec2 {
-    top: 480%;
 }
 
 .spec3 {
-    top: 380%;
 }
 
 .spec4 {
-    top: 440%;
-    width: 23.5%;
+    /*width: 23.5%;*/
 }
 
 .spec5 {
-    top: 390%;
-    width: 23.5%;
+    /*width: 25%;*/
 }
 
 .spec6 {
-    top: 330%;
-    width: 23.5%;
+    /*width: 23.5%;*/
 }
 
 .spec7 {
-    top: 440%;
-    width: 24%;
+    /*width: 24%;*/
 }
 
 .spec8 {
-    top: 305%;
-    width: 24.5%;
+    /*width: 24.5%;*/
 }
 
 .spec9 {
-    top: 440%;
-    width: 24%;
+    /*width: 24%;*/
 }
 
 .spec10 {
-    top: 420%;
-    width: 24.5%;
+    /*width: 24.5%;*/
 }
 
 .spec11 {
-    top: 385%;
-    width: 24.5%;
+    /*width: 24.5%;*/
 }
 
 .spec12 {
-    top: 495%;
-    width: 24%;
+    /*width: 24%;*/
 }
 
 .spec13 {
-    top: 260%;
-    width: 23%;
+    /*width: 23%;*/
 }
 
-.revtext2 {
-    left: 695%;
-}
+/*.revtext2 {*/
+    /*left: 695%;*/
+/*}*/
 
-.revtext3 {
-    bottom: 300%;
-}
+/*.revtext3 {*/
+    /*bottom: 300%;*/
+/*}*/
 
-.revtext4 {
-    left: 690%;
-}
+/*.revtext4 {*/
+    /*left: 690%;*/
+/*}*/
 
 /*rev animation slide 1*/
 
 .revanimation1 {
     width: 100%;
-    height: 100%;
+    height: 47%;
     background-color: #C90809;
+    opacity: .6;
     margin: auto;
     vertical-align: middle;
     /*left:300%;*/
     /*right: 248%;*/
     -webkit-animation: myfirst 10s infinite; /* Chrome, Safari, Opera */
-    animation: myfirst 10s infinite;
+    animation: myfirst 10s ;
     -webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
     transition-timing-function: ease-in-out;
 }
 
 
 .anim1height {
-    height: 50px;
+    height: 47%;
 }
 
 /* Chrome, Safari, Opera */
@@ -276,20 +317,20 @@ body {
 
     from, 15% {
         background: #C90809;
-        height: 5%;
+        height: 0%;
         opacity: 1;
     }
 
     26%, 42% {
         background: #C90809;
-        height: 10%;
-        opacity: .6;
+        height: 47%;
+        opacity: .7;
     }
 
     75%, 100% {
         background: #C90809;
-        height: 5%;
-        opacity: 1;
+        height: 47%;
+        opacity: .6;
     }
 }
 
@@ -343,20 +384,21 @@ body {
 
 .revanimation3 {
     width: 100%;
-    height: 100%;
-    background-color: #b8003d;
+    height: 20%;
+    background-color: #C90809;
+    opacity: .6;
     margin: auto;
     vertical-align: middle;
     /*left:300%;*/
     /*right: 248%;*/
-    -webkit-animation: mythird 10s infinite; /* Chrome, Safari, Opera */
-    animation: mythird 10s infinite;
+    -webkit-animation: mythird 10s; /* Chrome, Safari, Opera */
+    animation: mythird 10s;
     -webkit-transition-timing-function: ease-in-out; /* Safari and Chrome */
     transition-timing-function: ease-in-out;
 }
 
 .anim1height {
-    height: 50px;
+    height: 20%;
 }
 
 /* Chrome, Safari, Opera */
@@ -364,30 +406,30 @@ body {
 
     from, 15% {
         background: #C90809;
-        height: 5%;
+        height: 0%;
         opacity: 1;
     }
 
     26%, 42% {
         background: #C90809;
         height: 20%;
-        opacity: .6;
+        opacity: .7;
     }
 
     75%, 100% {
         background: #C90809;
-        height: 5%;
-        opacity: 1;
+        height: 20%;
+        opacity: .6;
     }
 }
 
 /*-----------------end of rev animation-------*/
 
-/*rev animation slide 4*/
+/*rev animation slide 4 !!!!!!DEFAULT!!!!!*/
 
 .revanimation4 {
     width: 100%;
-    height: 100%;
+    height: 25%;
     background-color: #b8003d;
     margin: auto;
     vertical-align: middle;
@@ -420,7 +462,7 @@ body {
 
     75%, 100% {
         background: #C90809;
-        height: 5%;
+        height: 25%;
         opacity: 1;
     }
 }
@@ -785,11 +827,11 @@ body {
 @-moz-document url-prefix() {
     .revanimation1 {
         width: 100%;
-        height: 5%;
+        height: 47%;
         background-color: #cc0000;
         margin: auto;
         vertical-align: middle;
-        opacity: .7;
+        opacity: .6;
     }
 }
 
@@ -807,11 +849,11 @@ body {
 @-moz-document url-prefix() {
     .revanimation3 {
         width: 100%;
-        height: 15%;
+        height: 20%;
         background-color: #cc0000;
         margin: auto;
         vertical-align: middle;
-        opacity: .7;
+        opacity: .6;
     }
 }
 
@@ -1715,180 +1757,207 @@ body {
         display: none;
     }
 
-    .mytext {
-        top: 100%;
-        font-size: 24px;
-    }
+    /*.mytext {*/
+        /*top: 100%;*/
+        /*font-size: 24px;*/
+    /*}*/
 
-    .text1 {
-        font-size: 20px;
-        line-height: 13px !important;
-    }
+    /*.text1 {*/
+        /*font-size: 20px;*/
+        /*line-height: 13px !important;*/
+    /*}*/
 
-    .text2 {
-        font-size: 20px;
-    }
+    /*.text2 {*/
+        /*font-size: 20px;*/
+    /*}*/
 
-    .text13 {
-        font-size: 20px;
-    }
+    /*.text13 {*/
+        /*font-size: 20px;*/
+    /*}*/
 
     .revborder {
         bottom: 450px;
         height: 45%;
     }
 
-    .revanimation {
-        bottom: 450px;
-        height: 45%;
-    }
+    /*.revanimation {*/
+        /*bottom: 450px;*/
+        /*height: 45%;*/
+    /*}*/
 
-    .revtext {
-        top: 50px;
-    }
+    /*.revtext {*/
+        /*top: 50px;*/
+    /*}*/
 
     .car1 {
-        width: 110%;
-        top: 400%;
+        width: 100%;
+    }
+
+    .carbtcc {
+        width: 80%;
+
     }
 
     .car2 {
         width: 100%;
-        top: 450%;
+
     }
 
     .car3 {
-        width: 120%;
-        top: 500%;
+        width: 110%;
+
     }
 
     .car4 {
         width: 120%;
-        top: 500%;
     }
 
     .car5 {
-        width: 120%;
-        top: 500%;
+        width: 130%;
     }
 
     .car6 {
-        width: 120%;
-        top: 500%;
+        width: 95%;
     }
 
     .car7 {
-        width: 100%;
-        top: 400%;
+        width: 90%;
     }
 
     .car8 {
-        width: 120%;
-        top: 480%;
+        width: 105%;
     }
 
     .car9 {
-        width: 120%;
-        top: 470%;
+        width: 110%;
     }
 
     .car10 {
-        width: 140%;
-        top: 580%;
+        width: 120%;
     }
 
     .car11 {
-        width: 120%;
-        top: 480%;
+        width: 100%;
     }
 
     .car12 {
-        width: 100%;
-        top: 400%;
+        width: 90%;
     }
 
     .car13 {
         width: 150%;
-        top: 300%;
+    }
+
+    /*.specs {*/
+        /*height: 6%;*/
+    /*}*/
+
+    /*.spec1 {*/
+        /*bottom: 20%;*/
+    /*}*/
+
+    /*.spec2 {*/
+        /*bottom: 15%;*/
+    /*}*/
+
+    /*.spec3 {*/
+        /*bottom: 50%;*/
+    /*}*/
+
+    /*.spec4 {*/
+        /*bottom: 40%;*/
+    /*}*/
+
+    /*.spec5 {*/
+        /*bottom: 40%;*/
+    /*}*/
+
+    /*.spec6 {*/
+        /*bottom: 50%;*/
+    /*}*/
+
+    /*.spec7 {*/
+        /*bottom: 40%;*/
+    /*}*/
+
+    /*.spec8 {*/
+        /*bottom: 50%;*/
+    /*}*/
+
+    /*.spec9 {*/
+        /*bottom: 40%;*/
+    /*}*/
+
+    /*.spec10 {*/
+        /*bottom: 40%;*/
+    /*}*/
+
+    /*.spec11 {*/
+        /*bottom: 50%;*/
+    /*}*/
+
+    /*.spec12 {*/
+        /*bottom: 20%;*/
+    /*}*/
+
+    /*.spec13 {*/
+        /*bottom: 400%;*/
+    /*}*/
+
+    /*.subheading6 {*/
+    /*}*/
+
+    .text1, .text2, .textdefault, .text13 {
+        margin-top: 150%;
     }
 
     .specs {
-        height: 6%;
+        margin-top: 150%;
     }
 
-    .spec1 {
-        bottom: 20%;
+    .heading, .subheading {
+        margin-bottom: 45%;
     }
 
-    .spec2 {
-        bottom: 15%;
+    .title2016 {
+        margin-top: 90%;
     }
 
-    .spec3 {
-        bottom: 40%;
+    .viewimages {
+        margin-top: 40%;
     }
 
-    .spec4 {
-        bottom: 40%;
+    .whiteflare {
+        margin-top: 50%;
     }
 
-    .spec5 {
-        bottom: 40%;
+    .story {
+        margin-top: 100%;
     }
 
-    .spec6 {
-        bottom: 40%;
+    #chainblock {
+        top: 2%;
     }
 
-    .spec7 {
-        bottom: 40%;
-    }
-
-    .spec8 {
-        bottom: 40%;
-    }
-
-    .spec9 {
-        bottom: 40%;
-    }
-
-    .spec10 {
-        bottom: 40%;
-    }
-
-    .spec11 {
-        bottom: 40%;
-    }
-
-    .spec12 {
-        bottom: 40%;
-    }
-
-    .spec13 {
-        bottom: 550%;
-    }
-
-    .subheading6 {
-    }
 
     @-webkit-keyframes myfirst {
 
         from, 15% {
             background: #C90809;
-            height: 5%;
+            height: 0%;
             opacity: 1;
         }
 
         26%, 42% {
             background: #C90809;
-            height: 24%;
-            opacity: .6;
+            height: 47%;
+            opacity: .7;
         }
 
         75%, 100% {
             background: #C90809;
-            height: 5%;
-            opacity: 1;
+            height: 47%;
+            opacity: .6;
         }
     }
 
@@ -1917,20 +1986,20 @@ body {
 
         from, 15% {
             background: #C90809;
-            height: 5%;
+            height: 0%;
             opacity: 1;
         }
 
         26%, 42% {
             background: #C90809;
-            height: 28%;
-            opacity: .6;
+            height: 20%;
+            opacity: .7;
         }
 
         75%, 100% {
             background: #C90809;
-            height: 5%;
-            opacity: 1;
+            height: 20%;
+            opacity: .6;
         }
     }
 
@@ -1938,19 +2007,19 @@ body {
 
         from, 15% {
             background: #C90809;
-            height: 5%;
+            height: 0%;
             opacity: 1;
         }
 
         26%, 42% {
             background: #C90809;
-            height: 30%;
+            height: 20%;
             opacity: .6;
         }
 
         75%, 100% {
             background: #C90809;
-            height: 5%;
+            height: 20%;
             opacity: 1;
         }
     }
