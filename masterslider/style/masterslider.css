@@ -137,8 +137,8 @@ body {
 }
 
 #ex2 .popupimages {
-    width: 75% !important;
-    height: 120% !important;
+    /*width: 75% !important;*/
+    /*height: 75% !important;*/
 }
 
 .popuptext {
@@ -265,12 +265,16 @@ body {
     line-height: 150% !important
 }
 
+.ex2text {
+    color: white;
+}
+
 #chainblock {
     top: 10%;
 }
 
 #ex2 {
-    margin-left: 20px !important;
+
 }
 
 /*
@@ -2026,9 +2030,6 @@ body {
         margin-top: 90%;
     }
 
-    .viewimages {
-        margin-top: 40%;
-    }
 
     .whiteflare {
         margin-top: 50%;
@@ -2041,6 +2042,27 @@ body {
     #chainblock {
         top: 2%;
     }
+
+    .v-img3 {
+        margin-bottom: 100%;
+    }
+    .v-img4 {
+        margin-bottom: 60%;
+    }
+    .v-img5 {
+        margin-bottom: 60%;
+    }
+    .v-img6 {
+        margin-bottom: 30%;
+    }
+    .v-img7 {
+        margin-bottom: 60%;
+    }
+    .v-img8 {
+        margin-bottom: 60%;
+    }
+
+
 
 
     @-webkit-keyframes myfirst {
