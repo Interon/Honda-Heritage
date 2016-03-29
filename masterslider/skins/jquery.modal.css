@@ -23,7 +23,7 @@
   vertical-align: middle;
   position: relative;
   /*z-index: 2;*/
-  width: 600px;
+  width: 1028px;
   /*background: black;*/
   /*padding: 15px 30px;*/
   /*-webkit-border-radius: 0px;*/
@@ -39,7 +39,7 @@
   /*text-align: left;*/
 }
 
-.modal a.close-modal {
+.modal a.close-modal-x {
    position: absolute;
    top: 5px;
    right: -35px;
