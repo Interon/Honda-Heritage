@@ -39,7 +39,7 @@
   /*text-align: left;*/
 }
 
-.modal a.close-modal-x {
+.modal a.close-modal-close {
    position: absolute;
    top: 5px;
    right: -35px;

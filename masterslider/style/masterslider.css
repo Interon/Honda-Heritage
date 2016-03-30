@@ -117,6 +117,17 @@ body {
     font-family: "HelveticaNeue-Light", Helvetica, sans-serif, sans-serif;
 }
 
+a,
+a:hover{
+    color: red;
+    font-size: 16px;
+}
+
+.modal a.close-modal {
+    margin-bottom: 500px;
+    margin-left: 500px;
+}
+
 .ms-caption {
     /*margin:20%;*/
     color: white;
