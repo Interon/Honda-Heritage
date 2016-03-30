@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/><!-- aj Version 1.2.56 popups, close button in progress -->
+    <meta charset="utf-8"/><!-- aj Version 1.2.57 More screen sizes -->
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -46,6 +46,10 @@
         <tr>
             <td>Screen</td>
             <td id="scrres"></td>
+        </tr>
+        <tr>
+            <td>window</td>
+            <td id="winres"></td>
         </tr>
         <tr>
             <td>Aspect</td>
@@ -3826,8 +3830,10 @@
     var hr = screen.height / r;
     var wr = screen.width / r;
     var xheight = 800;
+    $("#winres").html($(window).width() + '/' + $(window).height());
     $("#scrres").html(screen.width + '/' + screen.height);
     $("#aspect").html(aspect);
+    var xwidth = 1920;
     if (aspect == '4:3') {
         xheight = 1100;
     }
@@ -3839,18 +3845,35 @@
         if (screen.width == 1366) {
             xheight = 600;
         }
+        if (screen.width == 2560 && screen.height == 1440) {
+            xwidth = 1920;
+            xheight = 1090;
+        }
+        
     }
     if (aspect == '455:256') {
         xheight = 700;
     }
+   
     if (aspect == '8:5') {
         xheight = 875;
+        
+        if (screen.width == 1440) {
+            xwidth = 1920;
+            xheight = 920;
+        }
+    }
+  
+    var isaspect = getUrlVars()["aspect"];
+    if (isaspect)
+    {
+        xheight = 800;
     }
 
     $("#xheight").html(xheight);
     var slider = new MasterSlider();
     slider.setup('masterslider', {
-        width: 1920,    // slider standard width
+        width: xwidth,    // slider standard width
 
         height: xheight,   // slider standard height
         space: 0,
@@ -3927,6 +3950,16 @@
     });
     $(document).ready(function () {
     });
+    function getUrlVars() {
+        var vars = [], hash;
+        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+        for (var i = 0; i < hashes.length; i++) {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            vars[hash[0]] = hash[1];
+        }
+        return vars;
+    }
     function chainEffect() {
         $('.chainball').each(function () {
 
