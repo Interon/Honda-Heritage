@@ -2074,7 +2074,7 @@ body {
         margin-bottom: 70%;
     }
 
-    .blocker:before{
+    #ex2 .blocker:before{
         content: "";
         display: inline-block;
         width: 50%;
@@ -2082,6 +2082,16 @@ body {
         vertical-align: middle;
         margin-right: -0.05em;
     }
+
+    #ex3 .blocker:before{
+        content: "";
+        display: inline-block;
+        width: 50%;
+        height: 20%;
+        vertical-align: middle;
+        margin-right: -0.05em;
+    }
+
 
     .modal {
 
