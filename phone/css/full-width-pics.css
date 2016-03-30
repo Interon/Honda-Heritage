@@ -10,7 +10,7 @@ background-color:black !important;
 }
 #B.content, #B p, #B.row, #B.container, section {
     color: white !important;
-    font-family: 'HelveticaNeueLTStd35Thin' !important;
+    font-family: 'HelveticaNeueLTStd35Thin', "Helvetica Neue Light", "Helvetica Neue" Helvetica !important;
     background-color: black !important;
 }
 .heading-2016-phone {
