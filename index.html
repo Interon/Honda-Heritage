@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/><!-- aj Version 1.2.71  revborder width narrower -->
+    <meta charset="utf-8"/><!-- aj Version 1.2.72   -->
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -67,6 +67,10 @@
         <tr>
             <td>XHeight</td>
             <td id="xheight"></td>
+        </tr>
+        <tr>
+            <td>Size</td>
+            <td><div class="visible-xs">xs</div> <div class="visible-sm">sm</div><div class="visible-md">md</div><div class="visible-lg">lg</div></td>
         </tr>
     </table>
 </div>
@@ -3866,9 +3870,7 @@
         if (screen.width == 1920) {
             xheight = 800;
         }
-        if (screen.width == 1920 && screen.height == 1080) {
-            xheight = 1000;
-        }
+       
         if (screen.width == 1366) {
             xheight = 600;
         }
