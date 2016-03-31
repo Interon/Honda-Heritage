@@ -411,8 +411,9 @@ body {
 
 /*rev animation slide 1*/
 
+
 .revanimation1 {
-    width: 100%;
+    width: 540%;
     height: 47%;
     background-color: #C90809;
     opacity: .6;
@@ -2480,15 +2481,15 @@ body {
 
 
     .heading {
-        top: 410%
+        top: 500%
     }
 
     .f1 {
-        top: 380%;
+        top: 400%;
     }
 
     .subheading {
-        top: 580%;
+        top: 680%;
     }
 
     .revborder {
@@ -2518,6 +2519,11 @@ body {
     #chainblock {
         top: 300px;
         right: 100px;
+    }
+
+
+    .revborder {
+        width: 21%;
     }
 }
 
