@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/><!-- aj Version 1.2.70  revborder width narrower -->
+    <meta charset="utf-8"/><!-- aj Version 1.2.71  revborder width narrower -->
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -3866,6 +3866,9 @@
         if (screen.width == 1920) {
             xheight = 800;
         }
+        if (screen.width == 1920 && screen.height == 1080) {
+            xheight = 1000;
+        }
         if (screen.width == 1366) {
             xheight = 600;
         }
@@ -3874,6 +3877,10 @@
             xheight = 1200;;
         }
         
+    }
+
+    if (screen.width == 1024 && screen.height == 808) {
+        xheight = 1100;
     }
     if (aspect == '455:256') {
         xheight = 700;
