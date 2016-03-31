@@ -134,7 +134,9 @@ body {
     /*font-family: Helvetica, sans-serif, sans-serif;*/
 }
 
-
+#chainblock {
+    right: 20px;
+}
 
 .mytext, .popuptext {
     text-align: left;
@@ -206,7 +208,7 @@ body {
     height: 45%;
     background-color: transparent;
     border-style: solid;
-    border-width: 8px;
+    border-width: 9px;
     border-color: black;
     margin: auto;
     vertical-align: middle;
@@ -2372,7 +2374,57 @@ body {
     #B {
         display: none;
     }
+
+    #chainblock {
+        top: 10px;
+    }
 }
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-height: 768px) {
+    #A {
+        display: inline;
+    }
+
+    #B {
+        display: none;
+    }
+
+    #chainblock {
+        top: 40px;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-height: 900px) {
+    #A {
+        display: inline;
+    }
+
+    #B {
+        display: none;
+    }
+
+    #chainblock {
+        top: 80px;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-height: 1080px) {
+    #A {
+        display: inline;
+    }
+
+    #B {
+        display: none;
+    }
+
+    #chainblock {
+        top: 120px;
+    }
+}
+
 
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
@@ -2440,7 +2492,7 @@ body {
     }
 
     .revborder {
-        border-width: 12px;
+        border-width: 13px;
     }
 
     .text1, .text2, .textdefault, .text13 {
@@ -2463,6 +2515,10 @@ body {
         margin-top: 180%;
     }
 
+    #chainblock {
+        top: 300px;
+        right: 100px;
+    }
 }
 
 @media only screen and (orientation: portrait) {
