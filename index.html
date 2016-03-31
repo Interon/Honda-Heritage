@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/><!-- aj Version 1.2.65  bug fixes on modal for ipad  -->
+    <meta charset="utf-8"/><!-- aj Version 1.2.66  changes as per agency social media chainblock animation faster overflowing red blockr 2016 on last page fit screen   -->
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -13,11 +13,16 @@
           integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
           crossorigin="anonymous">
     <!-- Base MasterSlider style sheet -->
+    <!--<link rel="stylesheet"-->
+          <!--href="/masterslider/style/ms-caro3d.css"/>-->
+    <!--<link rel="stylesheet"-->
+          <!--href="/masterslider/style/ms-staff-style.css"/>-->
 
-
-    <!-- MasterSlider default skin -->
+    <!-- MasterSlider Template Style -->
     <link rel="stylesheet"
           href="/masterslider/skins/light-3/style.css"/>
+
+    <!-- MasterSlider default skin -->
 
     <link href="/masterslider/skins/jquery.modal.css"
           rel="stylesheet"/>
@@ -25,6 +30,10 @@
           rel="stylesheet">
     <link rel="stylesheet"
           href="/masterslider/style/masterslider.css"/>
+
+
+
+
     <!-- Latest version of jQuery from Google CDN -->
     <!-- You can remove it if jQuery is already included. -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -88,6 +97,7 @@
 
 
             <!-- rev counter -->
+
             <div class="ms-layer revborder ms-caption"
                  data-offset-x="0"
                  data-offset-y="300"
@@ -631,6 +641,7 @@
                  data-origin="br"
                  data-type="text"
                  data-effect="fade"
+                 data-delay="2000"
                  data-duration="3800"
                  data-ease="easeOutQuart">
                 VIEW<br/>IMAGES
@@ -794,6 +805,7 @@
                  data-offset-y="360"
                  data-origin="br"
                  data-type="text"
+                 data-delay="2000"
                  data-effect="fade"
                  data-duration="3800"
                  data-ease="easeOutQuart">
@@ -951,6 +963,7 @@
                  data-origin="br"
                  data-type="text"
                  data-effect="fade"
+                 data-delay="2000"
                  data-duration="3800"
                  data-ease="easeOutQuart">
                 VIEW<br/>IMAGES
@@ -1101,6 +1114,7 @@
                  data-origin="br"
                  data-type="text"
                  data-effect="fade"
+                 data-delay="2000"
                  data-duration="3800"
                  data-ease="easeOutQuart">
                 VIEW<br/>IMAGES
@@ -1266,6 +1280,7 @@
                  data-origin="br"
                  data-type="text"
                  data-effect="fade"
+                 data-delay="2000"
                  data-duration="3800"
                  data-ease="easeOutQuart">
                 VIEW<br/>IMAGES
@@ -1424,6 +1439,7 @@
                  data-origin="br"
                  data-type="text"
                  data-effect="fade"
+                 data-delay="2000"
                  data-duration="3800"
                  data-ease="easeOutQuart">
                 VIEW<br/>IMAGES
@@ -2083,10 +2099,10 @@
 
             <!--2016-->
             <div class="ms-layer ms-caption title2016"
-                 style="font-size: 2400%; color: rgba(183, 20, 20, 0.83); font-weight: 700;"
+                 style="font-size: 2400%; color: rgba(255, 10, 10, 0.83); font-weight: 700;"
                  data-offset-x="50"
-                 data-offset-y="-80"
-                 data-origin="tc"
+                 data-offset-y="420"
+                 data-origin="bc"
                  data-type="text"
                  data-effect="fade"
                  data-duration="0"
@@ -2181,11 +2197,11 @@
                  style="height:35px;width:580px; bottom: 50px; left: 5%;margin-right:auto;position:relative">
                 <div onclick="window.open('https://twitter.com/hondasa')"
                      class="twitter"
-                     style="background-repeat:no-repeat;background-image:url('masterslider/images/social/twitter.png');height:40px;width:40px;float:left;cursor:pointer;">
+                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/social/twitter.png');height:40px;width:40px;float:left;cursor:pointer;">
                 </div>
                 <div onclick="window.open('https://www.facebook.com/Hondasa/')"
                      class="twitter"
-                     style="background-repeat:no-repeat;background-image:url('masterslider/images/social/facebook.png');height:40px;width:40px;float:left;cursor:pointer;">
+                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/social/facebook.png');height:40px;width:40px;float:left;cursor:pointer;">
                 </div>
                 <!--<div onclick="window.open('https://www.linkedin.com/company/honda-motor-southern-africa')"
                  class="twitter"
@@ -2214,7 +2230,7 @@
         <!--chainblock-->
         <div style="width:100%;text-align:center">
             <div id="chainblock"
-                 style="position:absolute; width:20px; right: 20px;">
+                 style="position:absolute; width:20px;">
                 <div onclick="slider.api.gotoSlide(0);"
                      class="chainball"
                      data-position="0"
@@ -2222,55 +2238,55 @@
                 <div onclick="slider.api.gotoSlide(1);"
                      class="chainball"
                      data-position="1"
-                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:43px;width:13px;float:left;cursor:pointer;"></div>
+                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:40px;width:13px;float:left;cursor:pointer;"></div>
                 <div onclick="slider.api.gotoSlide(2);"
                      class="chainball"
                      data-position="2"
-                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:43px;width:13px;float:left;cursor:pointer;"></div>
+                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:40px;width:13px;float:left;cursor:pointer;"></div>
                 <div onclick="slider.api.gotoSlide(3);"
                      class="chainball"
                      data-position="3"
-                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:43px;width:13px;float:left;cursor:pointer;"></div>
+                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:40px;width:13px;float:left;cursor:pointer;"></div>
                 <div onclick="slider.api.gotoSlide(4);"
                      class="chainball"
                      data-position="4"
-                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:43px;width:13px;float:left;cursor:pointer;"></div>
+                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:40px;width:13px;float:left;cursor:pointer;"></div>
                 <div onclick="slider.api.gotoSlide(5);"
                      class="chainball"
                      data-position="5"
-                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:43px;width:13px;float:left;cursor:pointer;"></div>
+                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:40px;width:13px;float:left;cursor:pointer;"></div>
                 <div onclick="slider.api.gotoSlide(6);"
                      class="chainball"
                      data-position="6"
-                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:43px;width:13px;float:left;cursor:pointer;"></div>
+                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:40px;width:13px;float:left;cursor:pointer;"></div>
                 <div onclick="slider.api.gotoSlide(7);"
                      class="chainball"
                      data-position="7"
-                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:43px;width:13px;float:left;cursor:pointer;"></div>
+                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:40px;width:13px;float:left;cursor:pointer;"></div>
                 <div onclick="slider.api.gotoSlide(8);"
                      class="chainball"
                      data-position="8"
-                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:43px;width:13px;float:left;cursor:pointer;"></div>
+                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:40px;width:13px;float:left;cursor:pointer;"></div>
                 <div onclick="slider.api.gotoSlide(9);"
                      class="chainball"
                      data-position="9"
-                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:43px;width:13px;float:left;cursor:pointer;"></div>
+                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:40px;width:13px;float:left;cursor:pointer;"></div>
                 <div onclick="slider.api.gotoSlide(10);"
                      class="chainball"
                      data-position="10"
-                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:43px;width:13px;float:left;cursor:pointer;"></div>
+                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:40px;width:13px;float:left;cursor:pointer;"></div>
                 <div onclick="slider.api.gotoSlide(11);"
                      class="chainball"
                      data-position="11"
-                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:43px;width:13px;float:left;cursor:pointer;"></div>
+                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:40px;width:13px;float:left;cursor:pointer;"></div>
                 <div onclick="slider.api.gotoSlide(12);"
                      class="chainball"
                      data-position="12"
-                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:43px;width:13px;float:left;cursor:pointer;"></div>
+                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:40px;width:13px;float:left;cursor:pointer;"></div>
                 <div onclick="slider.api.gotoSlide(13);"
                      class="chainball"
                      data-position="13"
-                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:43px;width:13px;float:left;cursor:pointer;"></div>
+                     style="background-repeat:no-repeat;background-image:url('/masterslider/images/open.png');height:40px;width:13px;float:left;cursor:pointer;"></div>
             </div>
         </div>
 
@@ -3889,6 +3905,7 @@
         //autoHeight: true;
         layout: "boxed",
         wheel: true,
+        instantStartLayers:true,
        // dir: "v",
         //wheel: true;
         // more slider options goes here...
@@ -3905,9 +3922,11 @@
         width: 600,    // slider standard width
         height: 400,   // slider standard height
         space: 5,
-        view: 'basic',
+        view: 'flow',
+//        view: 'fadeBasic',
+        layout: 'partialview',
         autoHeight: true,
-        wheel: true,
+//        wheel: true,
       
         // more slider options goes here...
         // check slider options section in documentation for more options.
