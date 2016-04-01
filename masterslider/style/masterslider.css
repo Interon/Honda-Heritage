@@ -340,9 +340,9 @@ body {
 .subheading {
     text-align: center;
     position: fixed;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 30px;
-    font-weight: 100;
+    font-weight: 300;
     font-style: italic;
 }
 
@@ -2109,11 +2109,11 @@ body {
     }
 
     .title2016 {
-        margin-top: 90%;
+        margin-bottom: 50%;
     }
 
     .whiteflare {
-        margin-top: 50%;
+        margin-top: 100%;
     }
 
     .story {
@@ -2156,23 +2156,23 @@ body {
         margin-bottom: 60%;
     }
 
-    #ex2 .blocker:before {
-        content: "";
-        display: inline-block;
-        width: 50%;
-        height: 10%;
-        vertical-align: middle;
-        margin-right: -0.05em;
-    }
+    /*#ex2 .blocker:before {*/
+        /*content: "";*/
+        /*display: inline-block;*/
+        /*width: 50%;*/
+        /*height: 10%;*/
+        /*vertical-align: middle;*/
+        /*margin-right: -0.05em;*/
+    /*}*/
 
-    #ex3 .blocker:before {
-        content: "";
-        display: inline-block;
-        width: 50%;
-        height: 20%;
-        vertical-align: middle;
-        margin-right: -0.05em;
-    }
+    /*#ex3 .blocker:before {*/
+        /*content: "";*/
+        /*display: inline-block;*/
+        /*width: 50%;*/
+        /*height: 20%;*/
+        /*vertical-align: middle;*/
+        /*margin-right: -0.05em;*/
+    /*}*/
 
     .modal {
 
