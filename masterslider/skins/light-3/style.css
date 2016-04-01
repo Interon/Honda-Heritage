@@ -5,11 +5,11 @@
 
 .ms-skin-light-3 .ms-slide .ms-slide-vpbtn,
 .ms-skin-light-3 .ms-video-btn {
-    width: 50px;
+    width: 27%;
     height: 50px;
-    background: url(light-skin-3.png) no-repeat -15px -149px;
-    top: 50%;
-    left: 50%;
+    background: url(/masterslider/images/Nicks-type-R-story.png) no-repeat -15px -149px;
+    top: 50px;
+    left: 38%;
     margin: -25px 0 0 -25px;
 }
 

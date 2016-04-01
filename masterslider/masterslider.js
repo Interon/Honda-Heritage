@@ -5029,7 +5029,33 @@ MSSliderEvent.DESTROY = 'ms_destroy';
                     //new_slide.link_targ = this.getAttribute('target');
                     //$this.remove();
                 }
+
             });//.remove();
+
+
+
+
+            //// MyPopup
+            //var slide_link = $slide_ele.children('a').each(function (index) {
+            //    var $this = $(this);
+            //    if (this.getAttribute('data-type') === 'mypopup') {
+            //        new_slide.video = this.getAttribute('href');
+            //
+            //        new_slide.videoAutoPlay = $this.data('autoplay');
+            //
+            //        $this.remove();
+            //    } else if (!$this.hasClass('ms-layer')) {
+            //        new_slide.link = $(this);
+            //        //new_slide.link_targ = this.getAttribute('target');
+            //        //$this.remove();
+            //    }
+            //
+            //});//.remove();
+
+
+
+
+
 
             // Slide Layers
             that.__createSlideLayers(new_slide, $slide_ele.find('.ms-layer'));
