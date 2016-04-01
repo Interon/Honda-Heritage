@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/><!-- aj Version 1.2.79 remove 1998 popup, scroll down fix ipad, car shadow mobile, font for subheaading, white flare fix ipad, cropped out date stamps for popups    -->
+    <meta charset="utf-8"/><!-- aj Version 1.2.80 , fixed oppacity popups on masterslider js  -->
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -40,7 +40,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="/masterslider/jquery.modal.min.js"></script>
     <!-- MasterSlider main JS file -->
-    <script src="/masterslider/masterslider.min.js"></script>
+    <script src="/masterslider/masterslider.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic' rel='stylesheet' type='text/css'>
 
 </head>
@@ -4758,7 +4758,8 @@
         height: 400,   // slider standard height
         space: 5,
         view: 'flow',
-//        view: 'fadeBasic',
+//        view: 'partialWave',
+//        view:'fadeFlow',
         layout: 'partialview',
         autoHeight: true,
         loop: true,

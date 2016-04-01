@@ -6434,17 +6434,38 @@ MSViewEvents.CHANGE_END = 'slideChangeEnd';
 
 
     p.__updateSlidesHoriz = function (slide, distance) {
+
+
+
         var value = Math.abs(distance * 100 / this.__width);
         var rvalue = Math.min(value * 0.3, 30) * (distance < 0 ? -1 : 1);
+
+
+        if (slide.hasBG) {
+            slide.$bg_img.css('opacity', (100 - Math.abs(distance * 120 / this.__width / 2)) / 100);
+        }
+
+
         var zvalue = value * 1.2;
         slide.$element[0].style[window._jcsspfx + 'Transform'] = 'translateZ(' + -zvalue * 5 + 'px) rotateY(' + rvalue + 'deg) ';
+
+
     };
 
     p.__updateSlidesVertic = function (slide, distance) {
+
+
+
         var value = Math.abs(distance * 100 / this.__width);
         var rvalue = Math.min(value * 0.3, 30) * (distance < 0 ? -1 : 1);
+
+        if (slide.hasBG) {
+            slide.$bg_img.css('opacity', (100 - Math.abs(distance * 120 / this.__width / 2)) / 100);
+        }
+
         var zvalue = value * 1.2;
         slide.$element[0].style[window._jcsspfx + 'Transform'] = 'translateZ(' + -zvalue * 5 + 'px) rotateX(' + -rvalue + 'deg) ';
+
     };
 
 
