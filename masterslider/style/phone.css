@@ -11,8 +11,6 @@
     background-size: cover;
 }
 
-
-
 body {
 / / position: absolute;
     background-color: black;
@@ -356,7 +354,7 @@ body {
     }
     75%, 100% {
         background: #C90809;
-        height:9%;
+        height: 9%;
         opacity: .9
     }
 }
@@ -485,7 +483,7 @@ body {
 
     from, 15% {
         background: #C90809;
-        height:20%;
+        height: 20%;
         opacity: .9
     }
     26%, 42% {
@@ -842,9 +840,6 @@ body {
 }
 
 /*-----------------end of rev animation-------*/
-
-
-
 
 /*Master Slider CSS*/
 
