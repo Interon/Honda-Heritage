@@ -4,15 +4,16 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-body
-{
-background-color:black !important;
+body {
+    background-color: black !important;
 }
+
 #B.content, #B p, #B.row, #B.container, section {
     color: white !important;
     font-family: 'HelveticaNeueLTStd35Thin', "Helvetica Neue Light", "Helvetica Neue" Helvetica !important;
     background-color: black !important;
 }
+
 .heading-2016-phone {
     font-size: 120px;
     vertical-align: middle;
@@ -223,7 +224,7 @@ and (orientation: portrait) {
     }
 
     /*.col-xs-10 {*/
-        /*width: 41.66666667%*/
+    /*width: 41.66666667%*/
     /*}*/
     /*.tablet-offset {*/
     /*position: relative;*/
