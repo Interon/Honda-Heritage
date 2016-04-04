@@ -11,6 +11,16 @@
     }
 }
 
+@supports (overflow:-webkit-marquee) and (justify-content:inherit)
+{
+
+    .kohfirefox {
+        visibility: hidden;
+    }
+
+}
+
+
 
 .buzz_wrapper {
     position: absolute;
