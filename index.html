@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/><!-- aj ver 1.2.89 removed class name from car image in slide 1 -->
+    <meta charset="utf-8"/><!-- aj ver 1.2.90 cookie and auto reload for internet explorer --console.log for output -->
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -5514,6 +5514,56 @@
         });
 
     }
+
+
+
+    $(document).ready(function () {
+    
+        //var isIE = (!+"\v1") ? true : false;
+        //if (isIE){
+
+            function getCookie(name) {
+                var dc = document.cookie;
+                var prefix = name + "=";
+                var begin = dc.indexOf("; " + prefix);
+                if (begin == -1) {
+                    begin = dc.indexOf(prefix);
+                    if (begin != 0) return null;
+                }
+                else
+                {
+                    begin += 2;
+                    var end = document.cookie.indexOf(";", begin);
+                    if (end == -1) {
+                        end = dc.length;
+                    }
+                }
+                return unescape(dc.substring(begin + prefix.length, end));
+            } 
+
+       
+            var myCookie = getCookie("cookie1=8af95066-37a5-4b3d-a130-9986d78d36b5");
+            
+            if ($.browser.msie) {
+            
+            if (myCookie == null) {
+                // do cookie doesn't exist stuff;
+                document.cookie = "cookie1=8af95066-37a5-4b3d-a130-9986d78d36b5";
+                myCookie = document.cookie;
+                location.reload;
+                console.log("A cookie was created and page was reloaded")
+                console.log(myCookie);
+            }
+            else {
+                // do cookie exists stuff  
+                console.log("A cookie was NOT created")
+                console.log(myCookie);
+            }
+
+        };
+        
+   });
+
 
 
 </script>
