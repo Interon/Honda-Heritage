@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/><!-- aj ver 1.2.90 cookie and auto reload for internet explorer --console.log for output -->
+    <meta charset="utf-8"/><!-- aj ver 1.2.96 added images attempt 4-->
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -19,6 +19,7 @@
     <!--href="/masterslider/style/ms-staff-style.css"/>-->
 
     <!-- MasterSlider Template Style -->
+
     <link rel="stylesheet"
           href="/masterslider/skins/light-3/style.css"/>
 
@@ -39,7 +40,7 @@
             integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
             crossorigin="anonymous"></script>
     
-    <script src="/masterslider/jquery.modal.min.js"></script>
+    <script src="/masterslider/jquery.modal.js"></script>
     <!-- MasterSlider main JS file -->
     <script src="/masterslider/masterslider.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic' rel='stylesheet' type='text/css'>
@@ -228,10 +229,10 @@
                  data-offset-y="30"
                  data-origin="br"
                  data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
+                 data-effect="right(1000, false)"
+                 data-duration="2000"
                  data-ease="linear"
-                 data-delay="800"
+                 data-delay="200"
                  data-hide-effect="fade"
                  src="/masterslider/blank.gif"
                  data-src="/masterslider/images/car-1.png" />
@@ -395,10 +396,10 @@
                  data-offset-y="60"
                  data-origin="br"
                  data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
+                 data-effect="right(1000, false)"
+                 data-duration="2000"
                  data-ease="linear"
-                 data-delay="800"
+                 data-delay="200"
                  data-hide-effect="fade"
                  src="/masterslider/blank.gif"
                  data-src="/masterslider/images/car-BTCC.png"/>
@@ -531,10 +532,10 @@
                  data-offset-y="0"
                  data-origin="br"
                  data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
+                 data-effect="right(1200, false)"
+                 data-duration="2000"
                  data-ease="linear"
-                 data-delay="800"
+                 data-delay="200"
                  data-hide-effect="fade"
                  src="/masterslider/blank.gif"
                  data-src="/masterslider/images/car-2.png"/>
@@ -548,7 +549,7 @@
             <!-- slide background -->
             <img src="/masterslider/style/blank.gif"
                  data-src="/masterslider/images/bg-garage.jpg"
-                 alt="bg-racetrack"/>
+                 alt="bg-racetrack" />
 
             <!--white flare-->
             <img class="ms-layer whiteflare"
@@ -557,13 +558,13 @@
                  data-offset-y="-150"
                  data-origin="mc"
                  data-type="image"
-                 data-effect=top(short)"
+                 data-effect="top(short)"
                  data-duration="1800"
                  data-ease="linear"
                  data-delay="1800"
                  data-hide-effect="fade"
                  src="/masterslider/blank.gif"
-                 data-src="/masterslider/images/white-flare.png"/>
+                 data-src="/masterslider/images/white-flare.png" />
 
             <div class="ms-layer revanimation3"
                  style="bottom: 280%; width: 540%;"
@@ -627,7 +628,7 @@
                  data-delay="0"
                  data-hide-effect="fade"
                  src="/masterslider/blank.gif"
-                 data-src="/masterslider/images/shadow.png"/>
+                 data-src="/masterslider/images/shadow.png" />
 
 
             <!--spec block-->
@@ -643,9 +644,9 @@
 
                 Engine: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp; &nbsp; &nbsp;
-                &nbsp; &nbsp;3.0L Six-cylinder DOHC VTEC <br/>
+                &nbsp; &nbsp;3.0L Six-cylinder DOHC VTEC <br />
                 Maximum Output: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 280PS / 7,300rpm
-                <br/>
+                <br />
                 Maximum Torque: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 30.0kg · m / 5,400
                 rpm
 
@@ -673,23 +674,22 @@
 
             <!-- view images -->
             <!--<a href="#1992"-->
-               <!--class="display:block"-->
-               <!--rel="modal:open">-->
-                <div class="ms-layer ms-caption viewimages  v-img3"
-                     data-offset-x="280"
-                     data-offset-y="390"
-                     data-origin="br"
-                     data-type="text"
-                     data-effect="fade"
-                     data-delay="2000"
-                     data-duration="3800"
-                     data-ease="easeOutQuart">
-                    <a href="#1992"
-                       class="display:block"
-                       rel="modal:open">VIEW<br/>IMAGES</a>
-                </div>
+            <!--class="display:block"-->
+            <!--rel="modal:open">-->
+            <div class="ms-layer ms-caption viewimages v-img3"
+                 data-offset-x="280"
+                 data-offset-y="390"
+                 data-origin="br"
+                 data-type="text"
+                 data-effect="fade"
+                 data-delay="2200"
+                 data-duration="3000"
+                 data-ease="easeOutQuart">
+                <a href="#1992"
+                   class="display:block"
+                   rel="modal:open">VIEW<br />IMAGES</a>
+            </div>
             <!--</a>-->
-
             <!--car image layer-->
 
             <img class="ms-layer car3"
@@ -698,15 +698,31 @@
                  data-offset-y="0"
                  data-origin="br"
                  data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
+                 data-effect="right(1200, false)"
+                 data-duration="2000"
                  data-ease="linear"
-                 data-delay="800"
+                 data-delay="200"
                  data-hide-effect="fade"
                  src="/masterslider/blank.gif"
-                 data-src="/masterslider/images/car-3.png"/>
+                 data-src="/masterslider/images/car-3.png" />
 
-
+            <!-- view images clickable layer-->
+            <div class="ms-layer ms-caption viewImagesLink v-img3"
+                 data-offset-x="280"
+                 data-offset-y="390"
+                 data-origin="br"
+                 data-type="text"
+                 data-effect="fade"
+                 data-delay="2200"
+                 data-duration="3000"
+                 data-ease="easeOutQuart">
+                <a href="#1992"
+                   class="display:block"
+                   rel="modal:open"
+                   onclick="popupslider1992.api.gotoSlide(0)"
+                   >&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+            </div>
+            
         </div>
         <!-- end of slide -->
         <!-- 5 new slide ------------------------------------------------------------->
@@ -845,9 +861,9 @@
                      data-offset-y="360"
                      data-origin="br"
                      data-type="text"
-                     data-delay="2000"
+                     data-delay="2200"
                      data-effect="fade"
-                     data-duration="3800"
+                     data-duration="3000"
                      data-ease="easeOutQuart">
                     <a href="#1995"
                        class="display:block"
@@ -862,13 +878,28 @@
                  data-offset-y="70"
                  data-origin="br"
                  data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
+                 data-effect="right(1200, false)"
+                 data-duration="2000"
                  data-ease="linear"
-                 data-delay="800"
+                 data-delay="200"
                  data-hide-effect="fade"
                  src="/masterslider/blank.gif"
                  data-src="/masterslider/images/car-4.png"/>
+
+            <div class="ms-layer ms-caption viewImagesLink v-img4"
+                 data-offset-x="210"
+                 data-offset-y="360"
+                 data-origin="br"
+                 data-type="text"
+                 data-delay="2200"
+                 data-effect="fade"
+                 data-duration="3000"
+                 data-ease="easeOutQuart">
+                <a href="#1995"
+                   class="display:block"
+                   onclick="popupslider1995.api.gotoSlide(0)"
+                   rel="modal:open">&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+            </div>
 
         </div>
         <!-- end of slide -->
@@ -1005,7 +1036,7 @@
                      data-origin="br"
                      data-type="text"
                      data-effect="fade"
-                     data-delay="2000"
+                     data-delay="2200"
                      data-duration="3800"
                      data-ease="easeOutQuart">
                     <a href="#1997"
@@ -1020,14 +1051,29 @@
                  data-offset-y="30"
                  data-origin="br"
                  data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
+                 data-effect="right(1200, false)"
+                 data-duration="2000"
                  data-ease="linear"
-                 data-delay="800"
+                 data-delay="200"
                  data-hide-effect="fade"
                  src="/masterslider/blank.gif"
                  data-src="/masterslider/images/car-5.png"/>
 
+            <!-- view images link-->
+            <div class="ms-layer ms-caption viewImagesLink v-img5"
+                 data-offset-x="270"
+                 data-offset-y="420"
+                 data-origin="br"
+                 data-type="text"
+                 data-effect="fade"
+                 data-delay="2200"
+                 data-duration="3800"
+                 data-ease="easeOutQuart">
+                <a href="#1997"
+                   class="display:block"
+                   onclick="popupslider1997.api.gotoSlide(0)"
+                   rel="modal:open">&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+            </div>
 
         </div>
         <!-- end of slide -->
@@ -1041,7 +1087,7 @@
                  data-offset-y="-150"
                  data-origin="mc"
                  data-type="image"
-                 data-effect=top(short)"
+                 data-effect="top(short)"
                  data-duration="1800"
                  data-ease="linear"
                  data-delay="1800"
@@ -1173,10 +1219,10 @@
                  data-offset-y="10"
                  data-origin="br"
                  data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
+                 data-effect="right(1200, false)"
+                 data-duration="2000"
                  data-ease="linear"
-                 data-delay="800"
+                 data-delay="200"
                  data-hide-effect="fade"
                  src="/masterslider/blank.gif"
                  data-src="/masterslider/images/car-6.png"/>
@@ -1197,7 +1243,7 @@
                  data-offset-y="-150"
                  data-origin="mc"
                  data-type="image"
-                 data-effect=top(short)"
+                 data-effect="top(short)"
                  data-duration="1800"
                  data-ease="linear"
                  data-delay="1800"
@@ -1318,15 +1364,15 @@
 
             </div>
 
-
+            <!--view images layer-->
                 <div class="ms-layer ms-caption viewimages v-img7"
                      data-offset-x="230"
                      data-offset-y="470"
                      data-origin="br"
                      data-type="text"
                      data-effect="fade"
-                     data-delay="2000"
-                     data-duration="3800"
+                     data-delay="2200"
+                     data-duration="3000"
                      data-ease="easeOutQuart">
                     <a href="#1999"
                        class="display:block"
@@ -1341,13 +1387,29 @@
                  data-offset-y="10"
                  data-origin="br"
                  data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
+                 data-effect="right(1200, false)"
+                 data-duration="2200"
                  data-ease="linear"
-                 data-delay="800"
+                 data-delay="200"
                  data-hide-effect="fade"
                  src="/masterslider/blank.gif"
                  data-src="/masterslider/images/car-7.png"/>
+
+            <!--view images link-->
+            <div class="ms-layer ms-caption viewImagesLink v-img7"
+                 data-offset-x="230"
+                 data-offset-y="470"
+                 data-origin="br"
+                 data-type="text"
+                 data-effect="fade"
+                 data-delay="2200"
+                 data-duration="3000"
+                 data-ease="easeOutQuart">
+                <a href="#1999"
+                   class="display:block"
+                   onclick="popupslider1999.api.gotoSlide(0)"
+                   rel="modal:open">&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+            </div>
 
             <!-- rev counter -->
             <div class="div0">
@@ -1365,7 +1427,7 @@
                  data-offset-y="-150"
                  data-origin="mc"
                  data-type="image"
-                 data-effect=top(short)"
+                 data-effect="top(short)"
                  data-duration="1800"
                  data-ease="linear"
                  data-delay="1800"
@@ -1479,21 +1541,20 @@
 
             </div>
 
-
+            <!-- view images-->
                 <div class="ms-layer ms-caption viewimages v-img2001Integra"
                      data-offset-x="300"
                      data-offset-y="410"
                      data-origin="br"
                      data-type="text"
                      data-effect="fade"
-                     data-delay="2000"
-                     data-duration="3800"
+                     data-delay="2200"
+                     data-duration="3000"
                      data-ease="easeOutQuart">
                     <a href="#2001Integra"
                        class="display:block"
                        rel="modal:open">VIEW<br/>IMAGES</a>
                 </div>
-
 
             <!--car image layer-->
             <img class="ms-layer car8"
@@ -1502,14 +1563,29 @@
                  data-offset-y="20"
                  data-origin="br"
                  data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
+                 data-effect="right(1200, false)"
+                 data-duration="2000"
                  data-ease="linear"
-                 data-delay="800"
+                 data-delay="200"
                  data-hide-effect="fade"
                  src="/masterslider/blank.gif"
                  data-src="/masterslider/images/car-8.png"/>
 
+            <!-- view images layer-->
+            <div class="ms-layer ms-caption viewImagesLink v-img2001Integra"
+                 data-offset-x="300"
+                 data-offset-y="410"
+                 data-origin="br"
+                 data-type="text"
+                 data-effect="fade"
+                 data-delay="2200"
+                 data-duration="3000"
+                 data-ease="easeOutQuart">
+                <a href="#2001Integra"
+                   class="display:block"
+                   onclick="popupslider2001Integra.api.gotoSlide(0)"
+                   rel="modal:open">&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+            </div>
 
         </div>
         <!-- end of slide -->
@@ -1523,7 +1599,7 @@
                  data-offset-y="-150"
                  data-origin="mc"
                  data-type="image"
-                 data-effect=top(short)"
+                 data-effect="top(short)"
                  data-duration="1800"
                  data-ease="linear"
                  data-delay="800"
@@ -1643,17 +1719,17 @@
 
             </div>
 
-
+            <!-- viw images-->
                 <div class="ms-layer ms-caption viewimages v-img10"
                      data-offset-x="300"
                      data-offset-y="390"
                      data-origin="br"
                      data-type="text"
                      data-effect="fade"
-                     data-delay="2000"
-                     data-duration="3800"
+                     data-delay="2200"
+                     data-duration="3000"
                      data-ease="easeOutQuart">
-                    <a href="#1997"
+                    <a href="#2001Civic"
                        class="display:block"
                        rel="modal:open">VIEW<br/>IMAGES</a>
                 </div>
@@ -1666,14 +1742,29 @@
                  data-offset-y="10"
                  data-origin="br"
                  data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
+                 data-effect="right(1200, false)"
+                 data-duration="2000"
                  data-ease="linear"
-                 data-delay="800"
+                 data-delay="200"
                  data-hide-effect="fade"
                  src="/masterslider/blank.gif"
                  data-src="/masterslider/images/car-9.png"/>
 
+            <!-- viw imageslink-->
+            <div class="ms-layer ms-caption viewImagesLink v-img10"
+                 data-offset-x="300"
+                 data-offset-y="390"
+                 data-origin="br"
+                 data-type="text"
+                 data-effect="fade"
+                 data-delay="2200"
+                 data-duration="3000"
+                 data-ease="easeOutQuart">
+                <a href="#2001Civic"
+                   class="display:block"
+                   onclick="popupslider2001Civic.api.gotoSlide(0)"
+                   rel="modal:open">&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+            </div>
 
         </div>
         <!-- end of slide -->
@@ -1687,7 +1778,7 @@
                  data-offset-y="-150"
                  data-origin="mc"
                  data-type="image"
-                 data-effect=top(short)"
+                 data-effect="top(short)"
                  data-duration="1800"
                  data-ease="linear"
                  data-delay="1800"
@@ -1804,15 +1895,15 @@
 
             </div>
 
-
+            <!-- View Images Layer-->
                 <div class="ms-layer ms-caption viewimages v-img8"
                      data-offset-x="300"
                      data-offset-y="410"
                      data-origin="br"
                      data-type="text"
                      data-effect="fade"
-                     data-delay="2000"
-                     data-duration="3800"
+                     data-delay="2200"
+                     data-duration="3000"
                      data-ease="easeOutQuart">
                      <a href="#2002"
                          class="display:block"
@@ -1827,13 +1918,30 @@
                  data-offset-y="-20"
                  data-origin="br"
                  data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
+                 data-effect="right(1200, false)"
+                 data-duration="2000"
                  data-ease="linear"
-                 data-delay="800"
+                 data-delay="200"
                  data-hide-effect="fade"
                  src="/masterslider/blank.gif"
                  data-src="/masterslider/images/car-10.png"/>
+
+            <!-- View Images Layer-->
+            <div class="ms-layer ms-caption viewImagesLink v-img8"
+                 data-offset-x="300"
+                 data-offset-y="410"
+                 data-origin="br"
+                 data-type="text"
+                 data-effect="fade"
+                 data-delay="2200"
+                 data-duration="3000"
+                 data-ease="easeOutQuart">
+                <a href="#2002"
+                   class="display:block"
+                   onclick="popupslider2002.api.gotoSlide(0)"
+                   rel="modal:open">&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+            </div>
+
         </div>
         <!-- end of slide -->
         <!-- 12 new slide ------------------------------------------------------------->
@@ -1846,7 +1954,7 @@
                  data-offset-y="-150"
                  data-origin="mc"
                  data-type="image"
-                 data-effect=top(short)"
+                 data-effect="top(short)"
                  data-duration="1800"
                  data-ease="linear"
                  data-delay="1800"
@@ -1984,7 +2092,7 @@
 
             </div>
 
-
+            <!--view image layer-->
                 <div class="ms-layer ms-caption viewimages v-img12"
                      data-offset-x="300"
                      data-offset-y="420"
@@ -2007,10 +2115,10 @@
                  data-offset-y="-10"
                  data-origin="br"
                  data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
+                 data-effect="right(1200, false)"
+                 data-duration="2000"
                  data-ease="linear"
-                 data-delay="800"
+                 data-delay="200"
                  data-hide-effect="fade"
                  src="/masterslider/blank.gif"
                  data-src="/masterslider/images/car-11.png"/>
@@ -2031,10 +2139,25 @@
                  data-duration="3800"
                  data-ease="easeOutQuart">
                 <a href="#ex2"
+                   onclick="popupslider2.api.gotoSlide(0)"
                    rel="modal:open">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </a>
             </div>
 
-
+            <!--view image link-->
+            <div class="ms-layer ms-caption viewImagesLink v-img12"
+                 data-offset-x="300"
+                 data-offset-y="420"
+                 data-origin="br"
+                 data-type="text"
+                 data-effect="fade"
+                 data-delay="2000"
+                 data-duration="3800"
+                 data-ease="easeOutQuart">
+                <a href="#2007Sedan"
+                   class="display:block"
+                   onclick="popupslider2007Sedan.api.gotoSlide(0)"
+                   rel="modal:open">&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+            </div>
 
 
 
@@ -2051,7 +2174,7 @@
                  data-offset-y="-150"
                  data-origin="mc"
                  data-type="image"
-                 data-effect=top(short)"
+                 data-effect="top(short)"
                  data-duration="1800"
                  data-ease="linear"
                  data-delay="1800"
@@ -2199,7 +2322,7 @@
 
             </div>
 
-
+            <!--view image layer-->
                 <div class="ms-layer ms-caption viewimages v-img2007Civic"
                      data-offset-x="250"
                      data-offset-y="450"
@@ -2222,10 +2345,10 @@
                  data-offset-y="0"
                  data-origin="br"
                  data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
+                 data-effect="right(1200, false)"
+                 data-duration="2000"
                  data-ease="linear"
-                 data-delay="800"
+                 data-delay="200"
                  data-hide-effect="fade"
                  src="/masterslider/blank.gif"
                  data-src="/masterslider/images/car-12.png"/>
@@ -2243,6 +2366,22 @@
                  data-ease="easeOutQuart">
                 <a href="#nicktony"
                    rel="modal:open">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </a>
+            </div>
+
+            <!--view image layer-->
+            <div class="ms-layer ms-caption viewImagesLink v-img2007Civic"
+                 data-offset-x="250"
+                 data-offset-y="450"
+                 data-origin="br"
+                 data-type="text"
+                 data-effect="fade"
+                 data-delay="2000"
+                 data-duration="3800"
+                 data-ease="easeOutQuart">
+                <a href="#2007Hatchback"
+                   class="display:block"
+                   onclick="popupslider2007Hatchback.api.gotoSlide(0)"
+                   rel="modal:open">&nbsp&nbsp&nbsp&nbsp&nbsp</a>
             </div>
 
 
@@ -2327,10 +2466,10 @@
                  data-offset-y="20"
                  data-origin="br"
                  data-type="image"
-                 data-effect="right(long)"
-                 data-duration="1200"
+                 data-effect="right(2000, false)"
+                 data-duration="2000"
                  data-ease="linear"
-                 data-delay="800"
+                 data-delay="200"
                  data-hide-effect="fade"
                  src="/masterslider/blank.gif"
                  data-src="/masterslider/images/car-13.png"/>
@@ -2368,7 +2507,7 @@
             </div>
 
 
-            <!--link for kingofthehell-->
+            <!--link story-->
             <div class="ms-layer ms-caption storylinks story"
                  style="font-size: 1500%"
                  data-offset-x="200"
@@ -2378,7 +2517,7 @@
                  data-effect="fade"
                  data-duration="3800"
                  data-ease="easeOutQuart">
-                <a href="#2016" rel="modal:open">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </a>
+                <a href="#2016" onclick="popupslider2016.api.gotoSlide(0)" rel="modal:open">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </a>
             </div>
 
 
@@ -3890,24 +4029,24 @@
                  alt="5"/>
 
         </div>
-        <div class="ms-slide">
+        <!--<div class="ms-slide">
 
-            <!-- slide background -->
+            
             <img class="popupimages"
                  src="/masterslider/blank.gif"
                  data-src="/masterslider/images/view-images/1995/5.jpg"
                  alt="6"/>
 
-        </div>
-        <div class="ms-slide">
+        </div>-->
+        <!--<div class="ms-slide">
 
-            <!-- slide background -->
+           
             <img class="popupimages"
                  src="/masterslider/blank.gif"
                  data-src="/masterslider/images/view-images/1995/6.jpg"
                  alt="6"/>
 
-        </div>
+        </div>-->
         <!-- end of slide -->
 
     </div>
@@ -3970,15 +4109,15 @@
                  alt="6"/>
 
         </div>
-        <div class="ms-slide">
+        <!--<div class="ms-slide">
 
-            <!-- slide background -->
+            
             <img class="popupimages"
                  src="/masterslider/blank.gif"
                  data-src="/masterslider/images/view-images/1997/6.jpg"
                  alt="6"/>
 
-        </div>
+        </div>-->
         <!-- end of slide -->
 
     </div>
@@ -4040,7 +4179,7 @@
                  data-src="/masterslider/images/view-images/1998/5.jpg"
                  alt="6"/>
 
-        </div>
+        </div>-->
         <!-- end of slide -->
 
     </div>
@@ -4246,15 +4385,15 @@
                  alt="6"/>
 
         </div>
-        <!--<div class="ms-slide">-->
+        <div class="ms-slide">
 
-            <!--&lt;!&ndash; slide background &ndash;&gt;-->
-            <!--<img class="popupimages"-->
-                 <!--src="/masterslider/blank.gif"-->
-                 <!--data-src="/masterslider/images/view-images/2001-Civic/6.jpg"-->
-                 <!--alt="6"/>-->
+            &lt;!&ndash; slide background &ndash;&gt;
+            <img class="popupimages"
+                 src="/masterslider/blank.gif"
+                 data-src="/masterslider/images/view-images/2001-Civic/6.jpg"
+                 alt="6"/>
 
-        <!--</div>-->
+        </div>
         <!--<div class="ms-slide">-->
 
             <!--&lt;!&ndash; slide background &ndash;&gt;-->
@@ -4370,15 +4509,15 @@
                  alt="5"/>
 
         </div>
-        <div class="ms-slide">
+        <!--<div class="ms-slide">
 
-            <!-- slide background -->
+            
             <img class="popupimages"
                  src="/masterslider/blank.gif"
                  data-src="/masterslider/images/view-images/2007-Sedan/5.jpg"
                  alt="6"/>
 
-        </div>
+        </div>-->
         <!--<div class="ms-slide">-->
 
             <!--&lt;!&ndash; slide background &ndash;&gt;-->
@@ -4441,15 +4580,15 @@
                  alt="5"/>
 
         </div>
-        <div class="ms-slide">
+        <!--<div class="ms-slide">
 
-            <!-- slide background -->
+            
             <img class="popupimages"
                  src="/masterslider/blank.gif"
                  data-src="/masterslider/images/view-images/2007-Hatchback/5.jpg"
                  alt="6"/>
 
-        </div>
+        </div>-->
         <!-- end of slide -->
 
     </div>
@@ -4533,7 +4672,7 @@
 <div id="ex2"
      style="display:none;">
     <div class="ex2popup">
-        <div class="master-slider ms-skin-light-3"
+        <div class="master-slider storyPopupgArrows ms-skin-light-3"
              id="popupslider2">
 
 
@@ -4799,11 +4938,11 @@
 
         <div class="col-md-2"></div>
         <div class="col-md-3 choosestory">
-            <a href="#ex3" rel="modal:open"><h1 style="margin-bottom: 15px">Tony's Story</h1></a>
+            <a href="#ex3" onclick="popupsliderTony.api.gotoSlide(0)" rel="modal:open"><h1 style="margin-bottom: 15px">Tony's Story</h1></a>
         </div>
         <div class="col-md-2"></div>
         <div class="col-md-3 choosestory">
-            <a href="#ex4" rel="modal:open"><h1 style="margin-bottom: 15px">Nick's Story</h1></a>
+            <a href="#ex4" onclick="popupsliderNick.api.gotoSlide(0)" rel="modal:open"><h1 style="margin-bottom: 15px">Nick's Story</h1></a>
         </div>
         <div class="col-md-2"></div>
 
@@ -4822,7 +4961,7 @@
      style="display:none;">
 
 
-    <div class="master-slider ms-skin-light-3"
+    <div class="master-slider storyPopupgArrows ms-skin-light-3"
          id="popupsliderTony">
 
         <!-- close Button -->
@@ -4973,7 +5112,7 @@
      style="display:none;">
 
 
-    <div class="master-slider ms-skin-light-3"
+    <div class="master-slider storyPopupgArrows ms-skin-light-3"
          id="popupsliderNick">
 
         <!-- close Button -->
@@ -5041,6 +5180,66 @@
         </div>
         <!-- end of slide -->
 
+        <!-- new slide -->
+
+        <div style="width:1028px; background-color: black;"
+             class="ms-slide">
+
+            <div style="width:960px;">
+
+                <!-- slide background -->
+
+                <div style="float:left;background-color: black;width:400px;height:400px ">
+                    <img width="400"
+                         src="/masterslider/images/nick/1.jpeg" />
+                </div>
+
+                <div style="float:left;background-color: black;width:50px;height:400px "></div>
+
+                <div class="ex2text"
+                     style="width:930px; line-height: 17px; text-align: justify; position: relative; font-size: 11px;">
+                    <br /><span style="color:red; font-size: 30px">Nick Tattoos</span><br /><br />
+                    It is over all a great car, I have the 2009 championship edition, and it truly is one of the few
+                    cars that truly gives you what you want out of it, I’ve been on the Honda road for 7 years now, and
+                    have owned 7 Honda’s. From the old 1997 civic vtec, to the 2008 CRV, I also had a S2000 which I
+                    really regret selling. Two of my old civics have been in car magazines, the most recent one making
+                    it on the cover of speed and sound last year. I have owned: 2 1997 civic vtecs, 2 accord type S's,
+                    CRV, S2000 and my current Type <span style="color:red;">R</span>.
+                    <br /><br />
+                    This type <span style="color:red;">R</span> is my 1st type <span style="color:red;">R</span>, but I
+                    am already planning to buy another, I have had nothing but joy out of the car, it offers everything
+                    you need, from the day to day luxuries (steering control, climate control and etc.), the ride of the
+                    car is fantastic, it truly makes you feel like you are driving more than just a daily car to go to
+                    work and back in, even the drivers seating position makes you feel like you are piloting something!
+                    The only thing I wish it had more of is power, but when you compare it to its rivals like the VW
+                    GTI; you quickly realize you actually have a lot more in your hands, considering they are turbo
+                    charged. The type R being naturally aspirated offers great power compared to the GTI which is turbo
+                    charged.
+                    I will never drive anything other than a Honda; the reliability and overall quality by far out ways
+                    any other car!
+                    <br /><br />
+                    Thank you Honda for making real cars :D
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- end of slide -->
+
+        <!-- new slide -->
+        <div class="ms-slide">
+
+            <div style="float:left;background-color: black;width:100px;height:400px "></div>
+
+            <div style="float:left;background-color: black;width:400px;height:400px ">
+                <img width="800"
+                     src="/masterslider/images/nick/2.jpeg" />
+            </div>
+
+        </div>
+        <!-- end of slide -->
+
     </div>
 </div>
 
@@ -5049,6 +5248,7 @@
 
 
 <script type="text/javascript">
+
    
     $(window).bind('resize', function (e) {
         if (window.RT) clearTimeout(window.RT);
@@ -5164,6 +5364,7 @@
 
     var popupslider1992 = new MasterSlider();
     popupslider1992.setup('popupslider1992', {
+        
         width: 600,    // slider standard width
         height: 400,   // slider standard height
         space: 5,
@@ -5178,9 +5379,9 @@
         // more slider options goes here...
         // check slider options section in documentation for more options.
     });
-    popupslider1992.control('arrows');
+    popupslider1992.control('arrows', { autohide: false });
     // adds Arrows navigation control to the slider.
-    popupslider1992.control('arrows');
+
 
 
     //popupslider page 5 1995
@@ -5200,9 +5401,9 @@
         // more slider options goes here...
         // check slider options section in documentation for more options.
     });
-    popupslider1995.control('arrows');
+    popupslider1995.control('arrows', { autohide: false });
     // adds Arrows navigation control to the slider.
-    popupslider1995.control('arrows');
+
 
 
     //popupslider page 6 1997
@@ -5222,9 +5423,8 @@
         // more slider options goes here...
         // check slider options section in documentation for more options.
     });
-    popupslider1997.control('arrows');
+    popupslider1997.control('arrows', { autohide: false });
     // adds Arrows navigation control to the slider.
-    popupslider1997.control('arrows');
 
 
     //popupslider page 7 1998
@@ -5244,9 +5444,8 @@
         // more slider options goes here...
         // check slider options section in documentation for more options.
     });
-    popupslider1998.control('arrows');
+    popupslider1998.control('arrows', { autohide: false });
     // adds Arrows navigation control to the slider.
-    popupslider1998.control('arrows');
 
 
     //popupslider page 8 1999
@@ -5266,9 +5465,8 @@
         // more slider options goes here...
         // check slider options section in documentation for more options.
     });
-    popupslider1999.control('arrows');
+    popupslider1999.control('arrows', { autohide: false });
     // adds Arrows navigation control to the slider.
-    popupslider1999.control('arrows');
 
 
     //popupslider page 9 2001-Integra
@@ -5288,9 +5486,8 @@
         // more slider options goes here...
         // check slider options section in documentation for more options.
     });
-    popupslider2001Integra.control('arrows');
+    popupslider2001Integra.control('arrows', { autohide: false });
     // adds Arrows navigation control to the slider.
-    popupslider2001Integra.control('arrows');
 
 
     //popupslider page 10 2001Civic
@@ -5310,9 +5507,8 @@
         // more slider options goes here...
         // check slider options section in documentation for more options.
     });
-    popupslider2001Civic.control('arrows');
+    popupslider2001Civic.control('arrows', { autohide: false });
     // adds Arrows navigation control to the slider.
-    popupslider2001Civic.control('arrows');
 
 
     //popupslider page 11 2002
@@ -5332,9 +5528,8 @@
         // more slider options goes here...
         // check slider options section in documentation for more options.
     });
-    popupslider2002.control('arrows');
+    popupslider2002.control('arrows', { autohide: false });
     // adds Arrows navigation control to the slider.
-    popupslider2002.control('arrows');
 
 
     //popupslider page 12 2007Sedan
@@ -5354,9 +5549,8 @@
         // more slider options goes here...
         // check slider options section in documentation for more options.
     });
-    popupslider2007Sedan.control('arrows');
+    popupslider2007Sedan.control('arrows', { autohide: false });
     // adds Arrows navigation control to the slider.
-    popupslider2007Sedan.control('arrows');
 
 
     //popupslider page 13 2007Hatchback
@@ -5376,9 +5570,8 @@
         // more slider options goes here...
         // check slider options section in documentation for more options.
     });
-    popupslider2007Hatchback.control('arrows');
+    popupslider2007Hatchback.control('arrows', { autohide: false });
     // adds Arrows navigation control to the slider.
-    popupslider2007Hatchback.control('arrows');
 
 
 
@@ -5401,9 +5594,7 @@
         // more slider options goes here...
         // check slider options section in documentation for more options.
     });
-    popupslider2016.control('arrows');
-    // adds Arrows navigation control to the slider.
-    popupslider2016.control('arrows');
+    popupslider2016.control('arrows', { autohide: false });
 
 
     //popupslider page 12 !!!!!!!STORY!!!!!!
@@ -5416,13 +5607,13 @@
         layout: "boxed",
         view: 'basic',
         autoHeight: true,
-
+        loop: true,
 //        wheel: true,
         // more slider options goes here...
         // check slider options section in documentation for more options.
     });
     // adds Arrows navigation control to the slider.
-    popupslider2.control('arrows');
+    popupslider2.control('arrows', { autohide: false });
 
 
 
@@ -5439,11 +5630,12 @@
         view: 'basic',
         autoHeight: true,
         wheel: true,
+        loop: true,
         // more slider options goes here...
         // check slider options section in documentation for more options.
     });
     // adds Arrows navigation control to the slider.
-    popupsliderTony.control('arrows');
+    popupsliderTony.control('arrows', { autohide: false });
 
 
     slider.api.addEventListener(MSSliderEvent.CHANGE_START, function () {
@@ -5468,11 +5660,12 @@
         view: 'basic',
         autoHeight: true,
         wheel: true,
+        loop: true,
         // more slider options goes here...
         // check slider options section in documentation for more options.
     });
     // adds Arrows navigation control to the slider.
-    popupsliderNick.control('arrows');
+    popupsliderNick.control('arrows', { autohide: false });
 
 
     slider.api.addEventListener(MSSliderEvent.CHANGE_START, function () {
@@ -5561,10 +5754,7 @@
             }
 
         };
-        
-   });
-
-
+    });
 
 </script>
 </body>
