@@ -2570,6 +2570,27 @@ body {
 }
 
 /* Desktops and laptops ----------- */
+@media only screen and (min-height: 650px) {
+    #A {
+        display: inline;
+    }
+
+    #B {
+        display: none;
+    }
+
+    #chainblock {
+        top: 5px;
+    }
+    /*#ex3, #ex4, #2016, #2007Hatchback, #2007Sedan, #2002, #2001Civic, #2001Integra, #1999, #1998, #1997, #1995, #1992*/
+    #ex2, #ex3, #ex4 {
+        margin-top: 5%;
+    }
+
+
+}
+
+/* Desktops and laptops ----------- */
 @media only screen and (min-height: 768px) {
     #A {
         display: inline;
