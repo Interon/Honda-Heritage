@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/><!-- aj ver 1.2.97 resized images attempt 5-->
+    <meta charset="utf-8"/><!-- aj ver 1.2.99 added top-margin to popups for smaller screens -->
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -5279,8 +5279,7 @@
                 break;
         }
     };
-    window.moveTo(0, 0);
-    window.resizeTo(screen.availWidth, screen.availHeight);
+   
     function gcd(a, b) {
         return (b == 0) ? a : gcd(b, a % b);
     }
@@ -5714,7 +5713,7 @@
     
         //var isIE = (!+"\v1") ? true : false;
         //if (isIE){
-
+     
             function getCookie(name) {
                 var dc = document.cookie;
                 var prefix = name + "=";
@@ -5735,15 +5734,17 @@
             } 
 
        
-            var myCookie = getCookie("cookie1=8af95066-37a5-4b3d-a130-9986d78d36b5");
+            var myCookie = getCookie("cookie1");
             
             if ($.browser.msie) {
-            
+             
             if (myCookie == null) {
                 // do cookie doesn't exist stuff;
+                window.moveTo(0, 0);
+                window.resizeTo(screen.availWidth, screen.availHeight);
                 document.cookie = "cookie1=8af95066-37a5-4b3d-a130-9986d78d36b5";
                 myCookie = document.cookie;
-                location.reload;
+                window.location.reload();
                 console.log("A cookie was created and page was reloaded")
                 console.log(myCookie);
             }
