@@ -81,7 +81,11 @@
 }
 
 .buzz_wrapper span {
-    -webkit-animation: blur 30ms infinite, jerk 50ms infinite;
+    /*Old animation*/
+    /*-webkit-animation: blur 20ms infinite, jerk 50ms infinite;*/
+    /*New animation*/
+    
+
 }
 
 @-webkit-keyframes blur {
@@ -118,7 +122,7 @@
 }
 
 .buzz_wrapper span:nth-child(3) {
-    -webkit-animation: jerkblue 1s infinite;
+    -webkit-animation: jerkblue 4s infinite;
 }
 
 @-webkit-keyframes jerkblue {
@@ -129,7 +133,7 @@
         left: 0;
     }
     31% {
-        left: 10px;
+        left: 2px;
     }
     32% {
         left: 0;
@@ -138,13 +142,13 @@
         left: 0;
     }
     100% {
-        left: 10px;
+        left: 2px;
     }
 }
 
-.buzz_wrapper span:nth-child(2) {
+/*.buzz_wrapper span:nth-child(2) {
     -webkit-animation: jerkgreen 1s infinite;
-}
+}*/
 
 @-webkit-keyframes jerkgreen {
     0% {
@@ -168,7 +172,7 @@
 }
 
 .buzz_wrapper .text {
-    -webkit-animation: jerkwhole 5s infinite;
+    -webkit-animation: jerkwhole 4s infinite;
     position: relative;
 }
 
